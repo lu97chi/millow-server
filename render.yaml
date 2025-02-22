@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: millow-server
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npm run start:prod
+    envVars:
+      - key: PORT
+        value: 3000
+      - key: NODE_ENV
+        value: production
+      - key: MONGODB_URI
+        sync: false # This will need to be set in Render's dashboard 
