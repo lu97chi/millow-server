@@ -1,0 +1,12 @@
+---
+description: Best practices for integrating Mongoose with NestJS applications
+globs: **/*.{ts,js}
+---
+- Use MongooseModule.forRoot() to centralize and manage your MongoDB connection
+- Define schemas using Mongoose while enforcing strong typing with TypeScript interfaces
+- Create dedicated providers for Mongoose models to leverage NestJS dependency injection effectively
+- Encapsulate all database access within services to maintain a clean separation of concerns
+- Implement Mongoose middleware (pre/post hooks) for logging, validations, and error handling
+- Apply schema-level indexes to optimize query performance and enforce data integrity
+- Use lean queries (.lean()) for read-only operations to reduce overhead and improve response times
+- Write integration tests for your database operations to catch schema mismatches and connection issues early

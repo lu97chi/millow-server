@@ -1,0 +1,14 @@
+---
+description: description: Best practices and guidelines for NestJS framework
+globs: **/*.{ts,js}
+---
+- Use modular architecture to organize your application
+- Encapsulate API logic within modules, one per main domain/route
+- Use DTOs with class-validator for input validation
+- Implement MikroORM entities for data persistence
+- Separate business logic and persistence in services
+- Use global filters, middlewares, guards, and interceptors in a core module
+- Create a shared module for utilities and shared business logic
+- Write unit tests for controllers and services using Jest
+- Implement end-to-end tests for each API module
+- Add a test method to each controller for smoke testing

@@ -1,0 +1,11 @@
+---
+description: Best practices for using MikroORM in NestJS applications
+globs: **/*.{ts,js}
+---
+- Define entities with clear and consistent naming conventions
+- Use MikroORM's built-in migrations for database schema management
+- Implement soft deletes for entities when applicable
+- Use eager loading judiciously to avoid performance issues
+- Implement proper transaction management for database operations
+- Use MikroORM's query builder for complex queries
+- Optimize entity relationships to reduce unnecessary joins

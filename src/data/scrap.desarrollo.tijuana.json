@@ -1,0 +1,1988 @@
+[
+    {
+        "title": "Casas en Venta Tijuana | Privadas del Pac\u00edfico II",
+        "generatedTitle": "Desarrollo horizontal",
+        "priceOperationTypes": [
+            {
+                "lowPricePercentage": null,
+                "operationType": {
+                    "name": "Venta",
+                    "operationTypeId": "1"
+                },
+                "prices": [
+                    {
+                        "currencyId": "10",
+                        "amount": 2250000,
+                        "formattedAmount": "2,250,000",
+                        "currency": "MN"
+                    }
+                ]
+            }
+        ],
+        "mainFeatures": {},
+        "generalFeatures": {},
+        "developmentFeatures": {
+            "Desarrollo": {
+                "CFT201": {
+                    "featureId": "CFT201",
+                    "label": "Inmediata",
+                    "measure": null,
+                    "value": "0",
+                    "icon": "fecha",
+                    "featureCategoryId": "CFC3"
+                },
+                "CFT202": {
+                    "featureId": "CFT202",
+                    "label": "Total de unidades",
+                    "measure": null,
+                    "value": "10",
+                    "icon": null,
+                    "featureCategoryId": "CFC3"
+                },
+                "CFT200": {
+                    "featureId": "CFT200",
+                    "label": "En construcci\u00f3n",
+                    "measure": null,
+                    "value": "2",
+                    "icon": "terminado",
+                    "featureCategoryId": "CFC3"
+                }
+            }
+        },
+        "highlightedFeatures": [],
+        "flagsFeatures": [
+            {
+                "featureId": "CFT200",
+                "label": "En construcci\u00f3n",
+                "measure": null,
+                "value": "2",
+                "icon": "terminado",
+                "featureCategoryId": "CFC3"
+            },
+            {
+                "featureId": "CFT201",
+                "label": "Inmediata",
+                "measure": null,
+                "value": "0",
+                "icon": "fecha",
+                "featureCategoryId": "CFC3"
+            },
+            null
+        ],
+        "antiquity": null,
+        "publisher": {
+            "publisherId": "674889",
+            "name": "DESARROLLOS  ENCASA",
+            "url": "/inmobiliarias/desarrollos-encasa_674889-inmuebles.html",
+            "slotFilterUrl": null,
+            "urlLogo": "https://img10.naventcdn.com/empresas/18/00/00/67/48/89/130x70/logo_desarrollos-encasa_1738790666196.jpg",
+            "publisherTypeId": "2",
+            "urlChat": null,
+            "license": "111477615",
+            "publisherTags": [],
+            "parentPublisher": null,
+            "amountPostingActive": null,
+            "partialPhone": null,
+            "createdYear": null,
+            "premier": false,
+            "slug": "encasa",
+            "publisherStatistics": null,
+            "approved": false,
+            "mainPhone": null,
+            "created_date": "2019-05-30T04:00:00.000+0000",
+            "id_portal": "101",
+            "quantity_posting_by_operation_type": null
+        },
+        "realEstateType": {
+            "name": "Desarrollos horizontales",
+            "realEstateTypeId": "33"
+        },
+        "url": "/propiedades/desarrollo/ememhoin-casas-en-venta-tijuana-privadas-del-pacifico-ii-90647070.html",
+        "promotionTitle": "\u00a1Un Desarrollo de Encasa Tij!",
+        "descriptionNormalized": "Privadas del Pac\u00edfico es un fraccionamiento muy integral con una excelente ubicaci\u00f3n, y con hermosas casas. No dejes pasar la oportunidad de comprar tu nueva casa de 2 rec\u00e1maras al mejor precio de Tijuana. ",
+        "features": null,
+        "postingLocation": {
+            "address": {
+                "name": "Av. Panamericano, Tijuana, Baja California",
+                "visibility": "EXACT"
+            },
+            "location": {
+                "locationId": "V1-D-2984",
+                "name": "Panamericano",
+                "label": "ZONA",
+                "depth": 3,
+                "parent": {
+                    "locationId": "V1-C-260",
+                    "name": "Tijuana",
+                    "label": "CIUDAD",
+                    "depth": 2,
+                    "parent": {
+                        "locationId": "V1-B-62",
+                        "name": "Baja California Norte",
+                        "label": "PROVINCIA",
+                        "depth": 1,
+                        "parent": {
+                            "locationId": "V1-A-18",
+                            "name": "Mexico",
+                            "label": "PAIS",
+                            "depth": 0,
+                            "parent": null,
+                            "acronym": null
+                        },
+                        "acronym": null
+                    },
+                    "acronym": null
+                },
+                "acronym": null
+            },
+            "postingGeolocation": {
+                "geolocation": {
+                    "latitude": 32.4639704,
+                    "longitude": -117.0091792
+                },
+                "urlStaticMap": "//maps.google.com/maps/api/staticmap?center=32.46397040000000089321474661119282245635986328125,-117.00917920000000549407559446990489959716796875&zoom=16&key=AIzaSyBfTOxuYEmbL50_1P4KU8GI8toKT539agI&size=780x456&sensor=true&scale=2&signature=OlWhUFdoaYT8_fnPSgIEyTVjPDk=&channel=rplis-i24",
+                "visibility": null
+            }
+        },
+        "visiblePictures": {
+            "pictures": [
+                {
+                    "multimediaTypeId": "2",
+                    "order": 1,
+                    "height": 2291,
+                    "width": 3437,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/00/90/64/70/70/720x532/1476060846.jpg?isFirstImage=true",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/00/90/64/70/70/360x266/1476060846.jpg?isFirstImage=true",
+                    "url130x70": null,
+                    "title": "Desarrollo horizontal , Tijuana \u00b7 Casas en Venta Tijuana | Privadas del Pac\u00edfico II"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 2,
+                    "height": 1600,
+                    "width": 1204,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/00/90/64/70/70/720x532/1476064219.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/00/90/64/70/70/360x266/1476064219.jpg",
+                    "url130x70": null,
+                    "title": "Desarrollo horizontal en   Panamericano"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 3,
+                    "height": 1204,
+                    "width": 1600,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/00/90/64/70/70/720x532/1476064222.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/00/90/64/70/70/360x266/1476064222.jpg",
+                    "url130x70": null,
+                    "title": "Privadas del Pac\u00edfico es un fraccionamiento muy integral con una excelente ubica"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 4,
+                    "height": 1204,
+                    "width": 1600,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/00/90/64/70/70/720x532/1476064221.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/00/90/64/70/70/360x266/1476064221.jpg",
+                    "url130x70": null,
+                    "title": "Desarrollo horizontal   "
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 5,
+                    "height": 1204,
+                    "width": 1600,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/00/90/64/70/70/720x532/1476064220.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/00/90/64/70/70/360x266/1476064220.jpg",
+                    "url130x70": null,
+                    "title": "Desarrollo horizontal   Panamericano"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 6,
+                    "height": 2336,
+                    "width": 3504,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/00/90/64/70/70/720x532/1476060841.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/00/90/64/70/70/360x266/1476060841.jpg",
+                    "url130x70": null,
+                    "title": "Desarrollo horizontal   Panamericano"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 7,
+                    "height": 1080,
+                    "width": 1920,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/00/90/64/70/70/720x532/1476060834.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/00/90/64/70/70/360x266/1476060834.jpg",
+                    "url130x70": null,
+                    "title": "Desarrollo horizontal   "
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 8,
+                    "height": 2920,
+                    "width": 2336,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/00/90/64/70/70/720x532/1476060837.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/00/90/64/70/70/360x266/1476060837.jpg",
+                    "url130x70": null,
+                    "title": "Desarrollo horizontal - DESARROLLOS  ENCASA"
+                }
+            ],
+            "additionalPicturesCount": 12
+        },
+        "postingType": "DEVELOPMENT",
+        "whatsApp": "52 6643868778"
+    },
+    {
+        "title": "Casas en Venta Tijuana | Privada del Murua",
+        "generatedTitle": "Desarrollo horizontal \u00b7 90m\u00b2 \u00b7 2 Rec\u00e1maras \u00b7 1 Estacionamiento",
+        "priceOperationTypes": [
+            {
+                "lowPricePercentage": null,
+                "operationType": {
+                    "name": "Venta",
+                    "operationTypeId": "1"
+                },
+                "prices": [
+                    {
+                        "currencyId": "10",
+                        "amount": 2399000,
+                        "formattedAmount": "2,399,000",
+                        "currency": "MN"
+                    }
+                ]
+            }
+        ],
+        "mainFeatures": {
+            "CFT100": {
+                "featureId": "CFT100",
+                "label": "Terreno",
+                "measure": "m\u00b2",
+                "value": "90",
+                "icon": null,
+                "featureCategoryId": "CFC2"
+            },
+            "CFT101": {
+                "featureId": "CFT101",
+                "label": "Superficie constru\u00edda",
+                "measure": "m\u00b2",
+                "value": "90",
+                "icon": null,
+                "featureCategoryId": "CFC2"
+            },
+            "CFT2": {
+                "featureId": "CFT2",
+                "label": "Rec\u00e1maras",
+                "measure": null,
+                "value": "2",
+                "icon": null,
+                "featureCategoryId": "CFC1"
+            },
+            "CFT3": {
+                "featureId": "CFT3",
+                "label": "Ba\u00f1o",
+                "measure": null,
+                "value": "1",
+                "icon": null,
+                "featureCategoryId": "CFC1"
+            },
+            "CFT7": {
+                "featureId": "CFT7",
+                "label": "Estacionamiento",
+                "measure": null,
+                "value": "1",
+                "icon": null,
+                "featureCategoryId": "CFC1"
+            },
+            "CFT4": {
+                "featureId": "CFT4",
+                "label": "Medio ba\u00f1o",
+                "measure": null,
+                "value": "1",
+                "icon": null,
+                "featureCategoryId": "CFC1"
+            }
+        },
+        "generalFeatures": {},
+        "developmentFeatures": {
+            "Desarrollo": {
+                "CFT201": {
+                    "featureId": "CFT201",
+                    "label": "Inmediata",
+                    "measure": null,
+                    "value": "0",
+                    "icon": "fecha",
+                    "featureCategoryId": "CFC3"
+                },
+                "CFT202": {
+                    "featureId": "CFT202",
+                    "label": "Total de unidades",
+                    "measure": null,
+                    "value": "38",
+                    "icon": null,
+                    "featureCategoryId": "CFC3"
+                },
+                "CFT200": {
+                    "featureId": "CFT200",
+                    "label": "Listo para habitar ",
+                    "measure": null,
+                    "value": "3",
+                    "icon": "terminado",
+                    "featureCategoryId": "CFC3"
+                }
+            }
+        },
+        "highlightedFeatures": [
+            "Circuito Cerrado",
+            "Estacionamientos"
+        ],
+        "flagsFeatures": [
+            {
+                "featureId": "CFT200",
+                "label": "Listo para habitar ",
+                "measure": null,
+                "value": "3",
+                "icon": "terminado",
+                "featureCategoryId": "CFC3"
+            },
+            {
+                "featureId": "CFT201",
+                "label": "Inmediata",
+                "measure": null,
+                "value": "0",
+                "icon": "fecha",
+                "featureCategoryId": "CFC3"
+            },
+            null
+        ],
+        "antiquity": null,
+        "publisher": {
+            "publisherId": "674889",
+            "name": "DESARROLLOS  ENCASA",
+            "url": "/inmobiliarias/desarrollos-encasa_674889-inmuebles.html",
+            "slotFilterUrl": null,
+            "urlLogo": "https://img10.naventcdn.com/empresas/18/00/00/67/48/89/130x70/logo_desarrollos-encasa_1738790666196.jpg",
+            "publisherTypeId": "2",
+            "urlChat": null,
+            "license": "111477615",
+            "publisherTags": [],
+            "parentPublisher": null,
+            "amountPostingActive": null,
+            "partialPhone": null,
+            "createdYear": null,
+            "premier": false,
+            "slug": "encasa",
+            "publisherStatistics": null,
+            "approved": false,
+            "mainPhone": null,
+            "created_date": "2019-05-30T04:00:00.000+0000",
+            "id_portal": "101",
+            "quantity_posting_by_operation_type": null
+        },
+        "realEstateType": {
+            "name": "Desarrollos horizontales",
+            "realEstateTypeId": "33"
+        },
+        "url": "/propiedades/desarrollo/ememhoin-casas-en-venta-tijuana-privada-del-murua-90040788.html",
+        "promotionTitle": "\u00a1Vive en El Corazn de Tij!",
+        "descriptionNormalized": "Vive en el coraz\u00f3n de Tijuana, se de los afortunados en poder comprar tu nueva casa en la mejor ubicaci\u00f3n de la ciudad. Los mejores Accesos los tienes al alcance de tu mano. Ambar 2R. 2 Rec\u00e1maras. Sala. Comedor. Cocina. 1. 5 ba\u00f1os. 2 cajones de estacionamiento. 59 m2 de construcci\u00f3n. ambar 3R. 3 Rec\u00e1maras. Sala. Comedor. Cocina. 2. 5 ba\u00f1os. 2 cajones de estacionamiento. 84 m2 de construcci\u00f3n. Zona de alta plusval\u00eda, escuelas publicas comercios cercanos. ",
+        "features": null,
+        "postingLocation": {
+            "address": {
+                "name": "Murua",
+                "visibility": "EXACT"
+            },
+            "location": {
+                "locationId": "V1-D-253040",
+                "name": "Murua",
+                "label": "ZONA",
+                "depth": 3,
+                "parent": {
+                    "locationId": "V1-C-260",
+                    "name": "Tijuana",
+                    "label": "CIUDAD",
+                    "depth": 2,
+                    "parent": {
+                        "locationId": "V1-B-62",
+                        "name": "Baja California Norte",
+                        "label": "PROVINCIA",
+                        "depth": 1,
+                        "parent": {
+                            "locationId": "V1-A-18",
+                            "name": "Mexico",
+                            "label": "PAIS",
+                            "depth": 0,
+                            "parent": null,
+                            "acronym": null
+                        },
+                        "acronym": null
+                    },
+                    "acronym": null
+                },
+                "acronym": null
+            },
+            "postingGeolocation": {
+                "geolocation": {
+                    "latitude": 32.5152727,
+                    "longitude": -116.947097
+                },
+                "urlStaticMap": "//maps.google.com/maps/api/staticmap?center=32.515272699999997030317899771034717559814453125,-116.9470969999999994115569279529154300689697265625&zoom=16&key=AIzaSyBfTOxuYEmbL50_1P4KU8GI8toKT539agI&size=780x456&sensor=true&scale=2&signature=1iKBmDruHoNMygWPhJqu8Y_vifQ=&channel=rplis-i24",
+                "visibility": null
+            }
+        },
+        "visiblePictures": {
+            "pictures": [
+                {
+                    "multimediaTypeId": "2",
+                    "order": 1,
+                    "height": 2160,
+                    "width": 3840,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/00/90/04/07/88/720x532/1494638254.jpg?isFirstImage=true",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/00/90/04/07/88/360x266/1494638254.jpg?isFirstImage=true",
+                    "url130x70": null,
+                    "title": "Desarrollo horizontal de 2 habitaciones, Tijuana \u00b7 Casas en Venta Tijuana | Privada del Murua"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 2,
+                    "height": 2160,
+                    "width": 3840,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/00/90/04/07/88/720x532/1494638255.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/00/90/04/07/88/360x266/1494638255.jpg",
+                    "url130x70": null,
+                    "title": "Desarrollo horizontal en  de 2 habitaciones Murua"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 3,
+                    "height": 2160,
+                    "width": 3840,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/00/90/04/07/88/720x532/1494638257.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/00/90/04/07/88/360x266/1494638257.jpg",
+                    "url130x70": null,
+                    "title": "Vive en el coraz\u00f3n de Tijuana, se de los afortunados en poder comprar tu nueva C"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 4,
+                    "height": 2160,
+                    "width": 3840,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/00/90/04/07/88/720x532/1494638256.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/00/90/04/07/88/360x266/1494638256.jpg",
+                    "url130x70": null,
+                    "title": "Desarrollo horizontal  90m\u00b2 de 2 habitaciones"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 5,
+                    "height": 2160,
+                    "width": 3840,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/00/90/04/07/88/720x532/1494638253.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/00/90/04/07/88/360x266/1494638253.jpg",
+                    "url130x70": null,
+                    "title": "Desarrollo horizontal 90m\u00b2  Murua"
+                }
+            ],
+            "additionalPicturesCount": 0
+        },
+        "postingType": "DEVELOPMENT",
+        "whatsApp": "52 6643868778"
+    },
+    {
+        "title": "Casas en Venta Tijuana | Rinconada Santa Fe",
+        "generatedTitle": "Desarrollo horizontal",
+        "priceOperationTypes": [
+            {
+                "lowPricePercentage": null,
+                "operationType": {
+                    "name": "Venta",
+                    "operationTypeId": "1"
+                },
+                "prices": [
+                    {
+                        "currencyId": "10",
+                        "amount": 1850000,
+                        "formattedAmount": "1,850,000",
+                        "currency": "MN"
+                    }
+                ]
+            }
+        ],
+        "mainFeatures": {},
+        "generalFeatures": {},
+        "developmentFeatures": {
+            "Desarrollo": {
+                "CFT201": {
+                    "featureId": "CFT201",
+                    "label": "Inmediata",
+                    "measure": null,
+                    "value": "0",
+                    "icon": "fecha",
+                    "featureCategoryId": "CFC3"
+                },
+                "CFT202": {
+                    "featureId": "CFT202",
+                    "label": "Total de unidades",
+                    "measure": null,
+                    "value": "20",
+                    "icon": null,
+                    "featureCategoryId": "CFC3"
+                },
+                "CFT200": {
+                    "featureId": "CFT200",
+                    "label": "Listo para habitar ",
+                    "measure": null,
+                    "value": "3",
+                    "icon": "terminado",
+                    "featureCategoryId": "CFC3"
+                }
+            }
+        },
+        "highlightedFeatures": [],
+        "flagsFeatures": [
+            {
+                "featureId": "CFT200",
+                "label": "Listo para habitar ",
+                "measure": null,
+                "value": "3",
+                "icon": "terminado",
+                "featureCategoryId": "CFC3"
+            },
+            {
+                "featureId": "CFT201",
+                "label": "Inmediata",
+                "measure": null,
+                "value": "0",
+                "icon": "fecha",
+                "featureCategoryId": "CFC3"
+            },
+            null
+        ],
+        "antiquity": null,
+        "publisher": {
+            "publisherId": "674889",
+            "name": "DESARROLLOS  ENCASA",
+            "url": "/inmobiliarias/desarrollos-encasa_674889-inmuebles.html",
+            "slotFilterUrl": null,
+            "urlLogo": "https://img10.naventcdn.com/empresas/18/00/00/67/48/89/130x70/logo_desarrollos-encasa_1738790666196.jpg",
+            "publisherTypeId": "2",
+            "urlChat": null,
+            "license": "111477615",
+            "publisherTags": [],
+            "parentPublisher": null,
+            "amountPostingActive": null,
+            "partialPhone": null,
+            "createdYear": null,
+            "premier": false,
+            "slug": "encasa",
+            "publisherStatistics": null,
+            "approved": false,
+            "mainPhone": null,
+            "created_date": "2019-05-30T04:00:00.000+0000",
+            "id_portal": "101",
+            "quantity_posting_by_operation_type": null
+        },
+        "realEstateType": {
+            "name": "Desarrollos horizontales",
+            "realEstateTypeId": "33"
+        },
+        "url": "/propiedades/desarrollo/ememhoin-casas-en-venta-tijuana-rinconada-santa-fe-90646118.html",
+        "promotionTitle": "\u00a1Conoce Nuestras Promos!",
+        "descriptionNormalized": "Modelo ambar 2R. -59 m2 de construcci\u00f3n. -2 rec\u00e1maras. -1. 5 ba\u00f1os. -Espacio para Sala. -Espacio para Comedor. -Espacio para Cocina. -Espacio para estacionar 2 carros. -Puerta de Seguridad Incluida. midelo ambar 3R. -84 m2 de construcci\u00f3n. -3 rec\u00e1maras. -2. 5 ba\u00f1os. -Espacio para Sala. -Espacio para Comedor. -Espacio para Cocina. -Espacio para estacionar 2 carros. -Puerta de Seguridad Incluida",
+        "features": null,
+        "postingLocation": {
+            "address": {
+                "name": "El Rosario, 22666 Portico de San Antonio, B.C.",
+                "visibility": "EXACT"
+            },
+            "location": {
+                "locationId": "V1-D-3015",
+                "name": "P\u00f3rticos de San Antonio",
+                "label": "ZONA",
+                "depth": 3,
+                "parent": {
+                    "locationId": "V1-C-260",
+                    "name": "Tijuana",
+                    "label": "CIUDAD",
+                    "depth": 2,
+                    "parent": {
+                        "locationId": "V1-B-62",
+                        "name": "Baja California Norte",
+                        "label": "PROVINCIA",
+                        "depth": 1,
+                        "parent": {
+                            "locationId": "V1-A-18",
+                            "name": "Mexico",
+                            "label": "PAIS",
+                            "depth": 0,
+                            "parent": null,
+                            "acronym": null
+                        },
+                        "acronym": null
+                    },
+                    "acronym": null
+                },
+                "acronym": null
+            },
+            "postingGeolocation": {
+                "geolocation": {
+                    "latitude": 32.4394414,
+                    "longitude": -117.0407906
+                },
+                "urlStaticMap": "//maps.google.com/maps/api/staticmap?center=32.43944139999999975998434820212423801422119140625,-117.0407905999999940149791655130684375762939453125&zoom=16&key=AIzaSyBfTOxuYEmbL50_1P4KU8GI8toKT539agI&size=780x456&sensor=true&scale=2&signature=1TR-NnymjP0BZ38w9llbX9suuWQ=&channel=rplis-i24",
+                "visibility": null
+            }
+        },
+        "visiblePictures": {
+            "pictures": [
+                {
+                    "multimediaTypeId": "2",
+                    "order": 1,
+                    "height": 615,
+                    "width": 796,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/00/90/64/61/18/720x532/1101499140.jpg?isFirstImage=true",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/00/90/64/61/18/360x266/1101499140.jpg?isFirstImage=true",
+                    "url130x70": null,
+                    "title": "Desarrollo horizontal , Tijuana \u00b7 Casas en Venta Tijuana | Rinconada Santa Fe"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 2,
+                    "height": 615,
+                    "width": 822,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/00/90/64/61/18/720x532/1101499136.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/00/90/64/61/18/360x266/1101499136.jpg",
+                    "url130x70": null,
+                    "title": "Desarrollo horizontal en   P\u00f3rticos de San Antonio"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 3,
+                    "height": 622,
+                    "width": 798,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/00/90/64/61/18/720x532/1101499139.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/00/90/64/61/18/360x266/1101499139.jpg",
+                    "url130x70": null,
+                    "title": "MODELO AMBAR 2R \n-59 m2 de construcci\u00f3n \n-2 rec\u00e1maras \n-1.5 ba\u00f1os \n-Espacio para"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 4,
+                    "height": 619,
+                    "width": 797,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/00/90/64/61/18/720x532/1101499137.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/00/90/64/61/18/360x266/1101499137.jpg",
+                    "url130x70": null,
+                    "title": "Desarrollo horizontal   "
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 5,
+                    "height": 613,
+                    "width": 796,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/00/90/64/61/18/720x532/1101499138.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/00/90/64/61/18/360x266/1101499138.jpg",
+                    "url130x70": null,
+                    "title": "Desarrollo horizontal   P\u00f3rticos de San Antonio"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 6,
+                    "height": 609,
+                    "width": 809,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/00/90/64/61/18/720x532/1101499135.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/00/90/64/61/18/360x266/1101499135.jpg",
+                    "url130x70": null,
+                    "title": "Desarrollo horizontal   P\u00f3rticos de San Antonio"
+                }
+            ],
+            "additionalPicturesCount": 0
+        },
+        "postingType": "DEVELOPMENT",
+        "whatsApp": "52 6644847591"
+    },
+    {
+        "title": "Casas en Venta Tijuana | Privadas Santa Fe",
+        "generatedTitle": "Desarrollo horizontal",
+        "priceOperationTypes": [
+            {
+                "lowPricePercentage": null,
+                "operationType": {
+                    "name": "Venta",
+                    "operationTypeId": "1"
+                },
+                "prices": [
+                    {
+                        "currencyId": "10",
+                        "amount": 1995000,
+                        "formattedAmount": "1,995,000",
+                        "currency": "MN"
+                    }
+                ]
+            }
+        ],
+        "mainFeatures": {},
+        "generalFeatures": {},
+        "developmentFeatures": {
+            "Desarrollo": {
+                "CFT201": {
+                    "featureId": "CFT201",
+                    "label": "Inmediata",
+                    "measure": null,
+                    "value": "0",
+                    "icon": "fecha",
+                    "featureCategoryId": "CFC3"
+                },
+                "CFT202": {
+                    "featureId": "CFT202",
+                    "label": "Total de unidades",
+                    "measure": null,
+                    "value": "20",
+                    "icon": null,
+                    "featureCategoryId": "CFC3"
+                },
+                "CFT200": {
+                    "featureId": "CFT200",
+                    "label": "Listo para habitar ",
+                    "measure": null,
+                    "value": "3",
+                    "icon": "terminado",
+                    "featureCategoryId": "CFC3"
+                }
+            }
+        },
+        "highlightedFeatures": [],
+        "flagsFeatures": [
+            {
+                "featureId": "CFT200",
+                "label": "Listo para habitar ",
+                "measure": null,
+                "value": "3",
+                "icon": "terminado",
+                "featureCategoryId": "CFC3"
+            },
+            {
+                "featureId": "CFT201",
+                "label": "Inmediata",
+                "measure": null,
+                "value": "0",
+                "icon": "fecha",
+                "featureCategoryId": "CFC3"
+            },
+            null
+        ],
+        "antiquity": null,
+        "publisher": {
+            "publisherId": "674889",
+            "name": "DESARROLLOS  ENCASA",
+            "url": "/inmobiliarias/desarrollos-encasa_674889-inmuebles.html",
+            "slotFilterUrl": null,
+            "urlLogo": "https://img10.naventcdn.com/empresas/18/00/00/67/48/89/130x70/logo_desarrollos-encasa_1738790666196.jpg",
+            "publisherTypeId": "2",
+            "urlChat": null,
+            "license": "111477615",
+            "publisherTags": [],
+            "parentPublisher": null,
+            "amountPostingActive": null,
+            "partialPhone": null,
+            "createdYear": null,
+            "premier": false,
+            "slug": "encasa",
+            "publisherStatistics": null,
+            "approved": false,
+            "mainPhone": null,
+            "created_date": "2019-05-30T04:00:00.000+0000",
+            "id_portal": "101",
+            "quantity_posting_by_operation_type": null
+        },
+        "realEstateType": {
+            "name": "Desarrollos horizontales",
+            "realEstateTypeId": "33"
+        },
+        "url": "/propiedades/desarrollo/ememhoin-casas-en-venta-tijuana-privadas-santa-fe-90645423.html",
+        "promotionTitle": "Vive en El Lugar de Tus Sue\u00f1os",
+        "descriptionNormalized": "Niveles: 2. Rec\u00e1maras: 3. Ba\u00f1os: 2. Sala: Si. Comedor: Si. Cocina: Si. Estacionamiento: 2 lugares",
+        "features": null,
+        "postingLocation": {
+            "address": {
+                "name": "Portico de San antonio",
+                "visibility": "EXACT"
+            },
+            "location": {
+                "locationId": "V1-D-3015",
+                "name": "P\u00f3rticos de San Antonio",
+                "label": "ZONA",
+                "depth": 3,
+                "parent": {
+                    "locationId": "V1-C-260",
+                    "name": "Tijuana",
+                    "label": "CIUDAD",
+                    "depth": 2,
+                    "parent": {
+                        "locationId": "V1-B-62",
+                        "name": "Baja California Norte",
+                        "label": "PROVINCIA",
+                        "depth": 1,
+                        "parent": {
+                            "locationId": "V1-A-18",
+                            "name": "Mexico",
+                            "label": "PAIS",
+                            "depth": 0,
+                            "parent": null,
+                            "acronym": null
+                        },
+                        "acronym": null
+                    },
+                    "acronym": null
+                },
+                "acronym": null
+            },
+            "postingGeolocation": {
+                "geolocation": {
+                    "latitude": 32.4394414,
+                    "longitude": -117.0407906
+                },
+                "urlStaticMap": "//maps.google.com/maps/api/staticmap?center=32.43944139999999975998434820212423801422119140625,-117.0407905999999940149791655130684375762939453125&zoom=16&key=AIzaSyBfTOxuYEmbL50_1P4KU8GI8toKT539agI&size=780x456&sensor=true&scale=2&signature=1TR-NnymjP0BZ38w9llbX9suuWQ=&channel=rplis-i24",
+                "visibility": null
+            }
+        },
+        "visiblePictures": {
+            "pictures": [
+                {
+                    "multimediaTypeId": "2",
+                    "order": 1,
+                    "height": 1600,
+                    "width": 1200,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/00/90/64/54/23/720x532/1505753252.jpg?isFirstImage=true",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/00/90/64/54/23/360x266/1505753252.jpg?isFirstImage=true",
+                    "url130x70": null,
+                    "title": "Desarrollo horizontal , Tijuana \u00b7 Casas en Venta Tijuana | Privadas Santa Fe"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 1,
+                    "height": 1200,
+                    "width": 1600,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/00/90/64/54/23/720x532/1505753253.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/00/90/64/54/23/360x266/1505753253.jpg",
+                    "url130x70": null,
+                    "title": "Desarrollo horizontal , Tijuana"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 1,
+                    "height": 1600,
+                    "width": 1200,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/00/90/64/54/23/720x532/1505753254.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/00/90/64/54/23/360x266/1505753254.jpg",
+                    "url130x70": null,
+                    "title": "Desarrollo horizontal , Tijuana"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 4,
+                    "height": 602,
+                    "width": 828,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/00/90/64/54/23/720x532/1101489357.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/00/90/64/54/23/360x266/1101489357.jpg",
+                    "url130x70": null,
+                    "title": "Desarrollo horizontal   "
+                }
+            ],
+            "additionalPicturesCount": 0
+        },
+        "postingType": "DEVELOPMENT",
+        "whatsApp": "52 6644847591"
+    },
+    {
+        "title": "Sauces Residencial",
+        "generatedTitle": "Desarrollo horizontal",
+        "priceOperationTypes": [
+            {
+                "lowPricePercentage": null,
+                "operationType": {
+                    "name": "Venta",
+                    "operationTypeId": "1"
+                },
+                "prices": [
+                    {
+                        "currencyId": "10",
+                        "amount": 2385000,
+                        "formattedAmount": "2,385,000",
+                        "currency": "MN"
+                    }
+                ]
+            }
+        ],
+        "mainFeatures": {},
+        "generalFeatures": {},
+        "developmentFeatures": {
+            "Desarrollo": {
+                "CFT201": {
+                    "featureId": "CFT201",
+                    "label": "Inmediata",
+                    "measure": null,
+                    "value": "0",
+                    "icon": "fecha",
+                    "featureCategoryId": "CFC3"
+                },
+                "CFT202": {
+                    "featureId": "CFT202",
+                    "label": "Total de unidades",
+                    "measure": null,
+                    "value": "59",
+                    "icon": null,
+                    "featureCategoryId": "CFC3"
+                },
+                "CFT200": {
+                    "featureId": "CFT200",
+                    "label": "En construcci\u00f3n y terminadas",
+                    "measure": null,
+                    "value": "1",
+                    "icon": "terminado",
+                    "featureCategoryId": "CFC3"
+                }
+            }
+        },
+        "highlightedFeatures": [
+            "Jard\u00edn",
+            "Estacionamientos"
+        ],
+        "flagsFeatures": [
+            {
+                "featureId": "CFT200",
+                "label": "En construcci\u00f3n y terminadas",
+                "measure": null,
+                "value": "1",
+                "icon": "terminado",
+                "featureCategoryId": "CFC3"
+            },
+            {
+                "featureId": "CFT201",
+                "label": "Inmediata",
+                "measure": null,
+                "value": "0",
+                "icon": "fecha",
+                "featureCategoryId": "CFC3"
+            },
+            null
+        ],
+        "antiquity": null,
+        "publisher": {
+            "publisherId": "102771079",
+            "name": "HIR BAJA",
+            "url": "/inmobiliarias/hir-baja_102771079-inmuebles.html",
+            "slotFilterUrl": null,
+            "urlLogo": "https://img10.naventcdn.com/empresas/18/01/02/77/10/79/130x70/logo_hir-baja_1738277486758.jpg",
+            "publisherTypeId": "3",
+            "urlChat": null,
+            "license": null,
+            "publisherTags": [],
+            "parentPublisher": null,
+            "amountPostingActive": null,
+            "partialPhone": null,
+            "createdYear": null,
+            "premier": false,
+            "slug": "hirbaja",
+            "publisherStatistics": null,
+            "approved": false,
+            "mainPhone": null,
+            "created_date": "2025-01-28T05:00:00.000+0000",
+            "id_portal": "101",
+            "quantity_posting_by_operation_type": null
+        },
+        "realEstateType": {
+            "name": "Desarrollos horizontales",
+            "realEstateTypeId": "33"
+        },
+        "url": "/propiedades/desarrollo/ememhoin-sauces-residencial-145595101.html",
+        "promotionTitle": "Cocina Integral de Regalo",
+        "descriptionNormalized": "Los Sauces Residencial te da m\u00e1s que un lugar para vivir; te ofrece un estilo de vida \u00fanico en Tijuana. Dise\u00f1os modernos, ubicaci\u00f3n estrat\u00e9gica y el confort que necesitas. Aqu\u00ed empieza tu nueva historia. Casas de 3 rec. En una incre\u00edble ubicaci\u00f3n de Santa Fe Tijuana. ",
+        "features": null,
+        "postingLocation": {
+            "address": {
+                "name": "P.\u00ba La Escondida, El Rosario, 22666 Portico de San Antonio, B.C.",
+                "visibility": "EXACT"
+            },
+            "location": {
+                "locationId": "V1-D-2351",
+                "name": "Santa Fe",
+                "label": "ZONA",
+                "depth": 3,
+                "parent": {
+                    "locationId": "V1-C-260",
+                    "name": "Tijuana",
+                    "label": "CIUDAD",
+                    "depth": 2,
+                    "parent": {
+                        "locationId": "V1-B-62",
+                        "name": "Baja California Norte",
+                        "label": "PROVINCIA",
+                        "depth": 1,
+                        "parent": {
+                            "locationId": "V1-A-18",
+                            "name": "Mexico",
+                            "label": "PAIS",
+                            "depth": 0,
+                            "parent": null,
+                            "acronym": null
+                        },
+                        "acronym": null
+                    },
+                    "acronym": null
+                },
+                "acronym": null
+            },
+            "postingGeolocation": {
+                "geolocation": {
+                    "latitude": 32.431756591804884,
+                    "longitude": -117.04635469867249
+                },
+                "urlStaticMap": "//maps.google.com/maps/api/staticmap?center=32.431756591804884237717487849295139312744140625,-117.0463546986724878706809249706566333770751953125&zoom=16&key=AIzaSyBfTOxuYEmbL50_1P4KU8GI8toKT539agI&size=780x456&sensor=true&scale=2&signature=FXtTff8AUW-lCFLh2ajZFNj3IHQ=&channel=rplis-i24",
+                "visibility": null
+            }
+        },
+        "visiblePictures": {
+            "pictures": [
+                {
+                    "multimediaTypeId": "2",
+                    "order": 1,
+                    "height": 1365,
+                    "width": 2048,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/59/51/01/720x532/1508026430.jpg?isFirstImage=true",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/59/51/01/360x266/1508026430.jpg?isFirstImage=true",
+                    "url130x70": null,
+                    "title": "Desarrollo horizontal , Tijuana \u00b7 Sauces Residencial"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 2,
+                    "height": 1367,
+                    "width": 2048,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/59/51/01/720x532/1508026431.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/59/51/01/360x266/1508026431.jpg",
+                    "url130x70": null,
+                    "title": "Desarrollo horizontal en   Santa Fe"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 3,
+                    "height": 2048,
+                    "width": 1367,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/59/51/01/720x532/1508026433.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/59/51/01/360x266/1508026433.jpg",
+                    "url130x70": null,
+                    "title": "Los Sauces Residencial te da m\u00e1s que un lugar para vivir; te ofrece un estilo de"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 4,
+                    "height": 1367,
+                    "width": 2048,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/59/51/01/720x532/1508026429.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/59/51/01/360x266/1508026429.jpg",
+                    "url130x70": null,
+                    "title": "Desarrollo horizontal   "
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 5,
+                    "height": 1367,
+                    "width": 2048,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/59/51/01/720x532/1508026434.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/59/51/01/360x266/1508026434.jpg",
+                    "url130x70": null,
+                    "title": "Desarrollo horizontal   Santa Fe"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 6,
+                    "height": 1367,
+                    "width": 2048,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/59/51/01/720x532/1508026432.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/59/51/01/360x266/1508026432.jpg",
+                    "url130x70": null,
+                    "title": "Desarrollo horizontal   Santa Fe"
+                }
+            ],
+            "additionalPicturesCount": 0
+        },
+        "postingType": "DEVELOPMENT",
+        "whatsApp": "52 6644125118"
+    },
+    {
+        "title": "Riviera Residencial",
+        "generatedTitle": "Desarrollo horizontal",
+        "priceOperationTypes": [
+            {
+                "lowPricePercentage": null,
+                "operationType": {
+                    "name": "Venta",
+                    "operationTypeId": "1"
+                },
+                "prices": [
+                    {
+                        "currencyId": "10",
+                        "amount": 6232750,
+                        "formattedAmount": "6,232,750",
+                        "currency": "MN"
+                    }
+                ]
+            }
+        ],
+        "mainFeatures": {},
+        "generalFeatures": {},
+        "developmentFeatures": {
+            "Desarrollo": {
+                "CFT201": {
+                    "featureId": "CFT201",
+                    "label": "Inmediata",
+                    "measure": null,
+                    "value": "0",
+                    "icon": "fecha",
+                    "featureCategoryId": "CFC3"
+                },
+                "CFT202": {
+                    "featureId": "CFT202",
+                    "label": "Total de unidades",
+                    "measure": null,
+                    "value": "46",
+                    "icon": null,
+                    "featureCategoryId": "CFC3"
+                },
+                "CFT200": {
+                    "featureId": "CFT200",
+                    "label": "En construcci\u00f3n y terminadas",
+                    "measure": null,
+                    "value": "1",
+                    "icon": "terminado",
+                    "featureCategoryId": "CFC3"
+                }
+            }
+        },
+        "highlightedFeatures": [
+            "Alberca"
+        ],
+        "flagsFeatures": [
+            {
+                "featureId": "CFT200",
+                "label": "En construcci\u00f3n y terminadas",
+                "measure": null,
+                "value": "1",
+                "icon": "terminado",
+                "featureCategoryId": "CFC3"
+            },
+            {
+                "featureId": "CFT201",
+                "label": "Inmediata",
+                "measure": null,
+                "value": "0",
+                "icon": "fecha",
+                "featureCategoryId": "CFC3"
+            },
+            null
+        ],
+        "antiquity": null,
+        "publisher": {
+            "publisherId": "102771079",
+            "name": "HIR BAJA",
+            "url": "/inmobiliarias/hir-baja_102771079-inmuebles.html",
+            "slotFilterUrl": null,
+            "urlLogo": "https://img10.naventcdn.com/empresas/18/01/02/77/10/79/130x70/logo_hir-baja_1738277486758.jpg",
+            "publisherTypeId": "3",
+            "urlChat": null,
+            "license": null,
+            "publisherTags": [],
+            "parentPublisher": null,
+            "amountPostingActive": null,
+            "partialPhone": null,
+            "createdYear": null,
+            "premier": false,
+            "slug": "hirbaja",
+            "publisherStatistics": null,
+            "approved": false,
+            "mainPhone": null,
+            "created_date": "2025-01-28T05:00:00.000+0000",
+            "id_portal": "101",
+            "quantity_posting_by_operation_type": null
+        },
+        "realEstateType": {
+            "name": "Desarrollos horizontales",
+            "realEstateTypeId": "33"
+        },
+        "url": "/propiedades/desarrollo/ememhoin-riviera-residencial-145594050.html",
+        "promotionTitle": "Hgar de Tus Sue\u00f1os",
+        "descriptionNormalized": "Hir Residencial Rivera: donde la elegancia y la belleza se encuentran en cada esquina. Este desarrollo exclusivo ofrece una experiencia de vida sin igual, fusionando extraordinarios espacios con una arquitectura que roza la perfecci\u00f3n. Descubre el lujo redefinido en cada aspecto de tu hogar. Desarrollo de viviendas en la segunda etapa de construcci\u00f3n de solamente 46 viviendas con casa club y alberca dentro de Real del Mar, donde amenidades de la zona son campo de golf, h\u00edpico, etc. (amenidades de la zona no incluidas). Golf - Mar - Cielo",
+        "features": null,
+        "postingLocation": {
+            "address": {
+                "name": "Real del Mar",
+                "visibility": "EXACT"
+            },
+            "location": {
+                "locationId": "V1-D-2852",
+                "name": "Real del Mar",
+                "label": "ZONA",
+                "depth": 3,
+                "parent": {
+                    "locationId": "V1-C-260",
+                    "name": "Tijuana",
+                    "label": "CIUDAD",
+                    "depth": 2,
+                    "parent": {
+                        "locationId": "V1-B-62",
+                        "name": "Baja California Norte",
+                        "label": "PROVINCIA",
+                        "depth": 1,
+                        "parent": {
+                            "locationId": "V1-A-18",
+                            "name": "Mexico",
+                            "label": "PAIS",
+                            "depth": 0,
+                            "parent": null,
+                            "acronym": null
+                        },
+                        "acronym": null
+                    },
+                    "acronym": null
+                },
+                "acronym": null
+            },
+            "postingGeolocation": {
+                "geolocation": {
+                    "latitude": 32.4350328,
+                    "longitude": -117.0867632
+                },
+                "urlStaticMap": "//maps.google.com/maps/api/staticmap?center=32.4350328000000018846549210138618946075439453125,-117.0867631999999929348632576875388622283935546875&zoom=16&key=AIzaSyBfTOxuYEmbL50_1P4KU8GI8toKT539agI&size=780x456&sensor=true&scale=2&signature=izIPZi4hiPsY8ji5f27Ipdi7DA0=&channel=rplis-i24",
+                "visibility": null
+            }
+        },
+        "visiblePictures": {
+            "pictures": [
+                {
+                    "multimediaTypeId": "2",
+                    "order": 1,
+                    "height": 3000,
+                    "width": 4496,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/59/40/50/720x532/1508021018.jpg?isFirstImage=true",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/59/40/50/360x266/1508021018.jpg?isFirstImage=true",
+                    "url130x70": null,
+                    "title": "Desarrollo horizontal , Tijuana \u00b7 Riviera Residencial"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 2,
+                    "height": 3024,
+                    "width": 4032,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/59/40/50/720x532/1508021014.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/59/40/50/360x266/1508021014.jpg",
+                    "url130x70": null,
+                    "title": "Desarrollo horizontal en   Real del Mar"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 3,
+                    "height": 2048,
+                    "width": 1366,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/59/40/50/720x532/1508021013.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/59/40/50/360x266/1508021013.jpg",
+                    "url130x70": null,
+                    "title": "HIR Residencial Rivera: donde la elegancia y la belleza se encuentran en cada es"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 4,
+                    "height": 1367,
+                    "width": 2048,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/59/40/50/720x532/1508021012.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/59/40/50/360x266/1508021012.jpg",
+                    "url130x70": null,
+                    "title": "Desarrollo horizontal   "
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 5,
+                    "height": 3024,
+                    "width": 4032,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/59/40/50/720x532/1508021017.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/59/40/50/360x266/1508021017.jpg",
+                    "url130x70": null,
+                    "title": "Desarrollo horizontal   Real del Mar"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 6,
+                    "height": 3024,
+                    "width": 4032,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/59/40/50/720x532/1508021015.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/59/40/50/360x266/1508021015.jpg",
+                    "url130x70": null,
+                    "title": "Desarrollo horizontal   Real del Mar"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 7,
+                    "height": 3024,
+                    "width": 4032,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/59/40/50/720x532/1508021019.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/59/40/50/360x266/1508021019.jpg",
+                    "url130x70": null,
+                    "title": "Desarrollo horizontal   "
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 8,
+                    "height": 3024,
+                    "width": 4032,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/59/40/50/720x532/1508021020.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/59/40/50/360x266/1508021020.jpg",
+                    "url130x70": null,
+                    "title": "Desarrollo horizontal - HIR BAJA"
+                }
+            ],
+            "additionalPicturesCount": 1
+        },
+        "postingType": "DEVELOPMENT",
+        "whatsApp": "52 6644125118"
+    },
+    {
+        "title": "Eugenia",
+        "generatedTitle": "Desarrollo vertical",
+        "priceOperationTypes": [
+            {
+                "lowPricePercentage": null,
+                "operationType": {
+                    "name": "Venta",
+                    "operationTypeId": "1"
+                },
+                "prices": [
+                    {
+                        "currencyId": "2",
+                        "amount": 253150,
+                        "formattedAmount": "253,150",
+                        "currency": "USD"
+                    }
+                ]
+            }
+        ],
+        "mainFeatures": {},
+        "generalFeatures": {},
+        "developmentFeatures": {
+            "Desarrollo": {
+                "CFT201": {
+                    "featureId": "CFT201",
+                    "label": "Inmediata",
+                    "measure": null,
+                    "value": "0",
+                    "icon": "fecha",
+                    "featureCategoryId": "CFC3"
+                },
+                "CFT202": {
+                    "featureId": "CFT202",
+                    "label": "Total de unidades",
+                    "measure": null,
+                    "value": "16",
+                    "icon": null,
+                    "featureCategoryId": "CFC3"
+                },
+                "CFT200": {
+                    "featureId": "CFT200",
+                    "label": "En construcci\u00f3n",
+                    "measure": null,
+                    "value": "2",
+                    "icon": "terminado",
+                    "featureCategoryId": "CFC3"
+                }
+            }
+        },
+        "highlightedFeatures": [
+            "Circuito Cerrado"
+        ],
+        "flagsFeatures": [
+            {
+                "featureId": "CFT200",
+                "label": "En construcci\u00f3n",
+                "measure": null,
+                "value": "2",
+                "icon": "terminado",
+                "featureCategoryId": "CFC3"
+            },
+            {
+                "featureId": "CFT201",
+                "label": "Inmediata",
+                "measure": null,
+                "value": "0",
+                "icon": "fecha",
+                "featureCategoryId": "CFC3"
+            },
+            null
+        ],
+        "antiquity": null,
+        "publisher": {
+            "publisherId": "102433357",
+            "name": "Vive Tijuana",
+            "url": "/inmobiliarias/vive-tijuana_102433357-inmuebles.html",
+            "slotFilterUrl": null,
+            "urlLogo": "https://img10.naventcdn.com/empresas/18/01/02/43/33/57/130x70/logo_marco-everardo-garcia-garcia_1738271512478.jpg",
+            "publisherTypeId": "4",
+            "urlChat": null,
+            "license": null,
+            "publisherTags": [],
+            "parentPublisher": null,
+            "amountPostingActive": null,
+            "partialPhone": null,
+            "createdYear": null,
+            "premier": false,
+            "slug": "ViveTijuana",
+            "publisherStatistics": null,
+            "approved": false,
+            "mainPhone": null,
+            "created_date": "2023-10-11T04:00:00.000+0000",
+            "id_portal": "101",
+            "quantity_posting_by_operation_type": null
+        },
+        "realEstateType": {
+            "name": "Desarrollos verticales",
+            "realEstateTypeId": "34"
+        },
+        "url": "/propiedades/desarrollo/ememvein-eugenia-144217522.html",
+        "promotionTitle": "Aprovecha Lista 0",
+        "descriptionNormalized": "* Torre Corporativa Eugenia, es un nuevo desarrollo de edificio corporativo en la Zona Dorada de Tijuana, Baja California, en Plaza Toreo City Complex. El nuevo e ic\u00f3nico referente de la ciudad. * El m\u00e1s importante espacio de usos mixtos de la ciudad. * 2, 000 metros cuadrados de espacios comerciales. * Dos hoteles: Hotel City Express Plus y Courtyard by Marriott. * Un desarrollo residencial premium: The Park Toreo Residencial. * Tres torres corporativas: Torela Corporativo, Central Toreo y Torre Corporativa Eugenia. Torre Corporativa Eugenia es un edificio de trece niveles que alberga 12, 400 m\u00b2 rentables de espacios corporativos. La arquitectura y geometr\u00eda del edificio nos permite ofrecer variadas tipolog\u00edas de oficinas con opci\u00f3n de dividir hasta en 13 unidades por piso, flexibles para cumplir conjuntamente todos sus objetivos, indistintos de su industria. Este edificio corona la entrega de la Plaza Toreo City Complex, rindiendo. tributo al pasado con sus historias de plaza y comunidad, y hacia un futuro por igual exitoso para todos. El edificio cuenta con una serie de servicios que. lo convierten en un espacio ideal para trabajar. y disfrutar, incluyendo: \u2022 Recepci\u00f3n. \u2022 Lobby principal de doble altura. \u2022 Seguridad 24/7. \u2022 Circuito Cerrado. \u2022 Valet Parking. \u2022 4 Elevadores pasajeros m\u00e1s 1 de servicio. \u2022 Ba\u00f1os de damas y caballeros. \u2022 4 niveles de estacionamiento subterr\u00e1neo. \u2022 \u00c1reas exteriores comunes. \u2022 Andadores y terrazas. \u2022 Edificio con 11 niveles de oficinas. \u2022 Espacios desde 61 m2. ",
+        "features": null,
+        "postingLocation": {
+            "address": {
+                "name": "Calete",
+                "visibility": "EXACT"
+            },
+            "location": {
+                "locationId": "V1-D-2230",
+                "name": "Calete",
+                "label": "ZONA",
+                "depth": 3,
+                "parent": {
+                    "locationId": "V1-C-260",
+                    "name": "Tijuana",
+                    "label": "CIUDAD",
+                    "depth": 2,
+                    "parent": {
+                        "locationId": "V1-B-62",
+                        "name": "Baja California Norte",
+                        "label": "PROVINCIA",
+                        "depth": 1,
+                        "parent": {
+                            "locationId": "V1-A-18",
+                            "name": "Mexico",
+                            "label": "PAIS",
+                            "depth": 0,
+                            "parent": null,
+                            "acronym": null
+                        },
+                        "acronym": null
+                    },
+                    "acronym": null
+                },
+                "acronym": null
+            },
+            "postingGeolocation": {
+                "geolocation": {
+                    "latitude": 32.51155284848473,
+                    "longitude": -117.02127668255615
+                },
+                "urlStaticMap": "//maps.google.com/maps/api/staticmap?center=32.51155284848473314696093439124524593353271484375,-117.0212766825561487848972319625318050384521484375&zoom=16&key=AIzaSyBfTOxuYEmbL50_1P4KU8GI8toKT539agI&size=780x456&sensor=true&scale=2&signature=A2hxD1tfy_GR1y6VQ2Fr-wMIdVo=&channel=rplis-i24",
+                "visibility": null
+            }
+        },
+        "visiblePictures": {
+            "pictures": [
+                {
+                    "multimediaTypeId": "2",
+                    "order": 1,
+                    "height": 672,
+                    "width": 1140,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/44/21/75/22/720x532/1477910811.jpg?isFirstImage=true",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/44/21/75/22/360x266/1477910811.jpg?isFirstImage=true",
+                    "url130x70": null,
+                    "title": "Desarrollo vertical , Tijuana \u00b7 Eugenia"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 2,
+                    "height": 319,
+                    "width": 758,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/44/21/75/22/720x532/1477910812.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/44/21/75/22/360x266/1477910812.jpg",
+                    "url130x70": null,
+                    "title": "Desarrollo vertical en   Calete"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 3,
+                    "height": 663,
+                    "width": 439,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/44/21/75/22/720x532/1477910813.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/44/21/75/22/360x266/1477910813.jpg",
+                    "url130x70": null,
+                    "title": "* Torre Corporativa Eugenia, es un nuevo desarrollo de edificio corporativo en l"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 4,
+                    "height": 536,
+                    "width": 581,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/44/21/75/22/720x532/1477910809.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/44/21/75/22/360x266/1477910809.jpg",
+                    "url130x70": null,
+                    "title": "Desarrollo vertical   "
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 5,
+                    "height": 538,
+                    "width": 1179,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/44/21/75/22/720x532/1477910810.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/44/21/75/22/360x266/1477910810.jpg",
+                    "url130x70": null,
+                    "title": "Desarrollo vertical   Calete"
+                }
+            ],
+            "additionalPicturesCount": 0
+        },
+        "postingType": "DEVELOPMENT",
+        "whatsApp": "52 6642368622"
+    },
+    {
+        "title": "Hitj",
+        "generatedTitle": "Desarrollo vertical",
+        "priceOperationTypes": [
+            {
+                "lowPricePercentage": null,
+                "operationType": {
+                    "name": "Venta",
+                    "operationTypeId": "1"
+                },
+                "prices": [
+                    {
+                        "currencyId": "2",
+                        "amount": 186575,
+                        "formattedAmount": "186,575",
+                        "currency": "USD"
+                    }
+                ]
+            }
+        ],
+        "mainFeatures": {},
+        "generalFeatures": {},
+        "developmentFeatures": {
+            "Desarrollo": {
+                "CFT201": {
+                    "featureId": "CFT201",
+                    "label": "Inmediata",
+                    "measure": null,
+                    "value": "0",
+                    "icon": "fecha",
+                    "featureCategoryId": "CFC3"
+                },
+                "CFT202": {
+                    "featureId": "CFT202",
+                    "label": "Total de unidades",
+                    "measure": null,
+                    "value": "126",
+                    "icon": null,
+                    "featureCategoryId": "CFC3"
+                },
+                "CFT200": {
+                    "featureId": "CFT200",
+                    "label": "Listo para habitar ",
+                    "measure": null,
+                    "value": "3",
+                    "icon": "terminado",
+                    "featureCategoryId": "CFC3"
+                }
+            }
+        },
+        "highlightedFeatures": [
+            "Gimnasio",
+            "Circuito Cerrado",
+            "Estacionamientos"
+        ],
+        "flagsFeatures": [
+            {
+                "featureId": "CFT200",
+                "label": "Listo para habitar ",
+                "measure": null,
+                "value": "3",
+                "icon": "terminado",
+                "featureCategoryId": "CFC3"
+            },
+            {
+                "featureId": "CFT201",
+                "label": "Inmediata",
+                "measure": null,
+                "value": "0",
+                "icon": "fecha",
+                "featureCategoryId": "CFC3"
+            },
+            null
+        ],
+        "antiquity": null,
+        "publisher": {
+            "publisherId": "102433357",
+            "name": "Vive Tijuana",
+            "url": "/inmobiliarias/vive-tijuana_102433357-inmuebles.html",
+            "slotFilterUrl": null,
+            "urlLogo": "https://img10.naventcdn.com/empresas/18/01/02/43/33/57/130x70/logo_marco-everardo-garcia-garcia_1738271512478.jpg",
+            "publisherTypeId": "4",
+            "urlChat": null,
+            "license": null,
+            "publisherTags": [],
+            "parentPublisher": null,
+            "amountPostingActive": null,
+            "partialPhone": null,
+            "createdYear": null,
+            "premier": false,
+            "slug": "ViveTijuana",
+            "publisherStatistics": null,
+            "approved": false,
+            "mainPhone": null,
+            "created_date": "2023-10-11T04:00:00.000+0000",
+            "id_portal": "101",
+            "quantity_posting_by_operation_type": null
+        },
+        "realEstateType": {
+            "name": "Desarrollos verticales",
+            "realEstateTypeId": "34"
+        },
+        "url": "/propiedades/desarrollo/ememvein-hitj-144631175.html",
+        "promotionTitle": "5% de Descuento - Septiembre",
+        "descriptionNormalized": "2 Torres. 7 Niveles. 126 Departamentos. 63 Departamentos por torre. 1 Lobby por Torre. 2 Nucleos de Elevadores. 2 Niveles Estacionamiento techado. 1 Nivel completo de amenidades. Servicios. Seguridad 24 Hrs. - Acceso controlado peatonal. y vehicular. - Circuito cerrado. - Opci\u00f3n de bodegas. - \u00c1rea de bicicletas. - Pet friendly. Amenidades. - Gimnasio. - \u00c1rea de yoga. - Asadores. - \u00c1reas de firepits. - Terraza con vista al parque. y al Centro de la ciudad",
+        "features": null,
+        "postingLocation": {
+            "address": {
+                "name": "C. Salvador D\u00edaz Mir\u00f3n 4ta",
+                "visibility": "EXACT"
+            },
+            "location": {
+                "locationId": "V1-D-2175",
+                "name": "Zona Centro",
+                "label": "ZONA",
+                "depth": 3,
+                "parent": {
+                    "locationId": "V1-C-260",
+                    "name": "Tijuana",
+                    "label": "CIUDAD",
+                    "depth": 2,
+                    "parent": {
+                        "locationId": "V1-B-62",
+                        "name": "Baja California Norte",
+                        "label": "PROVINCIA",
+                        "depth": 1,
+                        "parent": {
+                            "locationId": "V1-A-18",
+                            "name": "Mexico",
+                            "label": "PAIS",
+                            "depth": 0,
+                            "parent": null,
+                            "acronym": null
+                        },
+                        "acronym": null
+                    },
+                    "acronym": null
+                },
+                "acronym": null
+            },
+            "postingGeolocation": {
+                "geolocation": {
+                    "latitude": 32.5324983,
+                    "longitude": -117.0398409
+                },
+                "urlStaticMap": "//maps.google.com/maps/api/staticmap?center=32.5324983000000003130480763502418994903564453125,-117.03984090000000151121639646589756011962890625&zoom=16&key=AIzaSyBfTOxuYEmbL50_1P4KU8GI8toKT539agI&size=780x456&sensor=true&scale=2&signature=LvalBaHzY99EiLqzJZqoag1FB6U=&channel=rplis-i24",
+                "visibility": null
+            }
+        },
+        "visiblePictures": {
+            "pictures": [
+                {
+                    "multimediaTypeId": "2",
+                    "order": 1,
+                    "height": 664,
+                    "width": 1182,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/44/63/11/75/720x532/1487452754.jpg?isFirstImage=true",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/44/63/11/75/360x266/1487452754.jpg?isFirstImage=true",
+                    "url130x70": null,
+                    "title": "Desarrollo vertical , Tijuana \u00b7 Hitj"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 2,
+                    "height": 659,
+                    "width": 1172,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/44/63/11/75/720x532/1487452756.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/44/63/11/75/360x266/1487452756.jpg",
+                    "url130x70": null,
+                    "title": "Desarrollo vertical en   Zona Centro"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 3,
+                    "height": 663,
+                    "width": 1177,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/44/63/11/75/720x532/1487452757.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/44/63/11/75/360x266/1487452757.jpg",
+                    "url130x70": null,
+                    "title": "2 Torres \n7 Niveles \n126 Departamentos \n63 Departamentos por torre \n1 Lobby por "
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 4,
+                    "height": 662,
+                    "width": 1183,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/44/63/11/75/720x532/1487452755.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/44/63/11/75/360x266/1487452755.jpg",
+                    "url130x70": null,
+                    "title": "Desarrollo vertical   "
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 5,
+                    "height": 661,
+                    "width": 1192,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/44/63/11/75/720x532/1487452758.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/44/63/11/75/360x266/1487452758.jpg",
+                    "url130x70": null,
+                    "title": "Desarrollo vertical   Zona Centro"
+                }
+            ],
+            "additionalPicturesCount": 0
+        },
+        "postingType": "DEVELOPMENT",
+        "whatsApp": "52 6642368622"
+    },
+    {
+        "title": "Departamentos en Pre Venta, Bosques de Otay, Gato Bronco",
+        "generatedTitle": "Desarrollo vertical",
+        "priceOperationTypes": [
+            {
+                "lowPricePercentage": null,
+                "operationType": {
+                    "name": "Venta",
+                    "operationTypeId": "1"
+                },
+                "prices": [
+                    {
+                        "currencyId": "2",
+                        "amount": 180000,
+                        "formattedAmount": "180,000",
+                        "currency": "USD"
+                    }
+                ]
+            }
+        ],
+        "mainFeatures": {},
+        "generalFeatures": {},
+        "developmentFeatures": {
+            "Desarrollo": {
+                "CFT201": {
+                    "featureId": "CFT201",
+                    "label": "Junio 2025",
+                    "measure": null,
+                    "value": "6-2025",
+                    "icon": "fecha",
+                    "featureCategoryId": "CFC3"
+                },
+                "CFT202": {
+                    "featureId": "CFT202",
+                    "label": "Total de unidades",
+                    "measure": null,
+                    "value": "200",
+                    "icon": null,
+                    "featureCategoryId": "CFC3"
+                },
+                "CFT200": {
+                    "featureId": "CFT200",
+                    "label": "En construcci\u00f3n",
+                    "measure": null,
+                    "value": "2",
+                    "icon": "terminado",
+                    "featureCategoryId": "CFC3"
+                }
+            }
+        },
+        "highlightedFeatures": [
+            "Gimnasio",
+            "Jard\u00edn",
+            "Alberca",
+            "Circuito Cerrado",
+            "Estacionamientos"
+        ],
+        "flagsFeatures": [
+            {
+                "featureId": "CFT200",
+                "label": "En construcci\u00f3n",
+                "measure": null,
+                "value": "2",
+                "icon": "terminado",
+                "featureCategoryId": "CFC3"
+            },
+            {
+                "featureId": "CFT201",
+                "label": "Junio 2025",
+                "measure": null,
+                "value": "6-2025",
+                "icon": "fecha",
+                "featureCategoryId": "CFC3"
+            },
+            null
+        ],
+        "antiquity": null,
+        "publisher": {
+            "publisherId": "102739178",
+            "name": "Integra Inmobiliaria",
+            "url": "/inmobiliarias/integra-inmobiliaria_102739178-inmuebles.html",
+            "slotFilterUrl": null,
+            "urlLogo": "https://img10.naventcdn.com/empresas/18/01/02/73/91/78/130x70/logo_integra-inmobiliaria_1732996122212.jpg",
+            "publisherTypeId": "2",
+            "urlChat": null,
+            "license": null,
+            "publisherTags": [],
+            "parentPublisher": null,
+            "amountPostingActive": null,
+            "partialPhone": null,
+            "createdYear": null,
+            "premier": false,
+            "slug": null,
+            "publisherStatistics": null,
+            "approved": false,
+            "mainPhone": "6641745126",
+            "created_date": "2024-11-29T05:00:00.000+0000",
+            "id_portal": "101",
+            "quantity_posting_by_operation_type": null
+        },
+        "realEstateType": {
+            "name": "Desarrollos verticales",
+            "realEstateTypeId": "34"
+        },
+        "url": "/propiedades/desarrollo/ememvein-departamentos-en-pre-venta-bosques-de-otay-gato-145196097.html",
+        "promotionTitle": "Bonificacion Descuento y",
+        "descriptionNormalized": "Departamentos de una, dos y tres recamaras en pre venta zona Otay, Gato Bronco. A 5 min de l\u00ednea internaconal Otay, equipado con cocina completa, closets y l\u00ednea blanca. Destacamos: - Excelente ubicaci\u00f3n en Tijuana. - Etapa de pre venta. - Excelente para inversi\u00f3n, alta plusval\u00eda comprobada. - Caseta de vigilancia. - Seguridad las 24 hrs. Modelo A: 1 recamara 1 ba\u00f1o. Modelo B: 2 recamaras 1 ba\u00f1o. Modelo C: 2 recamaras 1 ba\u00f1o. Modelo B: 2 recamaras 2 ba\u00f1os. Modelo H: 3 recamaras 2 ba\u00f1os. Amenidades: - Dos parques y dog park. - \u00c1reas recreativas. - Seguridad 24/7. - Acceso controlado. - Casa club. - Roof garden. - Alberca. - Gimnasio. - \u00c1rea de asadores. - Sala de juegos. - \u00c1rea de fogatas. - Sal\u00f3n de eventos. - \u00c1rea de lectura. - \u00c1reas infantiles. - Cancha de Padel. Equipamiento: - Closets. - Preinstalaci\u00f3n aa. Pregunta por promociones disponibles. Modelos disponibles: Pregunta por disponibles. Torre 1 - Entrega Junio 2025. Cercan\u00eda: - A unas cuadras de L\u00ednea internacional Otay. - A 5 min de V\u00eda R\u00e1pida. - A 12 min de Zona R\u00edo. Integra Servicios Inmobiliarios - Propiedades en Exclusiva, Convenio con los Mejores Desarrollos al mismo Precio, revisi\u00f3n de propiedades, cr\u00e9ditos hipotecarios y m\u00e1s en un solo lugar. * El pago es en d\u00f3lares americanos. ** El precio se define a tipo de cambio en el momento de publicaci\u00f3n. Precio sujeto a cambios sin previo aviso, no incluyen gastos notariales ni operacionales. ",
+        "features": null,
+        "postingLocation": {
+            "address": {
+                "name": "Otay, Gato Bronco",
+                "visibility": "EXACT"
+            },
+            "location": {
+                "locationId": "V1-D-253058",
+                "name": "Otay",
+                "label": "ZONA",
+                "depth": 3,
+                "parent": {
+                    "locationId": "V1-C-260",
+                    "name": "Tijuana",
+                    "label": "CIUDAD",
+                    "depth": 2,
+                    "parent": {
+                        "locationId": "V1-B-62",
+                        "name": "Baja California Norte",
+                        "label": "PROVINCIA",
+                        "depth": 1,
+                        "parent": {
+                            "locationId": "V1-A-18",
+                            "name": "Mexico",
+                            "label": "PAIS",
+                            "depth": 0,
+                            "parent": null,
+                            "acronym": null
+                        },
+                        "acronym": null
+                    },
+                    "acronym": null
+                },
+                "acronym": null
+            },
+            "postingGeolocation": {
+                "geolocation": {
+                    "latitude": 32.5161832,
+                    "longitude": -116.9257363
+                },
+                "urlStaticMap": "//maps.google.com/maps/api/staticmap?center=32.5161832000000003972672857344150543212890625,-116.9257362999999969588316162116825580596923828125&zoom=16&key=AIzaSyBfTOxuYEmbL50_1P4KU8GI8toKT539agI&size=780x456&sensor=true&scale=2&signature=wDmymm7KZBFvLuA61SxzjPSfN5c=&channel=rplis-i24",
+                "visibility": null
+            }
+        },
+        "visiblePictures": {
+            "pictures": [
+                {
+                    "multimediaTypeId": "2",
+                    "order": 1,
+                    "height": 2304,
+                    "width": 1728,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/19/60/97/720x532/1498821235.jpg?isFirstImage=true",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/19/60/97/360x266/1498821235.jpg?isFirstImage=true",
+                    "url130x70": null,
+                    "title": "VISTA EXTERIOR \u00b7 Departamentos en Pre Venta, Bosques de Otay, Gato Bronco"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 2,
+                    "height": 901,
+                    "width": 1200,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/19/60/97/720x532/1498821230.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/19/60/97/360x266/1498821230.jpg",
+                    "url130x70": null,
+                    "title": "ENTRADA"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 3,
+                    "height": 3472,
+                    "width": 4624,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/19/60/97/720x532/1498821237.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/19/60/97/360x266/1498821237.jpg",
+                    "url130x70": null,
+                    "title": "AVANCE OBRA 2"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 4,
+                    "height": 2304,
+                    "width": 1728,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/19/60/97/720x532/1498821234.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/19/60/97/360x266/1498821234.jpg",
+                    "url130x70": null,
+                    "title": "VISTA LATERAL"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 5,
+                    "height": 2304,
+                    "width": 1728,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/19/60/97/720x532/1498821233.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/19/60/97/360x266/1498821233.jpg",
+                    "url130x70": null,
+                    "title": "VISTA CARRETERA GATO BRONCO"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 6,
+                    "height": 3672,
+                    "width": 3472,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/19/60/97/720x532/1498821236.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/19/60/97/360x266/1498821236.jpg",
+                    "url130x70": null,
+                    "title": "AVANCE OBRA"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 7,
+                    "height": 800,
+                    "width": 1200,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/19/60/97/720x532/1498821231.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/19/60/97/360x266/1498821231.jpg",
+                    "url130x70": null,
+                    "title": "AVANCE OBRA 3"
+                }
+            ],
+            "additionalPicturesCount": 0
+        },
+        "postingType": "DEVELOPMENT",
+        "whatsApp": null
+    }
+]

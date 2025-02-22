@@ -1,0 +1,2216 @@
+[
+    {
+        "title": "Venta de Casa en Mazatl\u00e1n",
+        "generatedTitle": "Casa \u00b7 130m\u00b2 \u00b7 4 Rec\u00e1maras \u00b7 2 Estacionamientos",
+        "priceOperationTypes": [
+            {
+                "lowPricePercentage": null,
+                "operationType": {
+                    "name": "Venta",
+                    "operationTypeId": "1"
+                },
+                "prices": [
+                    {
+                        "currencyId": "10",
+                        "amount": 1000000,
+                        "formattedAmount": "1,000,000",
+                        "currency": "MN"
+                    }
+                ]
+            }
+        ],
+        "mainFeatures": {
+            "CFT100": {
+                "featureId": "CFT100",
+                "label": "Terreno",
+                "measure": "m\u00b2",
+                "value": "130",
+                "icon": null,
+                "featureCategoryId": "CFC2"
+            },
+            "CFT101": {
+                "featureId": "CFT101",
+                "label": "Superficie constru\u00edda",
+                "measure": "m\u00b2",
+                "value": "130",
+                "icon": null,
+                "featureCategoryId": "CFC2"
+            },
+            "CFT2": {
+                "featureId": "CFT2",
+                "label": "Rec\u00e1maras",
+                "measure": null,
+                "value": "4",
+                "icon": null,
+                "featureCategoryId": "CFC1"
+            },
+            "CFT3": {
+                "featureId": "CFT3",
+                "label": "Ba\u00f1os",
+                "measure": null,
+                "value": "2",
+                "icon": null,
+                "featureCategoryId": "CFC1"
+            },
+            "CFT7": {
+                "featureId": "CFT7",
+                "label": "Estacionamientos",
+                "measure": null,
+                "value": "2",
+                "icon": null,
+                "featureCategoryId": "CFC1"
+            },
+            "CFT4": {
+                "featureId": "CFT4",
+                "label": "Medio ba\u00f1o",
+                "measure": null,
+                "value": "1",
+                "icon": null,
+                "featureCategoryId": "CFC1"
+            },
+            "CFT5": {
+                "featureId": "CFT5",
+                "label": "Antig\u00fcedad",
+                "measure": null,
+                "value": "10",
+                "icon": null,
+                "featureCategoryId": "CFC1"
+            }
+        },
+        "generalFeatures": {},
+        "developmentFeatures": {},
+        "highlightedFeatures": [],
+        "flagsFeatures": [
+            {
+                "featureId": "remateHipotecario",
+                "label": "Remate hipotecario",
+                "measure": null,
+                "value": null,
+                "icon": "remate-hipotecario",
+                "featureCategoryId": null
+            }
+        ],
+        "antiquity": null,
+        "publisher": {
+            "publisherId": "102570564",
+            "name": "PORTHOS MOBILITY LOGISTICS",
+            "url": "/inmobiliarias/porthos-mobility-logistics_102570564-inmuebles.html",
+            "slotFilterUrl": null,
+            "urlLogo": "https://img10.naventcdn.com/empresas/18/01/02/57/05/64/130x70/logo_porthos-mobility-logistics_1724786413459.jpg",
+            "publisherTypeId": "2",
+            "urlChat": null,
+            "license": null,
+            "publisherTags": [
+                50000293
+            ],
+            "parentPublisher": null,
+            "amountPostingActive": null,
+            "partialPhone": null,
+            "createdYear": null,
+            "premier": false,
+            "slug": "",
+            "publisherStatistics": null,
+            "approved": false,
+            "mainPhone": null,
+            "created_date": "2024-03-27T04:00:00.000+0000",
+            "id_portal": "101",
+            "quantity_posting_by_operation_type": null
+        },
+        "realEstateType": {
+            "name": "Casas",
+            "realEstateTypeId": "1"
+        },
+        "url": "/propiedades/clasificado/veclcain-venta-de-casa-en-mazatlan-143852177.html",
+        "promotionTitle": null,
+        "descriptionNormalized": "Con esta hermosa propiedad tienes una extraordinaria oportunidad de incrementar tu patrimonio. Ubicada muy cerca del imss hgzmf 003, su ubicaci\u00f3n le permite acceder a distintos lugares, como escuelas restaurantes y hospitales. La compra debe ser con recursos propios. no creditos. Gestionamos todos los tramites legales, desde la firma de contrato hasta la entrega de la propiedad. No es necesario que el comprador se involucre o invierta tiempo y dinero. Entrega de 8 a 10 meses garantizada bajo contrat\u00f3. \u00a1Cont\u00e1ctame ser\u00e1 un gusto atenderte! ",
+        "features": null,
+        "postingLocation": {
+            "address": {
+                "name": "mazatlan ",
+                "visibility": "EXACT"
+            },
+            "location": {
+                "locationId": "V1-D-346913",
+                "name": "Mazatlan ",
+                "label": "ZONA",
+                "depth": 3,
+                "parent": {
+                    "locationId": "V1-C-2130",
+                    "name": "Mazatl\u00e1n",
+                    "label": "CIUDAD",
+                    "depth": 2,
+                    "parent": {
+                        "locationId": "V1-B-85",
+                        "name": "Sinaloa",
+                        "label": "PROVINCIA",
+                        "depth": 1,
+                        "parent": {
+                            "locationId": "V1-A-18",
+                            "name": "Mexico",
+                            "label": "PAIS",
+                            "depth": 0,
+                            "parent": null,
+                            "acronym": null
+                        },
+                        "acronym": null
+                    },
+                    "acronym": null
+                },
+                "acronym": null
+            },
+            "postingGeolocation": {
+                "geolocation": {
+                    "latitude": 23.2391419,
+                    "longitude": -106.4126147
+                },
+                "urlStaticMap": "//maps.google.com/maps/api/staticmap?center=23.23914189999999990732248988933861255645751953125,-106.41261470000000599611666984856128692626953125&zoom=16&key=AIzaSyBfTOxuYEmbL50_1P4KU8GI8toKT539agI&size=780x456&sensor=true&scale=2&signature=e-o_5V0UtmK1YIB3aMxhygDVCdw=&channel=rplis-i24",
+                "visibility": null
+            }
+        },
+        "visiblePictures": {
+            "pictures": [
+                {
+                    "multimediaTypeId": "2",
+                    "order": 1,
+                    "height": 856,
+                    "width": 985,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/43/85/21/77/720x532/1469117786.jpg?isFirstImage=true",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/43/85/21/77/360x266/1469117786.jpg?isFirstImage=true",
+                    "url130x70": null,
+                    "title": "Casa de 4 habitaciones, Mazatl\u00e1n \u00b7 Venta de Casa en Mazatl\u00e1n"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 2,
+                    "height": 1024,
+                    "width": 768,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/43/85/21/77/720x532/1469117778.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/43/85/21/77/360x266/1469117778.jpg",
+                    "url130x70": null,
+                    "title": "Casa en Venta de 4 habitaciones Mazatlan "
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 3,
+                    "height": 854,
+                    "width": 1032,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/43/85/21/77/720x532/1469117782.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/43/85/21/77/360x266/1469117782.jpg",
+                    "url130x70": null,
+                    "title": "Con esta hermosa propiedad tienes una extraordinaria oportunidad de incrementar "
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 4,
+                    "height": 1024,
+                    "width": 768,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/43/85/21/77/720x532/1469117785.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/43/85/21/77/360x266/1469117785.jpg",
+                    "url130x70": null,
+                    "title": "Casa Venta 130m\u00b2 de 4 habitaciones"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 5,
+                    "height": 1024,
+                    "width": 768,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/43/85/21/77/720x532/1469117783.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/43/85/21/77/360x266/1469117783.jpg",
+                    "url130x70": null,
+                    "title": "Casa 130m\u00b2 Venta Mazatlan "
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 6,
+                    "height": 1024,
+                    "width": 768,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/43/85/21/77/720x532/1469117781.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/43/85/21/77/360x266/1469117781.jpg",
+                    "url130x70": null,
+                    "title": "Casa 130m\u00b2 Venta Mazatlan "
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 7,
+                    "height": 1024,
+                    "width": 768,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/43/85/21/77/720x532/1469117780.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/43/85/21/77/360x266/1469117780.jpg",
+                    "url130x70": null,
+                    "title": "Casa de 4 habitaciones Venta MN 1,000,000"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 8,
+                    "height": 659,
+                    "width": 631,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/43/85/21/77/720x532/1469117777.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/43/85/21/77/360x266/1469117777.jpg",
+                    "url130x70": null,
+                    "title": "Casa \u00b7 130m\u00b2 \u00b7 4 Rec\u00e1maras \u00b7 2 Estacionamientos - PORTHOS MOBILITY LOGISTICS"
+                }
+            ],
+            "additionalPicturesCount": 3
+        },
+        "postingType": "PROPERTY",
+        "whatsApp": "52 5576953936"
+    },
+    {
+        "title": "Venta de Casa en Lomas de Mazatl\u00e1n, Sinaloa.",
+        "generatedTitle": "Casa \u00b7 254m\u00b2 \u00b7 5 Rec\u00e1maras \u00b7 2 Estacionamientos",
+        "priceOperationTypes": [
+            {
+                "lowPricePercentage": null,
+                "operationType": {
+                    "name": "Venta",
+                    "operationTypeId": "1"
+                },
+                "prices": [
+                    {
+                        "currencyId": "10",
+                        "amount": 710000,
+                        "formattedAmount": "710,000",
+                        "currency": "MN"
+                    }
+                ]
+            }
+        ],
+        "mainFeatures": {
+            "CFT100": {
+                "featureId": "CFT100",
+                "label": "Terreno",
+                "measure": "m\u00b2",
+                "value": "550",
+                "icon": null,
+                "featureCategoryId": "CFC2"
+            },
+            "CFT101": {
+                "featureId": "CFT101",
+                "label": "Superficie constru\u00edda",
+                "measure": "m\u00b2",
+                "value": "254",
+                "icon": null,
+                "featureCategoryId": "CFC2"
+            },
+            "CFT2": {
+                "featureId": "CFT2",
+                "label": "Rec\u00e1maras",
+                "measure": null,
+                "value": "5",
+                "icon": null,
+                "featureCategoryId": "CFC1"
+            },
+            "CFT3": {
+                "featureId": "CFT3",
+                "label": "Ba\u00f1os",
+                "measure": null,
+                "value": "4",
+                "icon": null,
+                "featureCategoryId": "CFC1"
+            },
+            "CFT7": {
+                "featureId": "CFT7",
+                "label": "Estacionamientos",
+                "measure": null,
+                "value": "2",
+                "icon": null,
+                "featureCategoryId": "CFC1"
+            },
+            "CFT5": {
+                "featureId": "CFT5",
+                "label": "Antig\u00fcedad",
+                "measure": null,
+                "value": "15",
+                "icon": null,
+                "featureCategoryId": "CFC1"
+            }
+        },
+        "generalFeatures": {},
+        "developmentFeatures": {},
+        "highlightedFeatures": [],
+        "flagsFeatures": [
+            {
+                "featureId": "remateHipotecario",
+                "label": "Remate hipotecario",
+                "measure": null,
+                "value": null,
+                "icon": "remate-hipotecario",
+                "featureCategoryId": null
+            }
+        ],
+        "antiquity": null,
+        "publisher": {
+            "publisherId": "102570564",
+            "name": "PORTHOS MOBILITY LOGISTICS",
+            "url": "/inmobiliarias/porthos-mobility-logistics_102570564-inmuebles.html",
+            "slotFilterUrl": null,
+            "urlLogo": "https://img10.naventcdn.com/empresas/18/01/02/57/05/64/130x70/logo_porthos-mobility-logistics_1724786413459.jpg",
+            "publisherTypeId": "2",
+            "urlChat": null,
+            "license": null,
+            "publisherTags": [
+                50000293
+            ],
+            "parentPublisher": null,
+            "amountPostingActive": null,
+            "partialPhone": null,
+            "createdYear": null,
+            "premier": false,
+            "slug": "",
+            "publisherStatistics": null,
+            "approved": false,
+            "mainPhone": null,
+            "created_date": "2024-03-27T04:00:00.000+0000",
+            "id_portal": "101",
+            "quantity_posting_by_operation_type": null
+        },
+        "realEstateType": {
+            "name": "Casas",
+            "realEstateTypeId": "1"
+        },
+        "url": "/propiedades/clasificado/veclcain-venta-de-casa-en-lomas-de-mazatlan-sinaloa.-145653972.html",
+        "promotionTitle": null,
+        "descriptionNormalized": "\u00a1somos la llave de tu futuro! \u00a1gran oportunidad de inversi\u00f3n! Esta propiedad es mucho m\u00e1s que una simple compra: es tu llave hacia un estilo de vida excepcional. Ya sea que desees establecerte aqu\u00ed, generar ingresos adicionales mediante la renta O realizar una inversi\u00f3n lucrativa. entrega garantizada 100% bajo contrato para tu seguridad Y confianza. Aumenta tu patrimonio para habitar O invertir. -es una casa de recuperaci\u00f3n bancaria. -el tr\u00e1mite es bajo contrato. -el pago es en 2 exhibiciones Y con recursos propios. -no se admite ning\u00fan tipo de cr\u00e9dito. -la empresa est\u00e1 legalmente constituida:) \u2026- Alejandra Lugo. Asesora Inmobiliaria. <span class='descripcionDatosAnunciante'><button class='btn btn-link js-verDatos' href='#'>Ver datos</button></span>",
+        "features": null,
+        "postingLocation": {
+            "address": {
+                "name": "CERRO DE LA COLORADA LOMAS DE MAZATLAN SINALOA",
+                "visibility": "EXACT"
+            },
+            "location": {
+                "locationId": "V1-D-346913",
+                "name": "Mazatlan ",
+                "label": "ZONA",
+                "depth": 3,
+                "parent": {
+                    "locationId": "V1-C-2130",
+                    "name": "Mazatl\u00e1n",
+                    "label": "CIUDAD",
+                    "depth": 2,
+                    "parent": {
+                        "locationId": "V1-B-85",
+                        "name": "Sinaloa",
+                        "label": "PROVINCIA",
+                        "depth": 1,
+                        "parent": {
+                            "locationId": "V1-A-18",
+                            "name": "Mexico",
+                            "label": "PAIS",
+                            "depth": 0,
+                            "parent": null,
+                            "acronym": null
+                        },
+                        "acronym": null
+                    },
+                    "acronym": null
+                },
+                "acronym": null
+            },
+            "postingGeolocation": {
+                "geolocation": {
+                    "latitude": 23.246514,
+                    "longitude": -106.4416892
+                },
+                "urlStaticMap": "//maps.google.com/maps/api/staticmap?center=23.246514000000001232137947226874530315399169921875,-106.4416891999999990048308973200619220733642578125&zoom=16&key=AIzaSyBfTOxuYEmbL50_1P4KU8GI8toKT539agI&size=780x456&sensor=true&scale=2&signature=BWFVyugMNC2PPOKS25fvdK6glZk=&channel=rplis-i24",
+                "visibility": null
+            }
+        },
+        "visiblePictures": {
+            "pictures": [
+                {
+                    "multimediaTypeId": "2",
+                    "order": 1,
+                    "height": 559,
+                    "width": 647,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/65/39/72/720x532/1509618560.jpg?isFirstImage=true",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/65/39/72/360x266/1509618560.jpg?isFirstImage=true",
+                    "url130x70": null,
+                    "title": "Casa de 5 habitaciones, Mazatl\u00e1n \u00b7 Venta de Casa en Lomas de Mazatl\u00e1n, Sinaloa."
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 2,
+                    "height": 579,
+                    "width": 716,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/65/39/72/720x532/1509618559.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/65/39/72/360x266/1509618559.jpg",
+                    "url130x70": null,
+                    "title": "Casa en Venta de 5 habitaciones Mazatlan "
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 3,
+                    "height": 579,
+                    "width": 716,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/65/39/72/720x532/1509618565.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/65/39/72/360x266/1509618565.jpg",
+                    "url130x70": null,
+                    "title": "\u00a1SOMOS LA LLAVE DE TU FUTURO! \n\n\u00a1GRAN OPORTUNIDAD DE INVERSI\u00d3N! \n\nESTA PROPIEDAD"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 4,
+                    "height": 559,
+                    "width": 647,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/65/39/72/720x532/1509618563.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/65/39/72/360x266/1509618563.jpg",
+                    "url130x70": null,
+                    "title": "Casa Venta 550m\u00b2 de 5 habitaciones"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 5,
+                    "height": 814,
+                    "width": 1170,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/65/39/72/720x532/1509618566.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/65/39/72/360x266/1509618566.jpg",
+                    "url130x70": null,
+                    "title": "Casa 550m\u00b2 Venta Mazatlan "
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 6,
+                    "height": 561,
+                    "width": 983,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/65/39/72/720x532/1509618564.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/65/39/72/360x266/1509618564.jpg",
+                    "url130x70": null,
+                    "title": "Casa 550m\u00b2 Venta Mazatlan "
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 7,
+                    "height": 574,
+                    "width": 933,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/65/39/72/720x532/1509618562.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/65/39/72/360x266/1509618562.jpg",
+                    "url130x70": null,
+                    "title": "Casa de 5 habitaciones Venta MN 710,000"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 8,
+                    "height": 554,
+                    "width": 636,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/65/39/72/720x532/1509618561.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/65/39/72/360x266/1509618561.jpg",
+                    "url130x70": null,
+                    "title": "Casa \u00b7 254m\u00b2 \u00b7 5 Rec\u00e1maras \u00b7 2 Estacionamientos - PORTHOS MOBILITY LOGISTICS"
+                }
+            ],
+            "additionalPicturesCount": 3
+        },
+        "postingType": "PROPERTY",
+        "whatsApp": "52 5653587667"
+    },
+    {
+        "title": "Se Vende Excelente Casa, Lomas D Mazatlan, Maz Sin - Dm",
+        "generatedTitle": "Casa \u00b7 191m\u00b2 \u00b7 4 Rec\u00e1maras \u00b7 2 Estacionamientos",
+        "priceOperationTypes": [
+            {
+                "lowPricePercentage": null,
+                "operationType": {
+                    "name": "Venta",
+                    "operationTypeId": "1"
+                },
+                "prices": [
+                    {
+                        "currencyId": "10",
+                        "amount": 700000,
+                        "formattedAmount": "700,000",
+                        "currency": "MN"
+                    }
+                ]
+            }
+        ],
+        "mainFeatures": {
+            "CFT100": {
+                "featureId": "CFT100",
+                "label": "Terreno",
+                "measure": "m\u00b2",
+                "value": "189",
+                "icon": null,
+                "featureCategoryId": "CFC2"
+            },
+            "CFT101": {
+                "featureId": "CFT101",
+                "label": "Superficie constru\u00edda",
+                "measure": "m\u00b2",
+                "value": "191",
+                "icon": null,
+                "featureCategoryId": "CFC2"
+            },
+            "CFT2": {
+                "featureId": "CFT2",
+                "label": "Rec\u00e1maras",
+                "measure": null,
+                "value": "4",
+                "icon": null,
+                "featureCategoryId": "CFC1"
+            },
+            "CFT3": {
+                "featureId": "CFT3",
+                "label": "Ba\u00f1os",
+                "measure": null,
+                "value": "3",
+                "icon": null,
+                "featureCategoryId": "CFC1"
+            },
+            "CFT7": {
+                "featureId": "CFT7",
+                "label": "Estacionamientos",
+                "measure": null,
+                "value": "2",
+                "icon": null,
+                "featureCategoryId": "CFC1"
+            },
+            "CFT5": {
+                "featureId": "CFT5",
+                "label": "Antig\u00fcedad",
+                "measure": null,
+                "value": "11",
+                "icon": null,
+                "featureCategoryId": "CFC1"
+            }
+        },
+        "generalFeatures": {},
+        "developmentFeatures": {},
+        "highlightedFeatures": [],
+        "flagsFeatures": [
+            {
+                "featureId": "remateHipotecario",
+                "label": "Remate hipotecario",
+                "measure": null,
+                "value": null,
+                "icon": "remate-hipotecario",
+                "featureCategoryId": null
+            }
+        ],
+        "antiquity": null,
+        "publisher": {
+            "publisherId": "102702813",
+            "name": "Inmobiliaria Crumen",
+            "url": "/inmobiliarias/inmobiliaria-crumen_102702813-inmuebles.html",
+            "slotFilterUrl": null,
+            "urlLogo": "https://img10.naventcdn.com/css/img/placeholder-img.png",
+            "publisherTypeId": "2",
+            "urlChat": null,
+            "license": null,
+            "publisherTags": [
+                50000293
+            ],
+            "parentPublisher": null,
+            "amountPostingActive": null,
+            "partialPhone": null,
+            "createdYear": null,
+            "premier": false,
+            "slug": "",
+            "publisherStatistics": null,
+            "approved": false,
+            "mainPhone": null,
+            "created_date": "2024-10-02T04:00:00.000+0000",
+            "id_portal": "101",
+            "quantity_posting_by_operation_type": null
+        },
+        "realEstateType": {
+            "name": "Casas",
+            "realEstateTypeId": "1"
+        },
+        "url": "/propiedades/clasificado/veclcain-se-vende-excelente-casa-lomas-d-mazatlan-maz-sin-144782559.html",
+        "promotionTitle": null,
+        "descriptionNormalized": "Hermosa casa de 3 niveles, cuenta con 4 habitaciones, 3. 5 ba\u00f1os, 2 espacios de estacionamiento, muy cerca de restaurantes, hoteles, escuelas Y centros comerciales",
+        "features": null,
+        "postingLocation": {
+            "address": {
+                "name": "C. CERRO DE LA COLORADA , LOMAS DE MAZATLAN ",
+                "visibility": "EXACT"
+            },
+            "location": {
+                "locationId": "V1-D-346913",
+                "name": "Mazatlan ",
+                "label": "ZONA",
+                "depth": 3,
+                "parent": {
+                    "locationId": "V1-C-2130",
+                    "name": "Mazatl\u00e1n",
+                    "label": "CIUDAD",
+                    "depth": 2,
+                    "parent": {
+                        "locationId": "V1-B-85",
+                        "name": "Sinaloa",
+                        "label": "PROVINCIA",
+                        "depth": 1,
+                        "parent": {
+                            "locationId": "V1-A-18",
+                            "name": "Mexico",
+                            "label": "PAIS",
+                            "depth": 0,
+                            "parent": null,
+                            "acronym": null
+                        },
+                        "acronym": null
+                    },
+                    "acronym": null
+                },
+                "acronym": null
+            },
+            "postingGeolocation": null
+        },
+        "visiblePictures": {
+            "pictures": [
+                {
+                    "multimediaTypeId": "2",
+                    "order": 1,
+                    "height": 396,
+                    "width": 528,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/44/78/25/59/720x532/1490514588.jpg?isFirstImage=true",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/44/78/25/59/360x266/1490514588.jpg?isFirstImage=true",
+                    "url130x70": null,
+                    "title": "Casa de 4 habitaciones, Mazatl\u00e1n \u00b7 Se Vende Excelente Casa, Lomas D Mazatlan, Maz Sin - Dm"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 2,
+                    "height": 200,
+                    "width": 564,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/44/78/25/59/720x532/1490514591.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/44/78/25/59/360x266/1490514591.jpg",
+                    "url130x70": null,
+                    "title": "Casa en Venta de 4 habitaciones Mazatlan "
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 3,
+                    "height": 350,
+                    "width": 384,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/44/78/25/59/720x532/1490514594.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/44/78/25/59/360x266/1490514594.jpg",
+                    "url130x70": null,
+                    "title": "HERMOSA CASA DE 3 NIVELES, CUENTA CON 4 HABITACIONES, 3.5 BA\u00d1OS, 2 ESPACIOS DE E"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 4,
+                    "height": 337,
+                    "width": 391,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/44/78/25/59/720x532/1490514584.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/44/78/25/59/360x266/1490514584.jpg",
+                    "url130x70": null,
+                    "title": "Casa Venta 189m\u00b2 de 4 habitaciones"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 5,
+                    "height": 396,
+                    "width": 528,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/44/78/25/59/720x532/1490514592.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/44/78/25/59/360x266/1490514592.jpg",
+                    "url130x70": null,
+                    "title": "Casa 189m\u00b2 Venta Mazatlan "
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 6,
+                    "height": 200,
+                    "width": 564,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/44/78/25/59/720x532/1490514583.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/44/78/25/59/360x266/1490514583.jpg",
+                    "url130x70": null,
+                    "title": "Casa 189m\u00b2 Venta Mazatlan "
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 7,
+                    "height": 350,
+                    "width": 384,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/44/78/25/59/720x532/1490514590.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/44/78/25/59/360x266/1490514590.jpg",
+                    "url130x70": null,
+                    "title": "Casa de 4 habitaciones Venta MN 700,000"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 8,
+                    "height": 337,
+                    "width": 391,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/44/78/25/59/720x532/1490514593.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/44/78/25/59/360x266/1490514593.jpg",
+                    "url130x70": null,
+                    "title": "Casa \u00b7 191m\u00b2 \u00b7 4 Rec\u00e1maras \u00b7 2 Estacionamientos - Inmobiliaria Crumen"
+                }
+            ],
+            "additionalPicturesCount": 4
+        },
+        "postingType": "PROPERTY",
+        "whatsApp": "52 5561875904"
+    },
+    {
+        "title": "Venta de Casa en Mazatlan Col Lomas de Mazatlan Sinaloa",
+        "generatedTitle": "Casa \u00b7 206m\u00b2 \u00b7 5 Rec\u00e1maras \u00b7 1 Estacionamiento",
+        "priceOperationTypes": [
+            {
+                "lowPricePercentage": null,
+                "operationType": {
+                    "name": "Venta",
+                    "operationTypeId": "1"
+                },
+                "prices": [
+                    {
+                        "currencyId": "10",
+                        "amount": 710000,
+                        "formattedAmount": "710,000",
+                        "currency": "MN"
+                    }
+                ]
+            }
+        ],
+        "mainFeatures": {
+            "CFT100": {
+                "featureId": "CFT100",
+                "label": "Terreno",
+                "measure": "m\u00b2",
+                "value": "380",
+                "icon": null,
+                "featureCategoryId": "CFC2"
+            },
+            "CFT101": {
+                "featureId": "CFT101",
+                "label": "Superficie constru\u00edda",
+                "measure": "m\u00b2",
+                "value": "206",
+                "icon": null,
+                "featureCategoryId": "CFC2"
+            },
+            "CFT2": {
+                "featureId": "CFT2",
+                "label": "Rec\u00e1maras",
+                "measure": null,
+                "value": "5",
+                "icon": null,
+                "featureCategoryId": "CFC1"
+            },
+            "CFT3": {
+                "featureId": "CFT3",
+                "label": "Ba\u00f1os",
+                "measure": null,
+                "value": "4",
+                "icon": null,
+                "featureCategoryId": "CFC1"
+            },
+            "CFT7": {
+                "featureId": "CFT7",
+                "label": "Estacionamiento",
+                "measure": null,
+                "value": "1",
+                "icon": null,
+                "featureCategoryId": "CFC1"
+            },
+            "CFT4": {
+                "featureId": "CFT4",
+                "label": "Medio ba\u00f1o",
+                "measure": null,
+                "value": "1",
+                "icon": null,
+                "featureCategoryId": "CFC1"
+            },
+            "CFT5": {
+                "featureId": "CFT5",
+                "label": "Antig\u00fcedad",
+                "measure": null,
+                "value": "14",
+                "icon": null,
+                "featureCategoryId": "CFC1"
+            }
+        },
+        "generalFeatures": {},
+        "developmentFeatures": {},
+        "highlightedFeatures": [],
+        "flagsFeatures": [
+            {
+                "featureId": "remateHipotecario",
+                "label": "Remate hipotecario",
+                "measure": null,
+                "value": null,
+                "icon": "remate-hipotecario",
+                "featureCategoryId": null
+            }
+        ],
+        "antiquity": null,
+        "publisher": {
+            "publisherId": "102635886",
+            "name": "CONSTRUCCIONES Y EDIFICACIONES LA STRADA DI CEMENTO",
+            "url": "/inmobiliarias/construcciones-y-edificaciones-la-strada-di-cemento_102635886-inmuebles.html",
+            "slotFilterUrl": null,
+            "urlLogo": "https://img10.naventcdn.com/empresas/18/01/02/63/58/86/130x70/logo_construcciones-y-edificaciones-la-strada-di-cemento_1719517147860.jpg",
+            "publisherTypeId": "2",
+            "urlChat": null,
+            "license": null,
+            "publisherTags": [
+                50000293
+            ],
+            "parentPublisher": null,
+            "amountPostingActive": null,
+            "partialPhone": null,
+            "createdYear": null,
+            "premier": false,
+            "slug": "strada",
+            "publisherStatistics": null,
+            "approved": false,
+            "mainPhone": null,
+            "created_date": "2024-06-25T04:00:00.000+0000",
+            "id_portal": "101",
+            "quantity_posting_by_operation_type": null
+        },
+        "realEstateType": {
+            "name": "Casas",
+            "realEstateTypeId": "1"
+        },
+        "url": "/propiedades/clasificado/veclcain-venta-de-casa-en-mazatlan-col-lomas-de-mazatlan-145107201.html",
+        "promotionTitle": null,
+        "descriptionNormalized": "Descubre una oportunidad \u00fanica en Mazatl\u00e1n! Te presentamos una impresionante casa de recuperaci\u00f3n bancaria, situada en una zona de alta plusval\u00eda. Este espacioso hogar cuenta con 5 amplias habitaciones, 4. 5 ba\u00f1os, una acogedora sala, una funcional cocina y un luminoso comedor. Adem\u00e1s, disfrutar\u00e1s de 1 caj\u00f3n de estacionamiento techado y un encantador patio trasero. Ubicaci\u00f3n inmejorable: estar\u00e1s cerca de escuelas, hospitales, bancos, avenidas principales, parques, supermercados y farmacias. Todo lo que necesitas a un paso. ",
+        "features": null,
+        "postingLocation": {
+            "address": {
+                "name": "CERRO DE LA COLORADA ",
+                "visibility": "EXACT"
+            },
+            "location": {
+                "locationId": "V1-D-346913",
+                "name": "Mazatlan ",
+                "label": "ZONA",
+                "depth": 3,
+                "parent": {
+                    "locationId": "V1-C-2130",
+                    "name": "Mazatl\u00e1n",
+                    "label": "CIUDAD",
+                    "depth": 2,
+                    "parent": {
+                        "locationId": "V1-B-85",
+                        "name": "Sinaloa",
+                        "label": "PROVINCIA",
+                        "depth": 1,
+                        "parent": {
+                            "locationId": "V1-A-18",
+                            "name": "Mexico",
+                            "label": "PAIS",
+                            "depth": 0,
+                            "parent": null,
+                            "acronym": null
+                        },
+                        "acronym": null
+                    },
+                    "acronym": null
+                },
+                "acronym": null
+            },
+            "postingGeolocation": {
+                "geolocation": {
+                    "latitude": 23.246514,
+                    "longitude": -106.4416892
+                },
+                "urlStaticMap": "//maps.google.com/maps/api/staticmap?center=23.246514000000001232137947226874530315399169921875,-106.4416891999999990048308973200619220733642578125&zoom=16&key=AIzaSyBfTOxuYEmbL50_1P4KU8GI8toKT539agI&size=780x456&sensor=true&scale=2&signature=BWFVyugMNC2PPOKS25fvdK6glZk=&channel=rplis-i24",
+                "visibility": null
+            }
+        },
+        "visiblePictures": {
+            "pictures": [
+                {
+                    "multimediaTypeId": "2",
+                    "order": 1,
+                    "height": 421,
+                    "width": 540,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/10/72/01/720x532/1497051705.jpg?isFirstImage=true",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/10/72/01/360x266/1497051705.jpg?isFirstImage=true",
+                    "url130x70": null,
+                    "title": "Casa de 5 habitaciones, Mazatl\u00e1n \u00b7 Venta de Casa en Mazatlan Col Lomas de Mazatlan Sinaloa"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 2,
+                    "height": 353,
+                    "width": 643,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/10/72/01/720x532/1497051707.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/10/72/01/360x266/1497051707.jpg",
+                    "url130x70": null,
+                    "title": "Casa en Venta de 5 habitaciones Mazatlan "
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 3,
+                    "height": 353,
+                    "width": 653,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/10/72/01/720x532/1497051714.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/10/72/01/360x266/1497051714.jpg",
+                    "url130x70": null,
+                    "title": "Descubre una oportunidad \u00fanica en Mazatl\u00e1n! Te presentamos una impresionante cas"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 4,
+                    "height": 352,
+                    "width": 646,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/10/72/01/720x532/1497051711.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/10/72/01/360x266/1497051711.jpg",
+                    "url130x70": null,
+                    "title": "Casa Venta 380m\u00b2 de 5 habitaciones"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 5,
+                    "height": 421,
+                    "width": 540,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/10/72/01/720x532/1497051713.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/10/72/01/360x266/1497051713.jpg",
+                    "url130x70": null,
+                    "title": "Casa 380m\u00b2 Venta Mazatlan "
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 6,
+                    "height": 370,
+                    "width": 596,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/10/72/01/720x532/1497051708.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/10/72/01/360x266/1497051708.jpg",
+                    "url130x70": null,
+                    "title": "Casa 380m\u00b2 Venta Mazatlan "
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 7,
+                    "height": 336,
+                    "width": 557,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/10/72/01/720x532/1497051706.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/10/72/01/360x266/1497051706.jpg",
+                    "url130x70": null,
+                    "title": "Casa de 5 habitaciones Venta MN 710,000"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 8,
+                    "height": 389,
+                    "width": 623,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/10/72/01/720x532/1497051712.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/10/72/01/360x266/1497051712.jpg",
+                    "url130x70": null,
+                    "title": "Casa \u00b7 206m\u00b2 \u00b7 5 Rec\u00e1maras \u00b7 1 Estacionamiento - CONSTRUCCIONES Y EDIFICACIONES LA STRADA DI CEMENTO"
+                }
+            ],
+            "additionalPicturesCount": 4
+        },
+        "postingType": "PROPERTY",
+        "whatsApp": "52 5647514406"
+    },
+    {
+        "title": "Venta de Hermoso Departamento en Mazatlan",
+        "generatedTitle": "Departamento \u00b7 138m\u00b2 \u00b7 2 Rec\u00e1maras \u00b7 2 Estacionamientos",
+        "priceOperationTypes": [
+            {
+                "lowPricePercentage": null,
+                "operationType": {
+                    "name": "Venta",
+                    "operationTypeId": "1"
+                },
+                "prices": [
+                    {
+                        "currencyId": "10",
+                        "amount": 772000,
+                        "formattedAmount": "772,000",
+                        "currency": "MN"
+                    }
+                ]
+            }
+        ],
+        "mainFeatures": {
+            "CFT100": {
+                "featureId": "CFT100",
+                "label": "Terreno",
+                "measure": "m\u00b2",
+                "value": "138",
+                "icon": null,
+                "featureCategoryId": "CFC2"
+            },
+            "CFT101": {
+                "featureId": "CFT101",
+                "label": "Superficie constru\u00edda",
+                "measure": "m\u00b2",
+                "value": "138",
+                "icon": null,
+                "featureCategoryId": "CFC2"
+            },
+            "CFT2": {
+                "featureId": "CFT2",
+                "label": "Rec\u00e1maras",
+                "measure": null,
+                "value": "2",
+                "icon": null,
+                "featureCategoryId": "CFC1"
+            },
+            "CFT3": {
+                "featureId": "CFT3",
+                "label": "Ba\u00f1os",
+                "measure": null,
+                "value": "2",
+                "icon": null,
+                "featureCategoryId": "CFC1"
+            },
+            "CFT7": {
+                "featureId": "CFT7",
+                "label": "Estacionamientos",
+                "measure": null,
+                "value": "2",
+                "icon": null,
+                "featureCategoryId": "CFC1"
+            },
+            "CFT5": {
+                "featureId": "CFT5",
+                "label": "Antig\u00fcedad",
+                "measure": null,
+                "value": "7",
+                "icon": null,
+                "featureCategoryId": "CFC1"
+            }
+        },
+        "generalFeatures": {},
+        "developmentFeatures": {},
+        "highlightedFeatures": [],
+        "flagsFeatures": [
+            {
+                "featureId": "remateHipotecario",
+                "label": "Remate hipotecario",
+                "measure": null,
+                "value": null,
+                "icon": "remate-hipotecario",
+                "featureCategoryId": null
+            }
+        ],
+        "antiquity": null,
+        "publisher": {
+            "publisherId": "102303564",
+            "name": "DICAFHE BIENES RA\u00cdCES",
+            "url": "/inmobiliarias/dicafhe-bienes-raices_102303564-inmuebles.html",
+            "slotFilterUrl": null,
+            "urlLogo": "https://img10.naventcdn.com/css/img/placeholder-img.png",
+            "publisherTypeId": "2",
+            "urlChat": null,
+            "license": null,
+            "publisherTags": [
+                50000293
+            ],
+            "parentPublisher": null,
+            "amountPostingActive": null,
+            "partialPhone": null,
+            "createdYear": null,
+            "premier": false,
+            "slug": "",
+            "publisherStatistics": null,
+            "approved": false,
+            "mainPhone": null,
+            "created_date": "2023-06-26T04:00:00.000+0000",
+            "id_portal": "101",
+            "quantity_posting_by_operation_type": null
+        },
+        "realEstateType": {
+            "name": "Departamentos",
+            "realEstateTypeId": "2"
+        },
+        "url": "/propiedades/clasificado/veclapin-venta-de-hermoso-departamento-en-mazatlan-144905041.html",
+        "promotionTitle": null,
+        "descriptionNormalized": "Venta de hermosa propiedad con estatus de recuperacion bancaria",
+        "features": null,
+        "postingLocation": {
+            "address": {
+                "name": "BOULEVARD MARINA",
+                "visibility": "EXACT"
+            },
+            "location": {
+                "locationId": "V1-D-346913",
+                "name": "Mazatlan ",
+                "label": "ZONA",
+                "depth": 3,
+                "parent": {
+                    "locationId": "V1-C-2130",
+                    "name": "Mazatl\u00e1n",
+                    "label": "CIUDAD",
+                    "depth": 2,
+                    "parent": {
+                        "locationId": "V1-B-85",
+                        "name": "Sinaloa",
+                        "label": "PROVINCIA",
+                        "depth": 1,
+                        "parent": {
+                            "locationId": "V1-A-18",
+                            "name": "Mexico",
+                            "label": "PAIS",
+                            "depth": 0,
+                            "parent": null,
+                            "acronym": null
+                        },
+                        "acronym": null
+                    },
+                    "acronym": null
+                },
+                "acronym": null
+            },
+            "postingGeolocation": null
+        },
+        "visiblePictures": {
+            "pictures": [
+                {
+                    "multimediaTypeId": "2",
+                    "order": 1,
+                    "height": 718,
+                    "width": 1044,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/44/90/50/41/720x532/1492926163.jpg?isFirstImage=true",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/44/90/50/41/360x266/1492926163.jpg?isFirstImage=true",
+                    "url130x70": null,
+                    "title": "Departamento de 2 habitaciones, Mazatl\u00e1n \u00b7 Venta de Hermoso Departamento en Mazatlan"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 2,
+                    "height": 738,
+                    "width": 1033,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/44/90/50/41/720x532/1492926168.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/44/90/50/41/360x266/1492926168.jpg",
+                    "url130x70": null,
+                    "title": "Departamento en Venta de 2 habitaciones Mazatlan "
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 3,
+                    "height": 768,
+                    "width": 1141,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/44/90/50/41/720x532/1492926164.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/44/90/50/41/360x266/1492926164.jpg",
+                    "url130x70": null,
+                    "title": "VENTA DE HERMOSA PROPIEDAD CON ESTATUS DE RECUPERACION BANCARIA"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 4,
+                    "height": 757,
+                    "width": 1137,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/44/90/50/41/720x532/1492926166.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/44/90/50/41/360x266/1492926166.jpg",
+                    "url130x70": null,
+                    "title": "Departamento Venta 138m\u00b2 de 2 habitaciones"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 5,
+                    "height": 759,
+                    "width": 1135,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/44/90/50/41/720x532/1492926169.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/44/90/50/41/360x266/1492926169.jpg",
+                    "url130x70": null,
+                    "title": "Departamento 138m\u00b2 Venta Mazatlan "
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 6,
+                    "height": 718,
+                    "width": 1044,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/44/90/50/41/720x532/1492926162.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/44/90/50/41/360x266/1492926162.jpg",
+                    "url130x70": null,
+                    "title": "Departamento 138m\u00b2 Venta Mazatlan "
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 7,
+                    "height": 738,
+                    "width": 1033,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/44/90/50/41/720x532/1492926161.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/44/90/50/41/360x266/1492926161.jpg",
+                    "url130x70": null,
+                    "title": "Departamento de 2 habitaciones Venta MN 772,000"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 8,
+                    "height": 768,
+                    "width": 1141,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/44/90/50/41/720x532/1492926167.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/44/90/50/41/360x266/1492926167.jpg",
+                    "url130x70": null,
+                    "title": "Departamento \u00b7 138m\u00b2 \u00b7 2 Rec\u00e1maras \u00b7 2 Estacionamientos - DICAFHE BIENES RA\u00cdCES"
+                }
+            ],
+            "additionalPicturesCount": 2
+        },
+        "postingType": "PROPERTY",
+        "whatsApp": "52 5527699348"
+    },
+    {
+        "title": "Venta de Hermosa Casa en Mazatl\u00e1n, Sinaloa.",
+        "generatedTitle": "Casa \u00b7 380m\u00b2 \u00b7 5 Rec\u00e1maras \u00b7 1 Estacionamiento",
+        "priceOperationTypes": [
+            {
+                "lowPricePercentage": null,
+                "operationType": {
+                    "name": "Venta",
+                    "operationTypeId": "1"
+                },
+                "prices": [
+                    {
+                        "currencyId": "10",
+                        "amount": 700000,
+                        "formattedAmount": "700,000",
+                        "currency": "MN"
+                    }
+                ]
+            }
+        ],
+        "mainFeatures": {
+            "CFT100": {
+                "featureId": "CFT100",
+                "label": "Terreno",
+                "measure": "m\u00b2",
+                "value": "208",
+                "icon": null,
+                "featureCategoryId": "CFC2"
+            },
+            "CFT101": {
+                "featureId": "CFT101",
+                "label": "Superficie constru\u00edda",
+                "measure": "m\u00b2",
+                "value": "380",
+                "icon": null,
+                "featureCategoryId": "CFC2"
+            },
+            "CFT2": {
+                "featureId": "CFT2",
+                "label": "Rec\u00e1maras",
+                "measure": null,
+                "value": "5",
+                "icon": null,
+                "featureCategoryId": "CFC1"
+            },
+            "CFT3": {
+                "featureId": "CFT3",
+                "label": "Ba\u00f1os",
+                "measure": null,
+                "value": "4",
+                "icon": null,
+                "featureCategoryId": "CFC1"
+            },
+            "CFT7": {
+                "featureId": "CFT7",
+                "label": "Estacionamiento",
+                "measure": null,
+                "value": "1",
+                "icon": null,
+                "featureCategoryId": "CFC1"
+            },
+            "CFT4": {
+                "featureId": "CFT4",
+                "label": "Medio ba\u00f1o",
+                "measure": null,
+                "value": "1",
+                "icon": null,
+                "featureCategoryId": "CFC1"
+            },
+            "CFT5": {
+                "featureId": "CFT5",
+                "label": "Antig\u00fcedad",
+                "measure": null,
+                "value": "10",
+                "icon": null,
+                "featureCategoryId": "CFC1"
+            }
+        },
+        "generalFeatures": {},
+        "developmentFeatures": {},
+        "highlightedFeatures": [],
+        "flagsFeatures": [
+            {
+                "featureId": "remateHipotecario",
+                "label": "Remate hipotecario",
+                "measure": null,
+                "value": null,
+                "icon": "remate-hipotecario",
+                "featureCategoryId": null
+            }
+        ],
+        "antiquity": null,
+        "publisher": {
+            "publisherId": "102303564",
+            "name": "DICAFHE BIENES RA\u00cdCES",
+            "url": "/inmobiliarias/dicafhe-bienes-raices_102303564-inmuebles.html",
+            "slotFilterUrl": null,
+            "urlLogo": "https://img10.naventcdn.com/css/img/placeholder-img.png",
+            "publisherTypeId": "2",
+            "urlChat": null,
+            "license": null,
+            "publisherTags": [
+                50000293
+            ],
+            "parentPublisher": null,
+            "amountPostingActive": null,
+            "partialPhone": null,
+            "createdYear": null,
+            "premier": false,
+            "slug": "",
+            "publisherStatistics": null,
+            "approved": false,
+            "mainPhone": null,
+            "created_date": "2023-06-26T04:00:00.000+0000",
+            "id_portal": "101",
+            "quantity_posting_by_operation_type": null
+        },
+        "realEstateType": {
+            "name": "Casas",
+            "realEstateTypeId": "1"
+        },
+        "url": "/propiedades/clasificado/veclcain-venta-de-hermosa-casa-en-mazatlan-sinaloa.-145551827.html",
+        "promotionTitle": null,
+        "descriptionNormalized": "Venta de propiedad con estatus de recuperaci\u00f3n bancaria. Gran oportunidad de casa A 5 minutos de malec\u00f3n mazatl\u00e1n con excelente ubicaci\u00f3n, cerca de avenidas principales, escuelas, bancos, hospitales, centros comerciales, supermercados, parques, etc. El inmueble cuenta con una comoda estancia, cocina integral Y espacio para sal Y comedor, jardin interior entre muchas otras amenidades. ",
+        "features": null,
+        "postingLocation": {
+            "address": {
+                "name": "CERRO DE LA COLORADA ",
+                "visibility": "EXACT"
+            },
+            "location": {
+                "locationId": "V1-D-346913",
+                "name": "Mazatlan ",
+                "label": "ZONA",
+                "depth": 3,
+                "parent": {
+                    "locationId": "V1-C-2130",
+                    "name": "Mazatl\u00e1n",
+                    "label": "CIUDAD",
+                    "depth": 2,
+                    "parent": {
+                        "locationId": "V1-B-85",
+                        "name": "Sinaloa",
+                        "label": "PROVINCIA",
+                        "depth": 1,
+                        "parent": {
+                            "locationId": "V1-A-18",
+                            "name": "Mexico",
+                            "label": "PAIS",
+                            "depth": 0,
+                            "parent": null,
+                            "acronym": null
+                        },
+                        "acronym": null
+                    },
+                    "acronym": null
+                },
+                "acronym": null
+            },
+            "postingGeolocation": null
+        },
+        "visiblePictures": {
+            "pictures": [
+                {
+                    "multimediaTypeId": "2",
+                    "order": 1,
+                    "height": 532,
+                    "width": 781,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/55/18/27/720x532/1506941839.jpg?isFirstImage=true",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/55/18/27/360x266/1506941839.jpg?isFirstImage=true",
+                    "url130x70": null,
+                    "title": "Casa de 5 habitaciones, Mazatl\u00e1n \u00b7 Venta de Hermosa Casa en Mazatl\u00e1n, Sinaloa."
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 2,
+                    "height": 432,
+                    "width": 597,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/55/18/27/720x532/1506941837.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/55/18/27/360x266/1506941837.jpg",
+                    "url130x70": null,
+                    "title": "Casa en Venta de 5 habitaciones Mazatlan "
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 3,
+                    "height": 586,
+                    "width": 1005,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/55/18/27/720x532/1506941843.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/55/18/27/360x266/1506941843.jpg",
+                    "url130x70": null,
+                    "title": "VENTA DE PROPIEDAD CON ESTATUS DE RECUPERACI\u00d3N BANCARIA. \n\nGRAN OPORTUNIDAD DE C"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 4,
+                    "height": 544,
+                    "width": 721,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/55/18/27/720x532/1506941835.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/55/18/27/360x266/1506941835.jpg",
+                    "url130x70": null,
+                    "title": "Casa Venta 208m\u00b2 de 5 habitaciones"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 5,
+                    "height": 592,
+                    "width": 934,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/55/18/27/720x532/1506941841.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/55/18/27/360x266/1506941841.jpg",
+                    "url130x70": null,
+                    "title": "Casa 208m\u00b2 Venta Mazatlan "
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 6,
+                    "height": 589,
+                    "width": 874,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/55/18/27/720x532/1506941842.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/55/18/27/360x266/1506941842.jpg",
+                    "url130x70": null,
+                    "title": "Casa 208m\u00b2 Venta Mazatlan "
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 7,
+                    "height": 591,
+                    "width": 1050,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/55/18/27/720x532/1506941844.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/55/18/27/360x266/1506941844.jpg",
+                    "url130x70": null,
+                    "title": "Casa de 5 habitaciones Venta MN 700,000"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 8,
+                    "height": 532,
+                    "width": 781,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/55/18/27/720x532/1506941838.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/55/18/27/360x266/1506941838.jpg",
+                    "url130x70": null,
+                    "title": "Casa \u00b7 380m\u00b2 \u00b7 5 Rec\u00e1maras \u00b7 1 Estacionamiento - DICAFHE BIENES RA\u00cdCES"
+                }
+            ],
+            "additionalPicturesCount": 2
+        },
+        "postingType": "PROPERTY",
+        "whatsApp": null
+    },
+    {
+        "title": "Hermosa Casa Ubicada en El Encanto, Mazatl\u00e1n, Sinaloa - Nm",
+        "generatedTitle": "Casa \u00b7 185m\u00b2 \u00b7 4 Rec\u00e1maras \u00b7 1 Estacionamiento",
+        "priceOperationTypes": [
+            {
+                "lowPricePercentage": null,
+                "operationType": {
+                    "name": "Venta",
+                    "operationTypeId": "1"
+                },
+                "prices": [
+                    {
+                        "currencyId": "10",
+                        "amount": 400000,
+                        "formattedAmount": "400,000",
+                        "currency": "MN"
+                    }
+                ]
+            }
+        ],
+        "mainFeatures": {
+            "CFT100": {
+                "featureId": "CFT100",
+                "label": "Terreno",
+                "measure": "m\u00b2",
+                "value": "400",
+                "icon": null,
+                "featureCategoryId": "CFC2"
+            },
+            "CFT101": {
+                "featureId": "CFT101",
+                "label": "Superficie constru\u00edda",
+                "measure": "m\u00b2",
+                "value": "185",
+                "icon": null,
+                "featureCategoryId": "CFC2"
+            },
+            "CFT2": {
+                "featureId": "CFT2",
+                "label": "Rec\u00e1maras",
+                "measure": null,
+                "value": "4",
+                "icon": null,
+                "featureCategoryId": "CFC1"
+            },
+            "CFT3": {
+                "featureId": "CFT3",
+                "label": "Ba\u00f1os",
+                "measure": null,
+                "value": "2",
+                "icon": null,
+                "featureCategoryId": "CFC1"
+            },
+            "CFT7": {
+                "featureId": "CFT7",
+                "label": "Estacionamiento",
+                "measure": null,
+                "value": "1",
+                "icon": null,
+                "featureCategoryId": "CFC1"
+            },
+            "CFT4": {
+                "featureId": "CFT4",
+                "label": "Medio ba\u00f1o",
+                "measure": null,
+                "value": "1",
+                "icon": null,
+                "featureCategoryId": "CFC1"
+            },
+            "CFT5": {
+                "featureId": "CFT5",
+                "label": "Antig\u00fcedad",
+                "measure": null,
+                "value": "10",
+                "icon": null,
+                "featureCategoryId": "CFC1"
+            }
+        },
+        "generalFeatures": {},
+        "developmentFeatures": {},
+        "highlightedFeatures": [],
+        "flagsFeatures": [
+            {
+                "featureId": "remateHipotecario",
+                "label": "Remate hipotecario",
+                "measure": null,
+                "value": null,
+                "icon": "remate-hipotecario",
+                "featureCategoryId": null
+            }
+        ],
+        "antiquity": null,
+        "publisher": {
+            "publisherId": "102690283",
+            "name": "GRUPO YAXUNUH",
+            "url": "/inmobiliarias/grupo-yaxunuh_102690283-inmuebles.html",
+            "slotFilterUrl": null,
+            "urlLogo": "https://img10.naventcdn.com/css/img/placeholder-img.png",
+            "publisherTypeId": "2",
+            "urlChat": null,
+            "license": null,
+            "publisherTags": [
+                50000293
+            ],
+            "parentPublisher": null,
+            "amountPostingActive": null,
+            "partialPhone": null,
+            "createdYear": null,
+            "premier": false,
+            "slug": "",
+            "publisherStatistics": null,
+            "approved": false,
+            "mainPhone": null,
+            "created_date": "2024-09-13T04:00:00.000+0000",
+            "id_portal": "101",
+            "quantity_posting_by_operation_type": null
+        },
+        "realEstateType": {
+            "name": "Casas",
+            "realEstateTypeId": "1"
+        },
+        "url": "/propiedades/clasificado/veclcain-hermosa-casa-ubicada-en-el-encanto-mazatlan-sinaloa-145281857.html",
+        "promotionTitle": null,
+        "descriptionNormalized": "Preciosa casa en mazatlan sinaloa, excelentes v\u00edas de acceso como. boulevard del marlin, circuito el secreto, cerca de tulum condos mazatlan, A. unos cuantos minutos de la playa, escuelas, mercados etc, excelente propiedad. Informes Y citas: lic. Natan mendoza <span class='descripcionDatosAnunciante'><button class='btn btn-link js-verDatos' href='#'>Ver datos</button></span>. recuperaci\u00f3n bancaria. \u00a1excelente oportunidad! recuperacion bancaria pago de contado en 2 exhibiciones con recursos propios, segundo pago A la firma de cesi\u00f3n de derechos, \u00a1invierte en tu patrimonio\u2026es tu oportunidad! Precio por debajo del 50% de valor comercial. entrega garantizada! Especialistas en recuperaci\u00f3n de inmuebles. Fotograf\u00edas de referencia. asesor\u00eda sin costo en nuestro corporativo. ",
+        "features": null,
+        "postingLocation": {
+            "address": {
+                "name": "El Secreto ",
+                "visibility": "EXACT"
+            },
+            "location": {
+                "locationId": "V1-D-346913",
+                "name": "Mazatlan ",
+                "label": "ZONA",
+                "depth": 3,
+                "parent": {
+                    "locationId": "V1-C-2130",
+                    "name": "Mazatl\u00e1n",
+                    "label": "CIUDAD",
+                    "depth": 2,
+                    "parent": {
+                        "locationId": "V1-B-85",
+                        "name": "Sinaloa",
+                        "label": "PROVINCIA",
+                        "depth": 1,
+                        "parent": {
+                            "locationId": "V1-A-18",
+                            "name": "Mexico",
+                            "label": "PAIS",
+                            "depth": 0,
+                            "parent": null,
+                            "acronym": null
+                        },
+                        "acronym": null
+                    },
+                    "acronym": null
+                },
+                "acronym": null
+            },
+            "postingGeolocation": null
+        },
+        "visiblePictures": {
+            "pictures": [
+                {
+                    "multimediaTypeId": "2",
+                    "order": 1,
+                    "height": 848,
+                    "width": 1012,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/28/18/57/720x532/1500581816.jpg?isFirstImage=true",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/28/18/57/360x266/1500581816.jpg?isFirstImage=true",
+                    "url130x70": null,
+                    "title": "Casa de 4 habitaciones, Mazatl\u00e1n \u00b7 Hermosa Casa Ubicada en El Encanto, Mazatl\u00e1n, Sinaloa - Nm"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 2,
+                    "height": 493,
+                    "width": 532,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/28/18/57/720x532/1500581818.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/28/18/57/360x266/1500581818.jpg",
+                    "url130x70": null,
+                    "title": "Casa en Venta de 4 habitaciones Mazatlan "
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 3,
+                    "height": 1200,
+                    "width": 960,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/28/18/57/720x532/1500581817.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/28/18/57/360x266/1500581817.jpg",
+                    "url130x70": null,
+                    "title": "PRECIOSA CASA EN MAZATLAN SINALOA, EXCELENTES V\u00cdAS DE ACCESO COMO \nBOULEVARD DEL"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 4,
+                    "height": 451,
+                    "width": 530,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/28/18/57/720x532/1500581812.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/28/18/57/360x266/1500581812.jpg",
+                    "url130x70": null,
+                    "title": "Casa Venta 400m\u00b2 de 4 habitaciones"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 5,
+                    "height": 491,
+                    "width": 597,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/28/18/57/720x532/1500581813.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/28/18/57/360x266/1500581813.jpg",
+                    "url130x70": null,
+                    "title": "Casa 400m\u00b2 Venta Mazatlan "
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 6,
+                    "height": 453,
+                    "width": 585,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/28/18/57/720x532/1500581810.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/28/18/57/360x266/1500581810.jpg",
+                    "url130x70": null,
+                    "title": "Casa 400m\u00b2 Venta Mazatlan "
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 7,
+                    "height": 451,
+                    "width": 530,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/28/18/57/720x532/1500581814.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/28/18/57/360x266/1500581814.jpg",
+                    "url130x70": null,
+                    "title": "Casa de 4 habitaciones Venta MN 400,000"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 8,
+                    "height": 491,
+                    "width": 597,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/28/18/57/720x532/1500581815.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/28/18/57/360x266/1500581815.jpg",
+                    "url130x70": null,
+                    "title": "Casa \u00b7 185m\u00b2 \u00b7 4 Rec\u00e1maras \u00b7 1 Estacionamiento - GRUPO YAXUNUH"
+                }
+            ],
+            "additionalPicturesCount": 2
+        },
+        "postingType": "PROPERTY",
+        "whatsApp": "52 5531094883"
+    },
+    {
+        "title": "Hermosa Casa en Venta",
+        "generatedTitle": "Casa \u00b7 200m\u00b2",
+        "priceOperationTypes": [
+            {
+                "lowPricePercentage": null,
+                "operationType": {
+                    "name": "Venta",
+                    "operationTypeId": "1"
+                },
+                "prices": [
+                    {
+                        "currencyId": "10",
+                        "amount": 610000,
+                        "formattedAmount": "610,000",
+                        "currency": "MN"
+                    }
+                ]
+            }
+        ],
+        "mainFeatures": {
+            "CFT100": {
+                "featureId": "CFT100",
+                "label": "Terreno",
+                "measure": "m\u00b2",
+                "value": "232",
+                "icon": null,
+                "featureCategoryId": "CFC2"
+            },
+            "CFT101": {
+                "featureId": "CFT101",
+                "label": "Superficie constru\u00edda",
+                "measure": "m\u00b2",
+                "value": "200",
+                "icon": null,
+                "featureCategoryId": "CFC2"
+            },
+            "CFT3": {
+                "featureId": "CFT3",
+                "label": "Ba\u00f1os",
+                "measure": null,
+                "value": "2",
+                "icon": null,
+                "featureCategoryId": "CFC1"
+            },
+            "CFT5": {
+                "featureId": "CFT5",
+                "label": "Antig\u00fcedad",
+                "measure": null,
+                "value": "1",
+                "icon": null,
+                "featureCategoryId": "CFC1"
+            }
+        },
+        "generalFeatures": {},
+        "developmentFeatures": {},
+        "highlightedFeatures": [],
+        "flagsFeatures": [
+            {
+                "featureId": "remateHipotecario",
+                "label": "Remate hipotecario",
+                "measure": null,
+                "value": null,
+                "icon": "remate-hipotecario",
+                "featureCategoryId": null
+            }
+        ],
+        "antiquity": null,
+        "publisher": {
+            "publisherId": "102702813",
+            "name": "Inmobiliaria Crumen",
+            "url": "/inmobiliarias/inmobiliaria-crumen_102702813-inmuebles.html",
+            "slotFilterUrl": null,
+            "urlLogo": "https://img10.naventcdn.com/css/img/placeholder-img.png",
+            "publisherTypeId": "2",
+            "urlChat": null,
+            "license": null,
+            "publisherTags": [
+                50000293
+            ],
+            "parentPublisher": null,
+            "amountPostingActive": null,
+            "partialPhone": null,
+            "createdYear": null,
+            "premier": false,
+            "slug": "",
+            "publisherStatistics": null,
+            "approved": false,
+            "mainPhone": null,
+            "created_date": "2024-10-02T04:00:00.000+0000",
+            "id_portal": "101",
+            "quantity_posting_by_operation_type": null
+        },
+        "realEstateType": {
+            "name": "Casas",
+            "realEstateTypeId": "1"
+        },
+        "url": "/propiedades/clasificado/veclcain-hermosa-casa-en-venta-145620116.html",
+        "promotionTitle": null,
+        "descriptionNormalized": "Hermosa casa de dos niveles, A 9 minutos de. la playa luna bonita, con una excelente ubicaci\u00f3n, escuelas Y bancos cercanos. Avenidas principales como. av. Camaron s\u00e1balo Y bulevard del mar\u00edn, excelente. oportunidad A un precio inmejorable. Excelente plusvalia. Somos una inmobiliaria especializada en la Recuperaci\u00f3n Bancaria con m\u00e1s de 9 a\u00f1os de experiencia, ubicados en la Ciudad de M\u00e9xico (cdmx). Durante nuestra trayectoria, hemos desarrollado una s\u00f3lida reputaci\u00f3n al ofrecer a nuestros clientes oportunidades \u00fanicas. Informes con lic. Jonathan legorreta /56/55/86/89/88/",
+        "features": null,
+        "postingLocation": {
+            "address": {
+                "name": "BLVD. DEL MARLIN # B, S\u00c1BALO COUNTRY, C.P.  MAZATL\u00c1N SINALOA",
+                "visibility": "EXACT"
+            },
+            "location": {
+                "locationId": "V1-D-346913",
+                "name": "Mazatlan ",
+                "label": "ZONA",
+                "depth": 3,
+                "parent": {
+                    "locationId": "V1-C-2130",
+                    "name": "Mazatl\u00e1n",
+                    "label": "CIUDAD",
+                    "depth": 2,
+                    "parent": {
+                        "locationId": "V1-B-85",
+                        "name": "Sinaloa",
+                        "label": "PROVINCIA",
+                        "depth": 1,
+                        "parent": {
+                            "locationId": "V1-A-18",
+                            "name": "Mexico",
+                            "label": "PAIS",
+                            "depth": 0,
+                            "parent": null,
+                            "acronym": null
+                        },
+                        "acronym": null
+                    },
+                    "acronym": null
+                },
+                "acronym": null
+            },
+            "postingGeolocation": null
+        },
+        "visiblePictures": {
+            "pictures": [
+                {
+                    "multimediaTypeId": "2",
+                    "order": 1,
+                    "height": 363,
+                    "width": 545,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/62/01/16/720x532/1508579744.jpg?isFirstImage=true",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/62/01/16/360x266/1508579744.jpg?isFirstImage=true",
+                    "url130x70": null,
+                    "title": "Casa , Mazatl\u00e1n \u00b7 Hermosa Casa en Venta"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 2,
+                    "height": 323,
+                    "width": 538,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/62/01/16/720x532/1508579746.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/62/01/16/360x266/1508579746.jpg",
+                    "url130x70": null,
+                    "title": "Casa en Venta  Mazatlan "
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 3,
+                    "height": 333,
+                    "width": 351,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/62/01/16/720x532/1508579747.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/62/01/16/360x266/1508579747.jpg",
+                    "url130x70": null,
+                    "title": "HERMOSA CASA DE DOS NIVELES, A 9 MINUTOS DE \nLA PLAYA LUNA BONITA, CON UNA EXCEL"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 4,
+                    "height": 337,
+                    "width": 370,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/62/01/16/720x532/1508579742.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/62/01/16/360x266/1508579742.jpg",
+                    "url130x70": null,
+                    "title": "Casa Venta 232m\u00b2 "
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 5,
+                    "height": 337,
+                    "width": 379,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/62/01/16/720x532/1508579743.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/62/01/16/360x266/1508579743.jpg",
+                    "url130x70": null,
+                    "title": "Casa 232m\u00b2 Venta Mazatlan "
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 6,
+                    "height": 335,
+                    "width": 351,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/62/01/16/720x532/1508579741.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/62/01/16/360x266/1508579741.jpg",
+                    "url130x70": null,
+                    "title": "Casa 232m\u00b2 Venta Mazatlan "
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 7,
+                    "height": 394,
+                    "width": 691,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/62/01/16/720x532/1508579745.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/62/01/16/360x266/1508579745.jpg",
+                    "url130x70": null,
+                    "title": "Casa  Venta MN 610,000"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 8,
+                    "height": 369,
+                    "width": 693,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/62/01/16/720x532/1508579740.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/62/01/16/360x266/1508579740.jpg",
+                    "url130x70": null,
+                    "title": "Casa \u00b7 200m\u00b2 - Inmobiliaria Crumen"
+                }
+            ],
+            "additionalPicturesCount": 0
+        },
+        "postingType": "PROPERTY",
+        "whatsApp": "52 5561875904"
+    },
+    {
+        "title": "Casa, Remate Bancario, Lomas de Mazatl\u00e1n, Mazatl\u00e1n Sinaloa",
+        "generatedTitle": "Casa \u00b7 220m\u00b2 \u00b7 4 Rec\u00e1maras \u00b7 2 Estacionamientos",
+        "priceOperationTypes": [
+            {
+                "lowPricePercentage": null,
+                "operationType": {
+                    "name": "Venta",
+                    "operationTypeId": "1"
+                },
+                "prices": [
+                    {
+                        "currencyId": "10",
+                        "amount": 1420000,
+                        "formattedAmount": "1,420,000",
+                        "currency": "MN"
+                    }
+                ]
+            }
+        ],
+        "mainFeatures": {
+            "CFT100": {
+                "featureId": "CFT100",
+                "label": "Terreno",
+                "measure": "m\u00b2",
+                "value": "220",
+                "icon": null,
+                "featureCategoryId": "CFC2"
+            },
+            "CFT101": {
+                "featureId": "CFT101",
+                "label": "Superficie constru\u00edda",
+                "measure": "m\u00b2",
+                "value": "220",
+                "icon": null,
+                "featureCategoryId": "CFC2"
+            },
+            "CFT2": {
+                "featureId": "CFT2",
+                "label": "Rec\u00e1maras",
+                "measure": null,
+                "value": "4",
+                "icon": null,
+                "featureCategoryId": "CFC1"
+            },
+            "CFT3": {
+                "featureId": "CFT3",
+                "label": "Ba\u00f1os",
+                "measure": null,
+                "value": "3",
+                "icon": null,
+                "featureCategoryId": "CFC1"
+            },
+            "CFT7": {
+                "featureId": "CFT7",
+                "label": "Estacionamientos",
+                "measure": null,
+                "value": "2",
+                "icon": null,
+                "featureCategoryId": "CFC1"
+            },
+            "CFT4": {
+                "featureId": "CFT4",
+                "label": "Medio ba\u00f1o",
+                "measure": null,
+                "value": "1",
+                "icon": null,
+                "featureCategoryId": "CFC1"
+            },
+            "CFT5": {
+                "featureId": "CFT5",
+                "label": "Antig\u00fcedad",
+                "measure": null,
+                "value": "20",
+                "icon": null,
+                "featureCategoryId": "CFC1"
+            }
+        },
+        "generalFeatures": {},
+        "developmentFeatures": {},
+        "highlightedFeatures": [],
+        "flagsFeatures": [
+            {
+                "featureId": "remateHipotecario",
+                "label": "Remate hipotecario",
+                "measure": null,
+                "value": null,
+                "icon": "remate-hipotecario",
+                "featureCategoryId": null
+            }
+        ],
+        "antiquity": null,
+        "publisher": {
+            "publisherId": "51266566",
+            "name": "GUTZA BIENES RA\u00cdCES",
+            "url": "/inmobiliarias/gutza-bienes-raices_51266566-inmuebles.html",
+            "slotFilterUrl": null,
+            "urlLogo": "https://img10.naventcdn.com/empresas/18/00/51/26/65/66/130x70/logo_gutza-bienes-raices_1653082860604.jpg",
+            "publisherTypeId": "2",
+            "urlChat": null,
+            "license": null,
+            "publisherTags": [
+                50000293
+            ],
+            "parentPublisher": null,
+            "amountPostingActive": null,
+            "partialPhone": null,
+            "createdYear": null,
+            "premier": false,
+            "slug": "",
+            "publisherStatistics": null,
+            "approved": false,
+            "mainPhone": null,
+            "created_date": "2022-04-26T04:00:00.000+0000",
+            "id_portal": "101",
+            "quantity_posting_by_operation_type": null
+        },
+        "realEstateType": {
+            "name": "Casas",
+            "realEstateTypeId": "1"
+        },
+        "url": "/propiedades/clasificado/veclcain-casa-remate-bancario-lomas-de-mazatlan-mazatlan-145300421.html",
+        "promotionTitle": null,
+        "descriptionNormalized": "Antes de invertir en remates, descubre porqu\u00e9 Gutza es la mejor opci\u00f3n. Hermosa casa de 3 niveles, excelente zona residencial de lata plusval\u00eda, excelente distribuci\u00f3n, 4 recamaras, 3 ba\u00f1os y 1 medio ba\u00f1o, cuenta con todos los servicios,, muy cerca de restaurantes, hoteles, escuelas y centros comerciales y supermercados como Soriana Toreo, excelentes vialidades como Av. Rafael Buelna y Av. De la Marina. Como referencia muy cerca de la Universidad Aut\u00f3noma de Durango. Rec\u00e1maras: 4. Ba\u00f1os: 4. Estacionamientos: 2. m2: 220. En Gutza contamos con m\u00e1s de 700 operaciones exitosas al a\u00f1o y somos la \u00fanica. empresa que garantiza transparencia y seguridad en cada paso del proceso. M\u00e1s. de 13 a\u00f1os en el mercado nos avalan, ven a visitar nuestras instalaciones en Torre. Gutza y comprueba por ti mismo la estabilidad con la que contamos. Conf\u00eda en nosotros para una inversi\u00f3n inteligente y segura. \u00a1Cont\u00e1ctanos hoy mismo y prep\u00e1rate para tu pr\u00f3xima oportunidad inmobiliaria! Soph\u00eda Pinz\u00f3n. 55 <span class='descripcionDatosAnunciante'><button class='btn btn-link js-verDatos' href='#'>Ver datos</button></span> **contesto WhatsApp**",
+        "features": null,
+        "postingLocation": {
+            "address": {
+                "name": "Cerro de la Colorada Lomas de Mazatl\u00e1n, Mazatl\u00e1n Sinaloa",
+                "visibility": "EXACT"
+            },
+            "location": {
+                "locationId": "V1-D-346913",
+                "name": "Mazatlan ",
+                "label": "ZONA",
+                "depth": 3,
+                "parent": {
+                    "locationId": "V1-C-2130",
+                    "name": "Mazatl\u00e1n",
+                    "label": "CIUDAD",
+                    "depth": 2,
+                    "parent": {
+                        "locationId": "V1-B-85",
+                        "name": "Sinaloa",
+                        "label": "PROVINCIA",
+                        "depth": 1,
+                        "parent": {
+                            "locationId": "V1-A-18",
+                            "name": "Mexico",
+                            "label": "PAIS",
+                            "depth": 0,
+                            "parent": null,
+                            "acronym": null
+                        },
+                        "acronym": null
+                    },
+                    "acronym": null
+                },
+                "acronym": null
+            },
+            "postingGeolocation": null
+        },
+        "visiblePictures": {
+            "pictures": [
+                {
+                    "multimediaTypeId": "2",
+                    "order": 1,
+                    "height": 547,
+                    "width": 828,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/30/04/21/720x532/1504262951.jpg?isFirstImage=true",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/30/04/21/360x266/1504262951.jpg?isFirstImage=true",
+                    "url130x70": null,
+                    "title": "Casa de 4 habitaciones, Mazatl\u00e1n \u00b7 Casa, Remate Bancario, Lomas de Mazatl\u00e1n, Mazatl\u00e1n Sinaloa"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 2,
+                    "height": 522,
+                    "width": 866,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/30/04/21/720x532/1504262952.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/30/04/21/360x266/1504262952.jpg",
+                    "url130x70": null,
+                    "title": "Casa en Venta de 4 habitaciones Mazatlan "
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 3,
+                    "height": 528,
+                    "width": 853,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/30/04/21/720x532/1504262964.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/30/04/21/360x266/1504262964.jpg",
+                    "url130x70": null,
+                    "title": "Antes de invertir en remates, descubre porqu\u00e9 Gutza es la mejor opci\u00f3n. \n\nHermos"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 4,
+                    "height": 420,
+                    "width": 520,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/30/04/21/720x532/1504262958.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/30/04/21/360x266/1504262958.jpg",
+                    "url130x70": null,
+                    "title": "Casa Venta 220m\u00b2 de 4 habitaciones"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 5,
+                    "height": 572,
+                    "width": 892,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/30/04/21/720x532/1504262957.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/30/04/21/360x266/1504262957.jpg",
+                    "url130x70": null,
+                    "title": "Casa 220m\u00b2 Venta Mazatlan "
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 6,
+                    "height": 511,
+                    "width": 1005,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/30/04/21/720x532/1504262959.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/30/04/21/360x266/1504262959.jpg",
+                    "url130x70": null,
+                    "title": "Casa 220m\u00b2 Venta Mazatlan "
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 7,
+                    "height": 458,
+                    "width": 601,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/30/04/21/720x532/1504262960.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/30/04/21/360x266/1504262960.jpg",
+                    "url130x70": null,
+                    "title": "Casa de 4 habitaciones Venta MN 1,420,000"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 8,
+                    "height": 512,
+                    "width": 1051,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/30/04/21/720x532/1504262962.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/30/04/21/360x266/1504262962.jpg",
+                    "url130x70": null,
+                    "title": "Casa \u00b7 220m\u00b2 \u00b7 4 Rec\u00e1maras \u00b7 2 Estacionamientos - GUTZA BIENES RA\u00cdCES"
+                }
+            ],
+            "additionalPicturesCount": 8
+        },
+        "postingType": "PROPERTY",
+        "whatsApp": "52 5519588682"
+    }
+]

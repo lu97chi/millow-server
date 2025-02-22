@@ -1,0 +1,10 @@
+---
+description: Best practices for using class-validator in NestJS applications
+globs: **/*.{ts,js}
+---
+- Use DTOs to define input validation schemas
+- Implement custom validators for complex validation logic
+- Use conditional validation when necessary
+- Group validations for different use cases (e.g., create, update)
+- Implement proper error handling for validation failures
+- Use whitelist and forbidNonWhitelisted options to prevent mass assignment vulnerabilities

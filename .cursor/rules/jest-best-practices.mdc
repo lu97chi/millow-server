@@ -1,0 +1,12 @@
+---
+description: Best practices for testing NestJS applications with Jest
+globs: **/*.{ts,js,spec.ts}
+---
+- Follow the Arrange-Act-Assert pattern in test cases
+- Use clear and descriptive names for test variables (inputX, mockX, actualX, expectedX)
+- Write unit tests for each public function in controllers and services
+- Use test doubles to simulate dependencies in unit tests
+- Implement acceptance tests for each module using the Given-When-Then convention
+- Write end-to-end tests for each API module
+- Use Jest's mocking capabilities to isolate dependencies
+- Implement proper test coverage and aim for high coverage percentages

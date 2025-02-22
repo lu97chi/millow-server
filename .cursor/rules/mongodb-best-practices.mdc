@@ -1,0 +1,11 @@
+---
+description: Best practices for using MongoDB in scalable applications
+globs: **/*.{ts,js}
+---
+- Use connection pooling and properly configured connection strings for optimal performance
+- Enable authentication and enforce encryption for data security (both in transit and at rest)
+- Deploy replica sets and sharding to ensure high availability and horizontal scalability
+- Regularly back up data and perform recovery drills to ensure business continuity
+- Monitor performance metrics using built-in profiling tools or third-party services and set alerts for slow queries or outages
+- Design schemas to balance flexibility with performance, avoiding overly nested or unbounded documents
+- Implement data archival strategies to manage large collections and maintain optimal performance

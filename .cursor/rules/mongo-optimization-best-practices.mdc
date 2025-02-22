@@ -1,0 +1,12 @@
+---
+description: Guidelines for optimizing MongoDB performance and queries
+globs: **/*.{ts,js}
+---
+- Regularly analyze query performance using MongoDB's explain() to ensure indexes are used effectively
+- Create appropriate single-field, compound, and text indexes on frequently queried attributes
+- Use the .lean() method in Mongoose queries when full document functionality is not required
+- Implement efficient pagination strategies (e.g., range queries or cursor-based pagination) for large datasets
+- Leverage aggregation pipelines for complex data transformations and to reduce client-side processing
+- Optimize bulk write operations to handle large volumes of data efficiently
+- Periodically review and refactor queries to eliminate redundant data retrieval and reduce payload sizes
+- Monitor database performance and adjust indexing strategies as your application evolves and data volume grows

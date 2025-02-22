@@ -1,0 +1,262 @@
+[
+    {
+        "title": "Renta Departamento 3 Recamaras Seccion Monumental Playas de Tijuana",
+        "generatedTitle": "Departamento \u00b7 122m\u00b2 \u00b7 3 Rec\u00e1maras \u00b7 2 Estacionamientos",
+        "priceOperationTypes": [
+            {
+                "lowPricePercentage": null,
+                "operationType": {
+                    "name": "Renta",
+                    "operationTypeId": "2"
+                },
+                "prices": [
+                    {
+                        "currencyId": "2",
+                        "amount": 1450,
+                        "formattedAmount": "1,450",
+                        "currency": "USD"
+                    }
+                ]
+            },
+            {
+                "lowPricePercentage": null,
+                "operationType": {
+                    "name": "Temporal/Vacacional",
+                    "operationTypeId": "4"
+                },
+                "prices": [
+                    {
+                        "currencyId": "2",
+                        "amount": 150,
+                        "formattedAmount": "150",
+                        "currency": "USD"
+                    }
+                ]
+            }
+        ],
+        "mainFeatures": {
+            "CFT100": {
+                "featureId": "CFT100",
+                "label": "Terreno",
+                "measure": "m\u00b2",
+                "value": "122",
+                "icon": null,
+                "featureCategoryId": "CFC2"
+            },
+            "CFT101": {
+                "featureId": "CFT101",
+                "label": "Superficie constru\u00edda",
+                "measure": "m\u00b2",
+                "value": "122",
+                "icon": null,
+                "featureCategoryId": "CFC2"
+            },
+            "CFT2": {
+                "featureId": "CFT2",
+                "label": "Rec\u00e1maras",
+                "measure": null,
+                "value": "3",
+                "icon": null,
+                "featureCategoryId": "CFC1"
+            },
+            "CFT3": {
+                "featureId": "CFT3",
+                "label": "Ba\u00f1os",
+                "measure": null,
+                "value": "2",
+                "icon": null,
+                "featureCategoryId": "CFC1"
+            },
+            "CFT7": {
+                "featureId": "CFT7",
+                "label": "Estacionamientos",
+                "measure": null,
+                "value": "2",
+                "icon": null,
+                "featureCategoryId": "CFC1"
+            },
+            "CFT4": {
+                "featureId": "CFT4",
+                "label": "Medio ba\u00f1o",
+                "measure": null,
+                "value": "1",
+                "icon": null,
+                "featureCategoryId": "CFC1"
+            },
+            "CFT5": {
+                "featureId": "CFT5",
+                "label": "Antig\u00fcedad",
+                "measure": null,
+                "value": "8",
+                "icon": null,
+                "featureCategoryId": "CFC1"
+            }
+        },
+        "generalFeatures": {},
+        "developmentFeatures": {},
+        "highlightedFeatures": [],
+        "flagsFeatures": [],
+        "antiquity": null,
+        "publisher": {
+            "publisherId": "660889",
+            "name": "soluciones inmobiliarias E R",
+            "url": "/inmobiliarias/soluciones-inmobiliarias-e-r_660889-inmuebles.html",
+            "slotFilterUrl": null,
+            "urlLogo": "https://img10.naventcdn.com/css/img/placeholder-img.png",
+            "publisherTypeId": "2",
+            "urlChat": null,
+            "license": null,
+            "publisherTags": [],
+            "parentPublisher": null,
+            "amountPostingActive": null,
+            "partialPhone": null,
+            "createdYear": null,
+            "premier": false,
+            "slug": null,
+            "publisherStatistics": null,
+            "approved": false,
+            "mainPhone": "6641209142",
+            "created_date": "2016-10-05T04:00:00.000+0000",
+            "id_portal": "101",
+            "quantity_posting_by_operation_type": null
+        },
+        "realEstateType": {
+            "name": "Departamentos",
+            "realEstateTypeId": "2"
+        },
+        "url": "/propiedades/clasificado/alclapin-renta-departamento-3-recamaras-seccion-monumental-145317695.html",
+        "promotionTitle": null,
+        "descriptionNormalized": "Renta departamento en Playas de Tijuana frente a la plaza monumental en park towers, rodeado de centro comerciales, mercados, bancos, restaurantes. , departamento en piso 6to con vista al mar, la renta incluye cuota de mantenimiento. , con caseta de seguridad, guardias 24/7. departamento amueblado en $1, 450. 00 d\u00f3lares son 122m2. 3 recamaras. 2 \u00bd ba\u00f1os. Sala, comedor. Cocina integral. \u00c1rea de lavado. 2 estacionamientos. Requisitos, 1er mes de renta, un mes como dep\u00f3sito, aval con propiedad en baja california, si no cuenta con aval aplicar\u00eda un 2do deposito",
+        "features": null,
+        "postingLocation": {
+            "address": {
+                "name": "Paseo playas 392 terrazas de mendoza",
+                "visibility": "EXACT"
+            },
+            "location": {
+                "locationId": "V1-D-2789",
+                "name": "Playas de Tijuana",
+                "label": "ZONA",
+                "depth": 3,
+                "parent": {
+                    "locationId": "V1-C-260",
+                    "name": "Tijuana",
+                    "label": "CIUDAD",
+                    "depth": 2,
+                    "parent": {
+                        "locationId": "V1-B-62",
+                        "name": "Baja California Norte",
+                        "label": "PROVINCIA",
+                        "depth": 1,
+                        "parent": {
+                            "locationId": "V1-A-18",
+                            "name": "Mexico",
+                            "label": "PAIS",
+                            "depth": 0,
+                            "parent": null,
+                            "acronym": null
+                        },
+                        "acronym": null
+                    },
+                    "acronym": null
+                },
+                "acronym": null
+            },
+            "postingGeolocation": {
+                "geolocation": {
+                    "latitude": 32.5318808,
+                    "longitude": -117.1189462
+                },
+                "urlStaticMap": "//maps.google.com/maps/api/staticmap?center=32.53188080000000326208464684896171092987060546875,-117.1189461999999963381924317218363285064697265625&zoom=16&key=AIzaSyBfTOxuYEmbL50_1P4KU8GI8toKT539agI&size=780x456&sensor=true&scale=2&signature=LDTfkmzS5Zp9arhNPcbINURaknM=&channel=rplis-i24",
+                "visibility": null
+            }
+        },
+        "visiblePictures": {
+            "pictures": [
+                {
+                    "multimediaTypeId": "2",
+                    "order": 1,
+                    "height": 3000,
+                    "width": 4000,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/31/76/95/720x532/1502973807.jpg?isFirstImage=true",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/31/76/95/360x266/1502973807.jpg?isFirstImage=true",
+                    "url130x70": null,
+                    "title": "Departamento de 3 habitaciones, Tijuana \u00b7 Renta Departamento 3 Recamaras Seccion Monumental Playas de Tijuana"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 2,
+                    "height": 3000,
+                    "width": 4000,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/31/76/95/720x532/1508964248.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/31/76/95/360x266/1508964248.jpg",
+                    "url130x70": null,
+                    "title": "Departamento en Renta de 3 habitaciones Playas de Tijuana"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 3,
+                    "height": 3000,
+                    "width": 4000,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/31/76/95/720x532/1502973797.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/31/76/95/360x266/1502973797.jpg",
+                    "url130x70": null,
+                    "title": "Renta departamento en Playas de Tijuana frente a la plaza monumental en park tow"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 4,
+                    "height": 3000,
+                    "width": 4000,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/31/76/95/720x532/1502973808.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/31/76/95/360x266/1502973808.jpg",
+                    "url130x70": null,
+                    "title": "Departamento Renta 122m\u00b2 de 3 habitaciones"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 5,
+                    "height": 3000,
+                    "width": 4000,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/31/76/95/720x532/1508964247.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/31/76/95/360x266/1508964247.jpg",
+                    "url130x70": null,
+                    "title": "Departamento 122m\u00b2 Renta Playas de Tijuana"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 6,
+                    "height": 1200,
+                    "width": 1600,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/31/76/95/720x532/1501421561.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/31/76/95/360x266/1501421561.jpg",
+                    "url130x70": null,
+                    "title": "Departamento 122m\u00b2 Renta Playas de Tijuana"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 7,
+                    "height": 3000,
+                    "width": 4000,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/31/76/95/720x532/1508964013.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/31/76/95/360x266/1508964013.jpg",
+                    "url130x70": null,
+                    "title": "Departamento de 3 habitaciones Renta USD 1,450"
+                },
+                {
+                    "multimediaTypeId": "2",
+                    "order": 8,
+                    "height": 1200,
+                    "width": 1600,
+                    "url730x532": "https://img10.naventcdn.com/avisos/18/01/45/31/76/95/720x532/1501421549.jpg",
+                    "url360x266": "https://img10.naventcdn.com/avisos/18/01/45/31/76/95/360x266/1501421549.jpg",
+                    "url130x70": null,
+                    "title": "Departamento \u00b7 122m\u00b2 \u00b7 3 Rec\u00e1maras \u00b7 2 Estacionamientos - soluciones inmobiliarias E R"
+                }
+            ],
+            "additionalPicturesCount": 39
+        },
+        "postingType": "PROPERTY",
+        "whatsApp": "52 6641209142"
+    }
+]
