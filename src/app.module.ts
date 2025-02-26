@@ -7,6 +7,7 @@ import { databaseConfig } from './config/database.config';
 import * as Joi from 'joi';
 import { PropertyModule } from './property/property.module';
 import { StatsModule } from './stats/stats.module';
+import { OpenAiModule } from './openai/openai.module';
 
 @Module({
   imports: [
@@ -16,11 +17,13 @@ import { StatsModule } from './stats/stats.module';
       validationSchema: Joi.object({
         MONGODB_URI: Joi.string().required(),
         NODE_ENV: Joi.string().valid('development', 'production', 'test').default('development'),
+        OPENAI_API_KEY: Joi.string().required(),
       }),
     }),
     DatabaseModule,
     PropertyModule,
-    StatsModule
+    StatsModule,
+    OpenAiModule
   ],
   controllers: [AppController],
   providers: [AppService],

@@ -18,6 +18,11 @@ export class PropertyController {
     return this.propertyService.findAll(filters);
   }
 
+  @Get('homepage')
+  async getHomepageData() {
+    return this.propertyService.getHomepageData();
+  }
+
   @Get(':id')
   async findOne(@Param('id') id: string): Promise<Property> {
     return this.propertyService.findOne(id);

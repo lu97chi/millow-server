@@ -13,7 +13,7 @@ export class PaginationDto {
   @Max(100)
   @IsOptional()
   @Type(() => Number)
-  pageSize?: number = 10;
+  pageSize?: number = 50;
 }
 
 export class QueryOptionsDto {

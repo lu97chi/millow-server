@@ -44,6 +44,7 @@ async function bootstrap() {
 
             console.log('Sync Results:', result);
         }
+        
 
         // Cleanup
         await app.close();

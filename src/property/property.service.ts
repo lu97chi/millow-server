@@ -99,6 +99,234 @@ export class PropertyService {
     }
   }
 
+  async getHomepageData(limit: number = 8): Promise<{
+    featuredProperties: Property[];
+    statistics: {
+      totalProperties: number;
+      availableProperties: number;
+      soldProperties: number;
+      rentedProperties: number;
+      averagePrice: number;
+      priceRange: { min: number; max: number };
+      propertyTypeDistribution: Record<string, number>;
+      operationTypeDistribution: Record<string, number>;
+      locationDistribution: {
+        topCities: Record<string, number>;
+        topStates: Record<string, number>;
+      };
+      amenitiesDistribution: Record<string, number>;
+      bedroomsDistribution: Record<string, number>;
+      bathroomsDistribution: Record<string, number>;
+      averageConstructionSize: number;
+      averageLotSize: number;
+      newestProperties: number;
+      updatedLastWeek: number;
+    };
+  }> {
+    try {
+      const startTime = Date.now();
+      this.logger.log('Fetching homepage data...');
+
+      // Get random featured properties (only available ones)
+      const featuredPropertiesQuery = { status: 'available' };
+      const featuredProperties = await this.propertyModel.aggregate([
+        { $match: featuredPropertiesQuery },
+        { $sample: { size: limit } }
+      ]).exec();
+
+      // Get total counts by status
+      const [
+        totalProperties,
+        availableProperties,
+        soldProperties,
+        rentedProperties
+      ] = await Promise.all([
+        this.propertyModel.countDocuments(),
+        this.propertyModel.countDocuments({ status: 'available' }),
+        this.propertyModel.countDocuments({ status: 'sold' }),
+        this.propertyModel.countDocuments({ status: 'rented' })
+      ]);
+
+      // Get price statistics
+      const priceStats = await this.propertyModel.aggregate([
+        {
+          $group: {
+            _id: null,
+            averagePrice: { $avg: '$price' },
+            minPrice: { $min: '$price' },
+            maxPrice: { $max: '$price' }
+          }
+        }
+      ]).exec();
+
+      // Get property type distribution
+      const propertyTypeStats = await this.propertyModel.aggregate([
+        {
+          $group: {
+            _id: '$propertyType',
+            count: { $sum: 1 }
+          }
+        }
+      ]).exec();
+
+      // Get operation type distribution
+      const operationTypeStats = await this.propertyModel.aggregate([
+        {
+          $group: {
+            _id: '$operationType',
+            count: { $sum: 1 }
+          }
+        }
+      ]).exec();
+
+      // Get city distribution
+      const cityStats = await this.propertyModel.aggregate([
+        {
+          $group: {
+            _id: '$location.city',
+            count: { $sum: 1 }
+          }
+        },
+        { $sort: { count: -1 } },
+        { $limit: 10 }
+      ]).exec();
+
+      // Get state distribution
+      const stateStats = await this.propertyModel.aggregate([
+        {
+          $group: {
+            _id: '$location.state',
+            count: { $sum: 1 }
+          }
+        },
+        { $sort: { count: -1 } },
+        { $limit: 10 }
+      ]).exec();
+
+      // Get amenities distribution
+      const amenitiesStats = await this.propertyModel.aggregate([
+        { $unwind: '$amenities' },
+        {
+          $group: {
+            _id: '$amenities',
+            count: { $sum: 1 }
+          }
+        },
+        { $sort: { count: -1 } }
+      ]).exec();
+
+      // Get bedrooms distribution
+      const bedroomsStats = await this.propertyModel.aggregate([
+        {
+          $group: {
+            _id: '$features.bedrooms',
+            count: { $sum: 1 }
+          }
+        },
+        { $sort: { _id: 1 } }
+      ]).exec();
+
+      // Get bathrooms distribution
+      const bathroomsStats = await this.propertyModel.aggregate([
+        {
+          $group: {
+            _id: '$features.bathrooms',
+            count: { $sum: 1 }
+          }
+        },
+        { $sort: { _id: 1 } }
+      ]).exec();
+
+      // Get average construction and lot size
+      const sizeStats = await this.propertyModel.aggregate([
+        {
+          $group: {
+            _id: null,
+            averageConstructionSize: { $avg: '$features.constructionSize' },
+            averageLotSize: { $avg: '$features.lotSize' }
+          }
+        }
+      ]).exec();
+
+      // Get count of properties created in the last 30 days
+      const thirtyDaysAgo = new Date();
+      thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
+      const newestProperties = await this.propertyModel.countDocuments({
+        createdAt: { $gte: thirtyDaysAgo }
+      });
+
+      // Get count of properties updated in the last 7 days
+      const sevenDaysAgo = new Date();
+      sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
+      const updatedLastWeek = await this.propertyModel.countDocuments({
+        updatedAt: { $gte: sevenDaysAgo }
+      });
+
+      // Format the statistics
+      const propertyTypeDistribution = Object.fromEntries(
+        propertyTypeStats.map(stat => [stat._id, stat.count])
+      );
+
+      const operationTypeDistribution = Object.fromEntries(
+        operationTypeStats.map(stat => [stat._id, stat.count])
+      );
+
+      const topCities = Object.fromEntries(
+        cityStats.map(stat => [stat._id, stat.count])
+      );
+
+      const topStates = Object.fromEntries(
+        stateStats.map(stat => [stat._id, stat.count])
+      );
+
+      const amenitiesDistribution = Object.fromEntries(
+        amenitiesStats.map(stat => [stat._id, stat.count])
+      );
+
+      const bedroomsDistribution = Object.fromEntries(
+        bedroomsStats.map(stat => [stat._id, stat.count])
+      );
+
+      const bathroomsDistribution = Object.fromEntries(
+        bathroomsStats.map(stat => [stat._id, stat.count])
+      );
+
+      const executionTime = Date.now() - startTime;
+      this.logger.log(`Homepage data fetched in ${executionTime}ms`);
+
+      return {
+        featuredProperties,
+        statistics: {
+          totalProperties,
+          availableProperties,
+          soldProperties,
+          rentedProperties,
+          averagePrice: priceStats[0]?.averagePrice || 0,
+          priceRange: priceStats[0] ? {
+            min: priceStats[0].minPrice,
+            max: priceStats[0].maxPrice
+          } : { min: 0, max: 0 },
+          propertyTypeDistribution,
+          operationTypeDistribution,
+          locationDistribution: {
+            topCities,
+            topStates
+          },
+          amenitiesDistribution,
+          bedroomsDistribution,
+          bathroomsDistribution,
+          averageConstructionSize: sizeStats[0]?.averageConstructionSize || 0,
+          averageLotSize: sizeStats[0]?.averageLotSize || 0,
+          newestProperties,
+          updatedLastWeek
+        }
+      };
+    } catch (error) {
+      this.logger.error(`Error fetching homepage data: ${error.message}`, error.stack);
+      throw new BadRequestException('Failed to fetch homepage data');
+    }
+  }
+
   async syncProperties(properties: any[]) {
     const startTime = Date.now();
     const stats = {
