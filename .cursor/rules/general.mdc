@@ -1,0 +1,8 @@
+---
+description: General rule for project
+globs: *.ts
+alwaysApply: true
+---
+- When you create a new file, make sure to add a comment at the top of the file with the changes you made
+
+- When you update/make changes to a file, make sure to rewrite the comment at the top of the file with the changes you made. If there is no comment, then add one

@@ -8,6 +8,7 @@ import * as Joi from 'joi';
 import { PropertyModule } from './property/property.module';
 import { StatsModule } from './stats/stats.module';
 import { OpenAiModule } from './openai/openai.module';
+import { ConversationModule } from './conversation/conversation.module';
 
 @Module({
   imports: [
@@ -23,7 +24,8 @@ import { OpenAiModule } from './openai/openai.module';
     DatabaseModule,
     PropertyModule,
     StatsModule,
-    OpenAiModule
+    OpenAiModule,
+    ConversationModule
   ],
   controllers: [AppController],
   providers: [AppService],

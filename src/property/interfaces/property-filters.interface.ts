@@ -65,6 +65,4 @@ export interface PropertyFilters {
     max?: number;
   };
   sortBy?: 'price asc' | 'price desc' | 'age asc' | 'age desc';
-  page?: number;
-  pageSize?: number;
 } 

@@ -79,7 +79,16 @@ class Agent {
   activeListings: number;
 }
 
-@Schema({ timestamps: true })
+@Schema({
+  timestamps: true,
+  toJSON: {
+    virtuals: true,
+    transform: (_, ret) => {
+      delete ret.__v;
+      return ret;
+    },
+  },
+})
 export class Property {
   @Prop({ required: true, type: String })
   title: string;
@@ -166,4 +175,27 @@ export class Property {
   agent: Agent;
 }
 
-export const PropertySchema = SchemaFactory.createForClass(Property); 
+export const PropertySchema = SchemaFactory.createForClass(Property);
+
+// Add text index for search
+PropertySchema.index(
+  { 
+    title: 'text',
+    description: 'text',
+    'location.address': 'text',
+    'location.area': 'text',
+    'location.city': 'text',
+    'location.state': 'text'
+  },
+  {
+    weights: {
+      title: 10,
+      description: 5,
+      'location.address': 3,
+      'location.area': 2,
+      'location.city': 2,
+      'location.state': 1
+    },
+    name: "PropertyTextIndex"
+  }
+); 

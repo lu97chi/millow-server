@@ -1,3 +1,16 @@
+/**
+ * Property Service
+ * 
+ * Changes:
+ * - Added findSimilarProperties method to find properties similar to a given property
+ * - Similarity is determined by:
+ *   - Same property type
+ *   - Same operation type
+ *   - Similar price range (±20%)
+ *   - Same city (if available)
+ *   - Similar number of bedrooms and bathrooms (±1)
+ *   - Available status
+ */
 import { Injectable, Logger, NotFoundException, BadRequestException } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
@@ -7,6 +20,7 @@ import { PropertyFilters } from './interfaces/property-filters.interface';
 import { PropertyTypeName, OperationType, Amenity } from './interfaces/property-filters.interface';
 import { ExecuteQueryDto } from './dto/execute-query.dto';
 import { QueryResult } from './interfaces/query-result.interface';
+import { SearchPropertiesDto } from './dto/search-properties.dto';
 
 interface PropertyLocation {
   state: string;
@@ -54,15 +68,12 @@ export class PropertyService {
 
   async findAll(filters: PropertyFilters = {}) {
     const query = this.buildQuery(filters);
-    const page = filters.page || 1;
-    const pageSize = filters.pageSize || 10;
-    const skip = (page - 1) * pageSize;
-
+    
     const [properties, total] = await Promise.all([
       this.propertyModel
         .find(query)
-        .skip(skip)
-        .limit(pageSize)
+        .sort({ createdAt: -1 })
+        .limit(50)
         .lean()
         .exec(),
       this.propertyModel.countDocuments(query),
@@ -77,6 +88,64 @@ export class PropertyService {
       throw new NotFoundException(`Property with ID ${id} not found`);
     }
     return property;
+  }
+
+  /**
+   * Find similar properties based on property type, price range, location, and features
+   * @param property The property to find similar properties for
+   * @param limit The maximum number of similar properties to return
+   * @returns Array of similar properties
+   */
+  async findSimilarProperties(property: Property, limit: number = 4): Promise<Property[]> {
+    this.logger.log(`Finding similar properties for property with ID ${property['_id']}`);
+    
+    // Build query for similar properties
+    const query: any = {
+      // Exclude the current property
+      _id: { $ne: property['_id'] },
+      // Same property type
+      propertyType: property.propertyType,
+      // Same operation type
+      operationType: property.operationType,
+      // Available status
+      status: 'available',
+      // Similar price range (±20%)
+      price: {
+        $gte: property.price * 0.8,
+        $lte: property.price * 1.2
+      }
+    };
+
+    // Add location similarity if available
+    if (property.location && property.location.city) {
+      query['location.city'] = property.location.city;
+    }
+
+    // Add bedrooms similarity if available
+    if (property.features && property.features.bedrooms) {
+      query['features.bedrooms'] = {
+        $gte: Math.max(1, property.features.bedrooms - 1),
+        $lte: property.features.bedrooms + 1
+      };
+    }
+
+    // Add bathrooms similarity if available
+    if (property.features && property.features.bathrooms) {
+      query['features.bathrooms'] = {
+        $gte: Math.max(1, property.features.bathrooms - 1),
+        $lte: property.features.bathrooms + 1
+      };
+    }
+
+    // Find similar properties
+    const similarProperties = await this.propertyModel
+      .find(query)
+      .sort({ createdAt: -1 })
+      .limit(limit)
+      .lean()
+      .exec();
+
+    return similarProperties;
   }
 
   async update(id: string, updatePropertyDto: Partial<CreatePropertyDto>): Promise<Property> {
@@ -562,7 +631,7 @@ export class PropertyService {
 
   async executeQuery(executeQueryDto: ExecuteQueryDto): Promise<QueryResult<Property>> {
     const startTime = Date.now();
-    const { query, page = 1, pageSize = 10, options = {} } = executeQueryDto;
+    const { query, options = {} } = executeQueryDto;
     
     const parsedQuery = JSON.parse(query);
     await this.validateQuery(parsedQuery);
@@ -570,9 +639,6 @@ export class PropertyService {
     if (options.projection) {
       await this.validateProjection(options.projection);
     }
-
-    const skip = (page - 1) * pageSize;
-    const limit = Math.min(pageSize, 100);
 
     // Get total count in database for statistics
     const totalInDatabase = await this.propertyModel.countDocuments();
@@ -584,7 +650,7 @@ export class PropertyService {
     const percentageMatch = (matchingResults / totalInDatabase) * 100;
 
     // Get statistics based on the query
-    const [priceStats, propertyTypeStats, operationTypeStats, cityStats] = await Promise.all([
+    const [priceStats, cityStats] = await Promise.all([
       // Price statistics
       this.propertyModel.aggregate([
         { $match: parsedQuery },
@@ -594,28 +660,6 @@ export class PropertyService {
             averagePrice: { $avg: '$price' },
             minPrice: { $min: '$price' },
             maxPrice: { $max: '$price' }
-          }
-        }
-      ]).exec(),
-
-      // Property type distribution
-      this.propertyModel.aggregate([
-        { $match: parsedQuery },
-        {
-          $group: {
-            _id: '$realEstateType',
-            count: { $sum: 1 }
-          }
-        }
-      ]).exec(),
-
-      // Operation type distribution
-      this.propertyModel.aggregate([
-        { $match: parsedQuery },
-        {
-          $group: {
-            _id: '$priceOperationType',
-            count: { $sum: 1 }
           }
         }
       ]).exec(),
@@ -632,24 +676,15 @@ export class PropertyService {
       ]).exec()
     ]);
 
-    // Execute the main query with pagination
+    // Execute the main query with limit
     const data = await this.propertyModel
       .find(parsedQuery, options.projection)
-      .sort(options.sort)
-      .skip(skip)
-      .limit(limit)
+      .sort({ ...options.sort, createdAt: -1 })
+      .limit(50)
       .lean()
       .exec();
 
     // Format the statistics
-    const propertyTypes = Object.fromEntries(
-      propertyTypeStats.map(stat => [stat._id, stat.count])
-    );
-
-    const operationTypes = Object.fromEntries(
-      operationTypeStats.map(stat => [stat._id, stat.count])
-    );
-
     const citiesDistribution = Object.fromEntries(
       cityStats.map(stat => [stat._id, stat.count])
     );
@@ -658,19 +693,8 @@ export class PropertyService {
 
     return {
       data,
-      pagination: {
-        total: matchingResults,
-        page,
-        pageSize: limit,
-        totalPages: Math.ceil(matchingResults / limit),
-        hasNextPage: skip + limit < matchingResults,
-        hasPreviousPage: page > 1
-      },
       metadata: {
         executionTime,
-        query: parsedQuery,
-        sort: options.sort,
-        projection: options.projection,
         statistics: {
           totalInDatabase,
           matchingResults,
@@ -680,8 +704,6 @@ export class PropertyService {
             min: priceStats[0].minPrice,
             max: priceStats[0].maxPrice
           } : undefined,
-          propertyTypes,
-          operationTypes,
           citiesDistribution
         }
       }
@@ -719,5 +741,57 @@ export class PropertyService {
         throw new BadRequestException(`Projection field ${field} is not allowed`);
       }
     }
+  }
+
+  async searchProperties(searchDto: SearchPropertiesDto) {
+    const { query } = searchDto;
+    const startTime = Date.now();
+    
+    // Create text search query
+    const searchQuery = {
+      $text: { $search: query }
+    };
+
+    // Get total count in database for statistics
+    const totalInDatabase = await this.propertyModel.countDocuments();
+
+    // Get count of matching documents
+    const matchingResults = await this.propertyModel.countDocuments(searchQuery);
+
+    // Execute search with scoring
+    const data = await this.propertyModel
+      .aggregate([
+        // Add text score
+        {
+          $match: searchQuery
+        },
+        {
+          $addFields: {
+            score: { $meta: "textScore" }
+          }
+        },
+        // Sort by score (descending) and creation date (newest first)
+        {
+          $sort: {
+            score: -1,
+            createdAt: -1
+          }
+        },
+        // Limit results
+        {
+          $limit: 50
+        }
+      ])
+      .exec();
+
+    return {
+      data,
+      metadata: {
+        executionTime: Date.now() - startTime,
+        totalInDatabase,
+        matchingResults,
+        percentageMatch: (matchingResults / totalInDatabase) * 100
+      }
+    };
   }
 } 

@@ -1,14 +1,12 @@
 import { Injectable, Logger } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import OpenAI from 'openai';
-import { SYSTEM_MESSAGE } from './system-message';
+import { SYSTEM_MESSAGE } from './system-messages/filtering';
 
 // Interface for the MongoDB query response
 interface AiQueryResponse {
   mongoQuery: Record<string, any>;
   explanation: string;
-  page?: number;
-  pageSize?: number;
   sort?: Record<string, 1 | -1>;
   projection?: Record<string, 1 | 0>;
 }
@@ -17,6 +15,11 @@ interface AiQueryResponse {
 interface LunaResponse {
   message: string;
   query: Record<string, any>;
+}
+
+interface ChatMessage {
+  role: 'system' | 'user' | 'assistant';
+  content: string;
 }
 
 @Injectable()
@@ -35,6 +38,32 @@ export class OpenAiService {
     this.openai = new OpenAI({
       apiKey,
     });
+  }
+
+  /**
+   * Process a conversation with context and history
+   * @param messages Array of messages including system context and conversation history
+   * @returns The response from OpenAI
+   */
+  async processConversation(messages: ChatMessage[]): Promise<string> {
+    try {
+      // Ensure we have the base system message first
+      const allMessages = [
+        { role: 'system' as const, content: SYSTEM_MESSAGE },
+        ...messages
+      ];
+
+      const response = await this.openai.chat.completions.create({
+        model: 'gpt-4',  // Using GPT-4 for better context understanding
+        messages: allMessages,
+        temperature: 0.7,
+      });
+
+      return response.choices[0].message.content || 'No response generated';
+    } catch (error) {
+      this.logger.error(`Error processing conversation: ${error.message}`, error.stack);
+      throw new Error(`Failed to process conversation: ${error.message}`);
+    }
   }
 
   /**
@@ -122,8 +151,6 @@ export class OpenAiService {
       return {
         mongoQuery,
         explanation: lunaResponse.message,
-        page: 1,
-        pageSize: 50,
         sort: {},
         projection: {}
       };

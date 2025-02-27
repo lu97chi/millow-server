@@ -1,0 +1,100 @@
+# Project Structure
+
+```
+└── .cursor/
+│   ├── rules/
+│   │   ├── agent.mdc
+│   │   ├── class-validator-best-practices.mdc
+│   │   ├── general.mdc
+│   │   ├── jest-best-practices.mdc
+│   │   ├── mikroorm-best-practices.mdc
+│   │   ├── mongo-optimization-best-practices.mdc
+│   │   ├── mongodb-best-practices.mdc
+│   │   ├── nestjs-best-practices.mdc
+│   │   ├── nestjs-mongoose-best-practices.mdc
+        └── structure.mdc
+└── .gitignore
+└── .prettierrc
+└── .scripts/
+    └── update_structure.sh
+└── README.md
+└── eslint.config.mjs
+└── nest-cli.json
+└── package-lock.json
+└── package.json
+└── render.yaml
+└── src/
+│   ├── app.controller.spec.ts
+│   ├── app.controller.ts
+│   ├── app.module.ts
+│   ├── app.service.ts
+│   ├── config/
+        └── database.config.ts
+│   ├── conversation/
+│   │   ├── conversation.controller.ts
+│   │   ├── conversation.module.ts
+│   │   ├── conversation.service.ts
+│   │   ├── dto/
+            └── create-message.dto.ts
+│   │   ├── schemas/
+            └── conversation.schema.ts
+│   ├── data/
+│   │   ├── scrap.compra.guadalajara.json
+│   │   ├── scrap.compra.mazatlan.json
+│   │   ├── scrap.compra.monterrey.json
+│   │   ├── scrap.compra.tijuana.json
+│   │   ├── scrap.desarrollo.guadalajara.json
+│   │   ├── scrap.desarrollo.mazatlan.json
+│   │   ├── scrap.desarrollo.monterrey.json
+│   │   ├── scrap.desarrollo.tijuana.json
+│   │   ├── scrap.remate.guadalajara.json
+│   │   ├── scrap.remate.mazatlan.json
+│   │   ├── scrap.remate.monterrey.json
+│   │   ├── scrap.remate.tijuana.json
+│   │   ├── scrap.renta.guadalajara.json
+│   │   ├── scrap.renta.mazatlan.json
+│   │   ├── scrap.renta.monterrey.json
+│   │   ├── scrap.renta.tijuana.json
+│   │   ├── scrap.vacacional.guadalajara.json
+│   │   ├── scrap.vacacional.mazatlan.json
+│   │   ├── scrap.vacacional.monterrey.json
+        └── scrap.vacacional.tijuana.json
+│   ├── database/
+        └── database.module.ts
+│   ├── main.ts
+│   ├── openai/
+│   │   ├── dto/
+│   │   │   ├── property-query.dto.ts
+            └── query.dto.ts
+│   │   ├── openai.controller.ts
+│   │   ├── openai.module.ts
+│   │   ├── openai.service.ts
+        └── system-message.ts
+│   ├── property/
+│   │   ├── dto/
+│   │   │   ├── create-property.dto.ts
+│   │   │   ├── execute-query.dto.ts
+            └── search-properties.dto.ts
+│   │   ├── interfaces/
+│   │   │   ├── property-filters.interface.ts
+            └── query-result.interface.ts
+│   │   ├── property-search.controller.ts
+│   │   ├── property.controller.ts
+│   │   ├── property.module.ts
+│   │   ├── property.service.ts
+│   │   ├── schemas/
+            └── property.schema.ts
+│   ├── scripts/
+        └── sync-properties.ts
+│   ├── stats/
+│   │   ├── interfaces/
+            └── market-stats.interface.ts
+│   │   ├── stats.controller.ts
+│   │   ├── stats.module.ts
+        └── stats.service.ts
+└── test/
+│   ├── app.e2e-spec.ts
+    └── jest-e2e.json
+└── tsconfig.build.json
+└── tsconfig.json
+```
