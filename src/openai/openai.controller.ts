@@ -137,7 +137,7 @@ export class OpenAiController {
       // Get the property information
       const property = await this.propertyService.findOne(propertyId);
 
-      // Create or get session
+      // Create or get session.
       let sessionId = providedSessionId;
       if (!sessionId) {
         sessionId = await this.conversationService.createSession();
