@@ -60,7 +60,3 @@ data/
 */data/
 src/data/
 src/data/**/*
-
-# Data folder inside src
-src/data/scrap.desarrollo.monterrey.json
-src/data/scrap.desarrollo.monterrey.json
