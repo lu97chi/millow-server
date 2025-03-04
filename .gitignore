@@ -54,3 +54,13 @@ pids
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Data directories
+data/
+*/data/
+src/data/
+src/data/**/*
+
+# Data folder inside src
+src/data/scrap.desarrollo.monterrey.json
+src/data/scrap.desarrollo.monterrey.json
