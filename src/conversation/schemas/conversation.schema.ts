@@ -53,6 +53,9 @@ export class Conversation {
   @Prop({ type: MongooseSchema.Types.Mixed, default: {} })
   mongoQuery: Record<string, any>;
 
+  @Prop({ type: String })
+  currentPropertyId?: string;
+
   @Prop({ type: Date, default: Date.now })
   lastUpdated: Date;
 

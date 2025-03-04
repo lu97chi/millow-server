@@ -5,6 +5,7 @@
  * - Added a new route for property context queries
  * - The new route fetches property information and adds it to the chat context
  * - Modified property-query endpoint to not return property information in the response
+ * - Updated to store currentPropertyId in conversation for better context handling
  */
 import { Controller, Post, Body, HttpCode, UsePipes, ValidationPipe, HttpException, HttpStatus, Inject, forwardRef, Logger } from '@nestjs/common';
 import { OpenAiService } from './openai.service';
@@ -145,20 +146,38 @@ export class OpenAiController {
 
       // Get or create conversation
       let conversation = await this.conversationService.getConversation(sessionId);
+      if (!conversation) {
+        // Create a new conversation if it doesn't exist
+        sessionId = await this.conversationService.createSession();
+        conversation = await this.conversationService.getConversation(sessionId);
+        
+        // If still null after creation, throw an error
+        if (!conversation) {
+          throw new HttpException('Failed to create conversation', HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+      }
 
       // Create property context message
       const propertyContextMessage = this.createPropertyContextMessage(property);
 
-      // Add system message with property context if it's a new conversation
-      if (!conversation || conversation.messages.length === 0) {
-        await this.conversationService.addMessage({
-          sessionId,
-          content: propertyContextMessage,
-          role: 'system'
-        });
+      // Store the current property ID in the conversation
+      conversation.currentPropertyId = propertyId;
+      await conversation.save();
 
-        // Refresh conversation after adding system message
-        conversation = await this.conversationService.getConversation(sessionId);
+      // Always add the property context as a system message for this request
+      // This ensures the property details are included in the context
+      await this.conversationService.addMessage({
+        sessionId,
+        content: propertyContextMessage,
+        role: 'system'
+      });
+
+      // Refresh conversation after adding system message
+      conversation = await this.conversationService.getConversation(sessionId);
+      
+      // If still null after refresh, throw an error
+      if (!conversation) {
+        throw new HttpException('Failed to retrieve conversation after update', HttpStatus.INTERNAL_SERVER_ERROR);
       }
 
       // Add user message

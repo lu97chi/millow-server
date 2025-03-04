@@ -47,16 +47,23 @@ export class OpenAiService {
    */
   async processConversation(messages: ChatMessage[]): Promise<string> {
     try {
-      // Ensure we have the base system message first
-      const allMessages = [
-        { role: 'system' as const, content: SYSTEM_MESSAGE },
-        ...messages
-      ];
+      // Check if this is a property-specific conversation
+      const isPropertySpecificQuery = messages.some(msg => 
+        msg.role === 'system' && msg.content.includes('DETALLES DE LA PROPIEDAD')
+      );
+
+      // Ensure we have the base system message first, but only if not property-specific
+      const allMessages = isPropertySpecificQuery 
+        ? [...messages] // For property-specific queries, don't add the filtering system message
+        : [{ role: 'system' as const, content: SYSTEM_MESSAGE }, ...messages];
+
+      // Use a higher temperature for property-specific queries for more natural responses
+      const temperature = isPropertySpecificQuery ? 0.7 : 0.5;
 
       const response = await this.openai.chat.completions.create({
-        model: 'gpt-4',  // Using GPT-4 for better context understanding
+        model: 'gpt-4o',  // Using GPT-4o for better context understanding
         messages: allMessages,
-        temperature: 0.7,
+        temperature,
       });
 
       return response.choices[0].message.content || 'No response generated';

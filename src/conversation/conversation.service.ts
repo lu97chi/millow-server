@@ -1,3 +1,11 @@
+/**
+ * Conversation Service
+ * 
+ * Changes:
+ * - Updated prepareMessagesForAI to prioritize property-specific context
+ * - Added support for currentPropertyId to maintain context between filtering and property-specific queries
+ * - Improved message handling to ensure property details are always included when needed
+ */
 import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
@@ -126,7 +134,28 @@ export class ConversationService {
   private prepareMessagesForAI(conversation: ConversationDocument): Array<{ role: 'system' | 'user' | 'assistant'; content: string }> {
     const messages: Array<{ role: 'system' | 'user' | 'assistant'; content: string }> = [];
     
-    // Add context message
+    // Find property-specific system messages if a currentPropertyId is set
+    let propertyContextMessage: Message | undefined = undefined;
+    if (conversation.currentPropertyId) {
+      // Look for the most recent system message that contains property details
+      for (let i = conversation.messages.length - 1; i >= 0; i--) {
+        const msg = conversation.messages[i];
+        if (msg.role === 'system' && msg.content.includes('DETALLES DE LA PROPIEDAD')) {
+          propertyContextMessage = msg;
+          break;
+        }
+      }
+    }
+    
+    // Add property context message first if found (highest priority)
+    if (propertyContextMessage) {
+      messages.push({
+        role: 'system',
+        content: propertyContextMessage.content
+      });
+    }
+    
+    // Add general context message
     if (conversation.context) {
       const contextStr = JSON.stringify(conversation.context);
       messages.push({
@@ -139,7 +168,17 @@ Respond in Spanish and keep track of all property requirements mentioned so far.
     }
 
     // Add recent messages (last 10 for better context)
-    const recentMessages = conversation.messages.slice(-10);
+    // Skip system messages that we've already included
+    const recentMessages = conversation.messages
+      .slice(-10)
+      .filter(msg => {
+        // Skip system messages that contain property details if we already added one
+        if (propertyContextMessage && msg.role === 'system' && msg.content.includes('DETALLES DE LA PROPIEDAD')) {
+          return false;
+        }
+        return true;
+      });
+    
     messages.push(...recentMessages);
 
     return messages;
