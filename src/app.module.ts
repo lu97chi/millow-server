@@ -9,6 +9,7 @@ import { PropertyModule } from './property/property.module';
 import { StatsModule } from './stats/stats.module';
 import { OpenAiModule } from './openai/openai.module';
 import { ConversationModule } from './conversation/conversation.module';
+import { CreditModule } from './conversation/credit/credit.module';
 
 @Module({
   imports: [
@@ -25,7 +26,8 @@ import { ConversationModule } from './conversation/conversation.module';
     PropertyModule,
     StatsModule,
     OpenAiModule,
-    ConversationModule
+    ConversationModule,
+    CreditModule
   ],
   controllers: [AppController],
   providers: [AppService],
