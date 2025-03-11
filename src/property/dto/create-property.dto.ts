@@ -1,6 +1,22 @@
-import { IsString, IsNumber, IsEnum, IsArray, ValidateNested, IsOptional, Min, IsNotEmpty, IsEmail } from 'class-validator';
+import {
+  IsString,
+  IsNumber,
+  IsEnum,
+  IsArray,
+  ValidateNested,
+  IsOptional,
+  Min,
+  IsNotEmpty,
+  IsEmail,
+} from 'class-validator';
 import { Type } from 'class-transformer';
-import { PropertyTypeName, OperationType, PropertyEntityType, PropertyStatus, Amenity } from '../interfaces/property-filters.interface';
+import {
+  PropertyTypeName,
+  OperationType,
+  PropertyEntityType,
+  PropertyStatus,
+  Amenity,
+} from '../interfaces/property-filters.interface';
 
 class CoordinatesDto {
   @IsNumber()
@@ -20,10 +36,6 @@ class PropertyLocationDto {
   @IsString()
   @IsNotEmpty()
   city: string;
-
-  @IsString()
-  @IsNotEmpty()
-  area: string;
 
   @IsString()
   @IsNotEmpty()
@@ -117,7 +129,7 @@ export class CreatePropertyDto {
     'Desarrollos horizontales',
     'Naves industriales',
     'Terrenos comerciales',
-    'Terrenos'
+    'Terrenos',
   ])
   propertyType: PropertyTypeName;
 
@@ -140,7 +152,17 @@ export class CreatePropertyDto {
   features: PropertyFeaturesDto;
 
   @IsArray()
-  @IsEnum(['Alberca', 'Circuito Cerrado', 'Estacionamientos', 'Gimnasio', 'Jardín', 'Roof Garden'], { each: true })
+  @IsEnum(
+    [
+      'Alberca',
+      'Circuito Cerrado',
+      'Estacionamientos',
+      'Gimnasio',
+      'Jardín',
+      'Roof Garden',
+    ],
+    { each: true },
+  )
   amenities: Amenity[];
 
   @IsArray()
@@ -163,4 +185,4 @@ export class CreatePropertyDto {
   @ValidateNested()
   @Type(() => AgentDto)
   agent: AgentDto;
-} 
+}

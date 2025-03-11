@@ -12,4 +12,4 @@ export class CreateMessageDto {
   @IsString()
   @IsOptional()
   role?: 'user' | 'system' | 'assistant' = 'user';
-} 
+}

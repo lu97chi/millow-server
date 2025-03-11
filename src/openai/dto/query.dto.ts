@@ -8,4 +8,4 @@ export class QueryDto {
   @IsString()
   @IsOptional()
   sessionId?: string;
-} 
+}

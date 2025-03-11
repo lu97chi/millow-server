@@ -1,4 +1,12 @@
-import { IsString, IsNotEmpty, IsObject, IsOptional, IsNumber, Min, Max } from 'class-validator';
+import {
+  IsString,
+  IsNotEmpty,
+  IsObject,
+  IsOptional,
+  IsNumber,
+  Min,
+  Max,
+} from 'class-validator';
 import { Type } from 'class-transformer';
 
 export class QueryOptionsDto {
@@ -18,4 +26,4 @@ export class ExecuteQueryDto {
 
   @IsOptional()
   options?: QueryOptionsDto;
-} 
+}

@@ -1,6 +1,6 @@
 /**
  * Conversation Service
- * 
+ *
  * Changes:
  * - Updated prepareMessagesForAI to prioritize property-specific context
  * - Added support for currentPropertyId to maintain context between filtering and property-specific queries
@@ -10,14 +10,20 @@ import { Injectable } from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 import { v4 as uuidv4 } from 'uuid';
-import { Conversation, ConversationDocument, Message, PropertyContext } from './schemas/conversation.schema';
+import {
+  Conversation,
+  ConversationDocument,
+  Message,
+  PropertyContext,
+} from './schemas/conversation.schema';
 import { CreateMessageDto } from './dto/create-message.dto';
 import { OpenAiService } from '../openai/openai.service';
 
 @Injectable()
 export class ConversationService {
   constructor(
-    @InjectModel(Conversation.name) private conversationModel: Model<ConversationDocument>,
+    @InjectModel(Conversation.name)
+    private conversationModel: Model<ConversationDocument>,
     private openaiService: OpenAiService,
   ) {}
 
@@ -32,20 +38,35 @@ export class ConversationService {
         location: undefined,
         priceRange: undefined,
         amenities: undefined,
-        additionalPreferences: undefined
+        additionalPreferences: undefined,
       } as PropertyContext,
+      searchContext: {
+        query: undefined,
+        location: undefined,
+        amenities: undefined,
+        logicalOperator: undefined,
+        mongoQuery: undefined,
+        extractedInputs: undefined,
+        previousAgents: undefined,
+        lastUpdated: new Date(),
+        isContinuation: false,
+      },
       isActive: true,
     });
     return sessionId;
   }
 
-  async getConversation(sessionId: string): Promise<ConversationDocument | null> {
+  async getConversation(
+    sessionId: string,
+  ): Promise<ConversationDocument | null> {
     return this.conversationModel.findOne({ sessionId, isActive: true });
   }
 
-  async addMessage(createMessageDto: CreateMessageDto): Promise<ConversationDocument> {
+  async addMessage(
+    createMessageDto: CreateMessageDto,
+  ): Promise<ConversationDocument> {
     const { sessionId, content, role = 'user' } = createMessageDto;
-    
+
     // Get or create conversation
     let conversation = await this.getConversation(sessionId);
     if (!conversation) {
@@ -58,8 +79,19 @@ export class ConversationService {
           location: undefined,
           priceRange: undefined,
           amenities: undefined,
-          additionalPreferences: undefined
+          additionalPreferences: undefined,
         } as PropertyContext,
+        searchContext: {
+          query: undefined,
+          location: undefined,
+          amenities: undefined,
+          logicalOperator: undefined,
+          mongoQuery: undefined,
+          extractedInputs: undefined,
+          previousAgents: undefined,
+          lastUpdated: new Date(),
+          isContinuation: false,
+        },
         isActive: true,
       });
     }
@@ -91,7 +123,10 @@ export class ConversationService {
     return conversation.save();
   }
 
-  private async updateContext(conversation: ConversationDocument, message: string): Promise<void> {
+  private async updateContext(
+    conversation: ConversationDocument,
+    message: string,
+  ): Promise<void> {
     // Initialize context if it doesn't exist
     if (!conversation.context) {
       conversation.context = {
@@ -100,10 +135,10 @@ export class ConversationService {
         location: undefined,
         priceRange: undefined,
         amenities: undefined,
-        additionalPreferences: undefined
+        additionalPreferences: undefined,
       } as PropertyContext;
     }
-    
+
     // Example basic context extraction (you would want to make this more sophisticated)
     if (message.toLowerCase().includes('casa')) {
       conversation.context.propertyType = 'Casas'; // Using the exact enum value from system message
@@ -119,9 +154,11 @@ export class ConversationService {
     }
   }
 
-  private async getAIResponse(conversation: ConversationDocument): Promise<string> {
+  private async getAIResponse(
+    conversation: ConversationDocument,
+  ): Promise<string> {
     const messages = this.prepareMessagesForAI(conversation);
-    
+
     try {
       // Call OpenAI service with full conversation context
       return await this.openaiService.processConversation(messages);
@@ -131,30 +168,38 @@ export class ConversationService {
     }
   }
 
-  private prepareMessagesForAI(conversation: ConversationDocument): Array<{ role: 'system' | 'user' | 'assistant'; content: string }> {
-    const messages: Array<{ role: 'system' | 'user' | 'assistant'; content: string }> = [];
-    
+  private prepareMessagesForAI(
+    conversation: ConversationDocument,
+  ): Array<{ role: 'system' | 'user' | 'assistant'; content: string }> {
+    const messages: Array<{
+      role: 'system' | 'user' | 'assistant';
+      content: string;
+    }> = [];
+
     // Find property-specific system messages if a currentPropertyId is set
     let propertyContextMessage: Message | undefined = undefined;
     if (conversation.currentPropertyId) {
       // Look for the most recent system message that contains property details
       for (let i = conversation.messages.length - 1; i >= 0; i--) {
         const msg = conversation.messages[i];
-        if (msg.role === 'system' && msg.content.includes('DETALLES DE LA PROPIEDAD')) {
+        if (
+          msg.role === 'system' &&
+          msg.content.includes('DETALLES DE LA PROPIEDAD')
+        ) {
           propertyContextMessage = msg;
           break;
         }
       }
     }
-    
+
     // Add property context message first if found (highest priority)
     if (propertyContextMessage) {
       messages.push({
         role: 'system',
-        content: propertyContextMessage.content
+        content: propertyContextMessage.content,
       });
     }
-    
+
     // Add general context message
     if (conversation.context) {
       const contextStr = JSON.stringify(conversation.context);
@@ -163,31 +208,123 @@ export class ConversationService {
         content: `Current property search context: ${contextStr}
 Please help the user find properties based on these preferences and any new requirements they mention.
 Remember to maintain and update this context as the conversation continues.
-Respond in Spanish and keep track of all property requirements mentioned so far.`
+Respond in Spanish and keep track of all property requirements mentioned so far.`,
       });
     }
 
     // Add recent messages (last 10 for better context)
     // Skip system messages that we've already included
-    const recentMessages = conversation.messages
-      .slice(-10)
-      .filter(msg => {
-        // Skip system messages that contain property details if we already added one
-        if (propertyContextMessage && msg.role === 'system' && msg.content.includes('DETALLES DE LA PROPIEDAD')) {
-          return false;
-        }
-        return true;
-      });
-    
+    const recentMessages = conversation.messages.slice(-10).filter((msg) => {
+      // Skip system messages that contain property details if we already added one
+      if (
+        propertyContextMessage &&
+        msg.role === 'system' &&
+        msg.content.includes('DETALLES DE LA PROPIEDAD')
+      ) {
+        return false;
+      }
+      return true;
+    });
+
     messages.push(...recentMessages);
 
     return messages;
   }
 
   async deactivateSession(sessionId: string): Promise<void> {
-    await this.conversationModel.updateOne(
-      { sessionId },
-      { isActive: false }
-    );
+    await this.conversationModel.updateOne({ sessionId }, { isActive: false });
+  }
+
+  /**
+   * Update the search context with new information from agent decisions
+   * @param sessionId The session ID
+   * @param agentDecision The agent decision containing extracted inputs
+   * @param mongoQuery The MongoDB query generated by the agents
+   * @returns The updated conversation
+   */
+  async updateSearchContext(
+    sessionId: string,
+    agentDecision: {
+      agents: string[];
+      extractedInputs: Record<string, any>;
+      reasoning: string;
+      isContinuation?: boolean;
+    },
+    mongoQuery?: Record<string, any>,
+  ): Promise<ConversationDocument> {
+    const conversation = await this.getConversation(sessionId);
+    if (!conversation) {
+      throw new Error(`Conversation with sessionId ${sessionId} not found`);
+    }
+
+    // Initialize searchContext if it doesn't exist
+    if (!conversation.searchContext) {
+      conversation.searchContext = {
+        query: undefined,
+        location: undefined,
+        amenities: undefined,
+        logicalOperator: undefined,
+        mongoQuery: undefined,
+        extractedInputs: undefined,
+        previousAgents: undefined,
+        lastUpdated: new Date(),
+        isContinuation: false,
+      };
+    }
+
+    // Update the search context
+    conversation.searchContext.previousAgents = agentDecision.agents;
+    conversation.searchContext.isContinuation =
+      agentDecision.isContinuation || false;
+    conversation.searchContext.lastUpdated = new Date();
+
+    // Update extracted inputs
+    if (agentDecision.extractedInputs) {
+      conversation.searchContext.extractedInputs = {
+        ...conversation.searchContext.extractedInputs,
+        ...agentDecision.extractedInputs,
+      };
+
+      // Update specific fields
+      if (agentDecision.extractedInputs.query) {
+        conversation.searchContext.query = agentDecision.extractedInputs.query;
+      }
+
+      if (agentDecision.extractedInputs.location) {
+        conversation.searchContext.location =
+          agentDecision.extractedInputs.location;
+      }
+
+      if (agentDecision.extractedInputs.amenities) {
+        conversation.searchContext.amenities =
+          agentDecision.extractedInputs.amenities;
+      }
+
+      if (agentDecision.extractedInputs.logicalOperator) {
+        conversation.searchContext.logicalOperator =
+          agentDecision.extractedInputs.logicalOperator;
+      }
+    }
+
+    // Update MongoDB query if provided
+    if (mongoQuery) {
+      conversation.searchContext.mongoQuery = mongoQuery;
+    }
+
+    return conversation.save();
+  }
+
+  /**
+   * Get the search context for a conversation
+   * @param sessionId The session ID
+   * @returns The search context
+   */
+  async getSearchContext(sessionId: string): Promise<any> {
+    const conversation = await this.getConversation(sessionId);
+    if (!conversation) {
+      return null;
+    }
+
+    return conversation.searchContext || null;
   }
 }

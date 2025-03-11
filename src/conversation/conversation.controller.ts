@@ -1,4 +1,13 @@
-import { Controller, Post, Body, Get, Param, Delete, HttpException, HttpStatus } from '@nestjs/common';
+import {
+  Controller,
+  Post,
+  Body,
+  Get,
+  Param,
+  Delete,
+  HttpException,
+  HttpStatus,
+} from '@nestjs/common';
 import { ConversationService } from './conversation.service';
 import { CreateMessageDto } from './dto/create-message.dto';
 
@@ -12,14 +21,18 @@ export class ConversationController {
       const sessionId = await this.conversationService.createSession();
       return { sessionId };
     } catch (error) {
-      throw new HttpException('Failed to create session', HttpStatus.INTERNAL_SERVER_ERROR);
+      throw new HttpException(
+        'Failed to create session',
+        HttpStatus.INTERNAL_SERVER_ERROR,
+      );
     }
   }
 
   @Get('session/:sessionId')
   async getConversation(@Param('sessionId') sessionId: string) {
     try {
-      const conversation = await this.conversationService.getConversation(sessionId);
+      const conversation =
+        await this.conversationService.getConversation(sessionId);
       if (!conversation) {
         throw new HttpException('Conversation not found', HttpStatus.NOT_FOUND);
       }
@@ -28,17 +41,24 @@ export class ConversationController {
       if (error instanceof HttpException) {
         throw error;
       }
-      throw new HttpException('Failed to get conversation', HttpStatus.INTERNAL_SERVER_ERROR);
+      throw new HttpException(
+        'Failed to get conversation',
+        HttpStatus.INTERNAL_SERVER_ERROR,
+      );
     }
   }
 
   @Post('message')
   async addMessage(@Body() createMessageDto: CreateMessageDto) {
     try {
-      const conversation = await this.conversationService.addMessage(createMessageDto);
+      const conversation =
+        await this.conversationService.addMessage(createMessageDto);
       return conversation;
     } catch (error) {
-      throw new HttpException('Failed to add message', HttpStatus.INTERNAL_SERVER_ERROR);
+      throw new HttpException(
+        'Failed to add message',
+        HttpStatus.INTERNAL_SERVER_ERROR,
+      );
     }
   }
 
@@ -48,7 +68,10 @@ export class ConversationController {
       await this.conversationService.deactivateSession(sessionId);
       return { message: 'Session deactivated successfully' };
     } catch (error) {
-      throw new HttpException('Failed to deactivate session', HttpStatus.INTERNAL_SERVER_ERROR);
+      throw new HttpException(
+        'Failed to deactivate session',
+        HttpStatus.INTERNAL_SERVER_ERROR,
+      );
     }
   }
 }

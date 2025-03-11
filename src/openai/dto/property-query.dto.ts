@@ -1,6 +1,6 @@
 /**
  * Property Query DTO
- * 
+ *
  * Changes:
  * - Created a new DTO for handling queries with property context
  */
@@ -16,4 +16,4 @@ export class PropertyQueryDto {
   @IsOptional()
   @IsUUID()
   sessionId?: string;
-} 
+}

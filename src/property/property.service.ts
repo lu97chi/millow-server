@@ -1,6 +1,6 @@
 /**
  * Property Service
- * 
+ *
  * Changes:
  * - Added findSimilarProperties method to find properties similar to a given property
  * - Similarity is determined by:
@@ -11,13 +11,22 @@
  *   - Similar number of bedrooms and bathrooms (±1)
  *   - Available status
  */
-import { Injectable, Logger, NotFoundException, BadRequestException } from '@nestjs/common';
+import {
+  Injectable,
+  Logger,
+  NotFoundException,
+  BadRequestException,
+} from '@nestjs/common';
 import { InjectModel } from '@nestjs/mongoose';
 import { Model } from 'mongoose';
 import { Property, PropertyDocument } from './schemas/property.schema';
 import { CreatePropertyDto } from './dto/create-property.dto';
 import { PropertyFilters } from './interfaces/property-filters.interface';
-import { PropertyTypeName, OperationType, Amenity } from './interfaces/property-filters.interface';
+import {
+  PropertyTypeName,
+  OperationType,
+  Amenity,
+} from './interfaces/property-filters.interface';
 import { ExecuteQueryDto } from './dto/execute-query.dto';
 import { QueryResult } from './interfaces/query-result.interface';
 import { SearchPropertiesDto } from './dto/search-properties.dto';
@@ -25,7 +34,6 @@ import { SearchPropertiesDto } from './dto/search-properties.dto';
 interface PropertyLocation {
   state: string;
   city: string;
-  area: string;
   address: string;
   coordinates: {
     lat: number;
@@ -58,7 +66,7 @@ export class PropertyService {
   private readonly logger = new Logger(PropertyService.name);
 
   constructor(
-    @InjectModel(Property.name) private propertyModel: Model<PropertyDocument>
+    @InjectModel(Property.name) private propertyModel: Model<PropertyDocument>,
   ) {}
 
   async create(createPropertyDto: CreatePropertyDto): Promise<Property> {
@@ -68,7 +76,7 @@ export class PropertyService {
 
   async findAll(filters: PropertyFilters = {}) {
     const query = this.buildQuery(filters);
-    
+
     const [properties, total] = await Promise.all([
       this.propertyModel
         .find(query)
@@ -96,9 +104,14 @@ export class PropertyService {
    * @param limit The maximum number of similar properties to return
    * @returns Array of similar properties
    */
-  async findSimilarProperties(property: Property, limit: number = 4): Promise<Property[]> {
-    this.logger.log(`Finding similar properties for property with ID ${property['_id']}`);
-    
+  async findSimilarProperties(
+    property: Property,
+    limit: number = 4,
+  ): Promise<Property[]> {
+    this.logger.log(
+      `Finding similar properties for property with ID ${property['_id']}`,
+    );
+
     // Build query for similar properties
     const query: any = {
       // Exclude the current property
@@ -112,8 +125,8 @@ export class PropertyService {
       // Similar price range (±20%)
       price: {
         $gte: property.price * 0.8,
-        $lte: property.price * 1.2
-      }
+        $lte: property.price * 1.2,
+      },
     };
 
     // Add location similarity if available
@@ -125,7 +138,7 @@ export class PropertyService {
     if (property.features && property.features.bedrooms) {
       query['features.bedrooms'] = {
         $gte: Math.max(1, property.features.bedrooms - 1),
-        $lte: property.features.bedrooms + 1
+        $lte: property.features.bedrooms + 1,
       };
     }
 
@@ -133,7 +146,7 @@ export class PropertyService {
     if (property.features && property.features.bathrooms) {
       query['features.bathrooms'] = {
         $gte: Math.max(1, property.features.bathrooms - 1),
-        $lte: property.features.bathrooms + 1
+        $lte: property.features.bathrooms + 1,
       };
     }
 
@@ -148,7 +161,10 @@ export class PropertyService {
     return similarProperties;
   }
 
-  async update(id: string, updatePropertyDto: Partial<CreatePropertyDto>): Promise<Property> {
+  async update(
+    id: string,
+    updatePropertyDto: Partial<CreatePropertyDto>,
+  ): Promise<Property> {
     const updatedProperty = await this.propertyModel
       .findByIdAndUpdate(id, updatePropertyDto, { new: true })
       .lean()
@@ -198,166 +214,186 @@ export class PropertyService {
 
       // Get random featured properties (only available ones)
       const featuredPropertiesQuery = { status: 'available' };
-      const featuredProperties = await this.propertyModel.aggregate([
-        { $match: featuredPropertiesQuery },
-        { $sample: { size: limit } }
-      ]).exec();
+      const featuredProperties = await this.propertyModel
+        .aggregate([
+          { $match: featuredPropertiesQuery },
+          { $sample: { size: limit } },
+        ])
+        .exec();
 
       // Get total counts by status
       const [
         totalProperties,
         availableProperties,
         soldProperties,
-        rentedProperties
+        rentedProperties,
       ] = await Promise.all([
         this.propertyModel.countDocuments(),
         this.propertyModel.countDocuments({ status: 'available' }),
         this.propertyModel.countDocuments({ status: 'sold' }),
-        this.propertyModel.countDocuments({ status: 'rented' })
+        this.propertyModel.countDocuments({ status: 'rented' }),
       ]);
 
       // Get price statistics
-      const priceStats = await this.propertyModel.aggregate([
-        {
-          $group: {
-            _id: null,
-            averagePrice: { $avg: '$price' },
-            minPrice: { $min: '$price' },
-            maxPrice: { $max: '$price' }
-          }
-        }
-      ]).exec();
+      const priceStats = await this.propertyModel
+        .aggregate([
+          {
+            $group: {
+              _id: null,
+              averagePrice: { $avg: '$price' },
+              minPrice: { $min: '$price' },
+              maxPrice: { $max: '$price' },
+            },
+          },
+        ])
+        .exec();
 
       // Get property type distribution
-      const propertyTypeStats = await this.propertyModel.aggregate([
-        {
-          $group: {
-            _id: '$propertyType',
-            count: { $sum: 1 }
-          }
-        }
-      ]).exec();
+      const propertyTypeStats = await this.propertyModel
+        .aggregate([
+          {
+            $group: {
+              _id: '$propertyType',
+              count: { $sum: 1 },
+            },
+          },
+        ])
+        .exec();
 
       // Get operation type distribution
-      const operationTypeStats = await this.propertyModel.aggregate([
-        {
-          $group: {
-            _id: '$operationType',
-            count: { $sum: 1 }
-          }
-        }
-      ]).exec();
+      const operationTypeStats = await this.propertyModel
+        .aggregate([
+          {
+            $group: {
+              _id: '$operationType',
+              count: { $sum: 1 },
+            },
+          },
+        ])
+        .exec();
 
       // Get city distribution
-      const cityStats = await this.propertyModel.aggregate([
-        {
-          $group: {
-            _id: '$location.city',
-            count: { $sum: 1 }
-          }
-        },
-        { $sort: { count: -1 } },
-        { $limit: 10 }
-      ]).exec();
+      const cityStats = await this.propertyModel
+        .aggregate([
+          {
+            $group: {
+              _id: '$location.city',
+              count: { $sum: 1 },
+            },
+          },
+          { $sort: { count: -1 } },
+          { $limit: 10 },
+        ])
+        .exec();
 
       // Get state distribution
-      const stateStats = await this.propertyModel.aggregate([
-        {
-          $group: {
-            _id: '$location.state',
-            count: { $sum: 1 }
-          }
-        },
-        { $sort: { count: -1 } },
-        { $limit: 10 }
-      ]).exec();
+      const stateStats = await this.propertyModel
+        .aggregate([
+          {
+            $group: {
+              _id: '$location.state',
+              count: { $sum: 1 },
+            },
+          },
+          { $sort: { count: -1 } },
+          { $limit: 10 },
+        ])
+        .exec();
 
       // Get amenities distribution
-      const amenitiesStats = await this.propertyModel.aggregate([
-        { $unwind: '$amenities' },
-        {
-          $group: {
-            _id: '$amenities',
-            count: { $sum: 1 }
-          }
-        },
-        { $sort: { count: -1 } }
-      ]).exec();
+      const amenitiesStats = await this.propertyModel
+        .aggregate([
+          { $unwind: '$amenities' },
+          {
+            $group: {
+              _id: '$amenities',
+              count: { $sum: 1 },
+            },
+          },
+          { $sort: { count: -1 } },
+        ])
+        .exec();
 
       // Get bedrooms distribution
-      const bedroomsStats = await this.propertyModel.aggregate([
-        {
-          $group: {
-            _id: '$features.bedrooms',
-            count: { $sum: 1 }
-          }
-        },
-        { $sort: { _id: 1 } }
-      ]).exec();
+      const bedroomsStats = await this.propertyModel
+        .aggregate([
+          {
+            $group: {
+              _id: '$features.bedrooms',
+              count: { $sum: 1 },
+            },
+          },
+          { $sort: { _id: 1 } },
+        ])
+        .exec();
 
       // Get bathrooms distribution
-      const bathroomsStats = await this.propertyModel.aggregate([
-        {
-          $group: {
-            _id: '$features.bathrooms',
-            count: { $sum: 1 }
-          }
-        },
-        { $sort: { _id: 1 } }
-      ]).exec();
+      const bathroomsStats = await this.propertyModel
+        .aggregate([
+          {
+            $group: {
+              _id: '$features.bathrooms',
+              count: { $sum: 1 },
+            },
+          },
+          { $sort: { _id: 1 } },
+        ])
+        .exec();
 
       // Get average construction and lot size
-      const sizeStats = await this.propertyModel.aggregate([
-        {
-          $group: {
-            _id: null,
-            averageConstructionSize: { $avg: '$features.constructionSize' },
-            averageLotSize: { $avg: '$features.lotSize' }
-          }
-        }
-      ]).exec();
+      const sizeStats = await this.propertyModel
+        .aggregate([
+          {
+            $group: {
+              _id: null,
+              averageConstructionSize: { $avg: '$features.constructionSize' },
+              averageLotSize: { $avg: '$features.lotSize' },
+            },
+          },
+        ])
+        .exec();
 
       // Get count of properties created in the last 30 days
       const thirtyDaysAgo = new Date();
       thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
       const newestProperties = await this.propertyModel.countDocuments({
-        createdAt: { $gte: thirtyDaysAgo }
+        createdAt: { $gte: thirtyDaysAgo },
       });
 
       // Get count of properties updated in the last 7 days
       const sevenDaysAgo = new Date();
       sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
       const updatedLastWeek = await this.propertyModel.countDocuments({
-        updatedAt: { $gte: sevenDaysAgo }
+        updatedAt: { $gte: sevenDaysAgo },
       });
 
       // Format the statistics
       const propertyTypeDistribution = Object.fromEntries(
-        propertyTypeStats.map(stat => [stat._id, stat.count])
+        propertyTypeStats.map((stat) => [stat._id, stat.count]),
       );
 
       const operationTypeDistribution = Object.fromEntries(
-        operationTypeStats.map(stat => [stat._id, stat.count])
+        operationTypeStats.map((stat) => [stat._id, stat.count]),
       );
 
       const topCities = Object.fromEntries(
-        cityStats.map(stat => [stat._id, stat.count])
+        cityStats.map((stat) => [stat._id, stat.count]),
       );
 
       const topStates = Object.fromEntries(
-        stateStats.map(stat => [stat._id, stat.count])
+        stateStats.map((stat) => [stat._id, stat.count]),
       );
 
       const amenitiesDistribution = Object.fromEntries(
-        amenitiesStats.map(stat => [stat._id, stat.count])
+        amenitiesStats.map((stat) => [stat._id, stat.count]),
       );
 
       const bedroomsDistribution = Object.fromEntries(
-        bedroomsStats.map(stat => [stat._id, stat.count])
+        bedroomsStats.map((stat) => [stat._id, stat.count]),
       );
 
       const bathroomsDistribution = Object.fromEntries(
-        bathroomsStats.map(stat => [stat._id, stat.count])
+        bathroomsStats.map((stat) => [stat._id, stat.count]),
       );
 
       const executionTime = Date.now() - startTime;
@@ -371,15 +407,17 @@ export class PropertyService {
           soldProperties,
           rentedProperties,
           averagePrice: priceStats[0]?.averagePrice || 0,
-          priceRange: priceStats[0] ? {
-            min: priceStats[0].minPrice,
-            max: priceStats[0].maxPrice
-          } : { min: 0, max: 0 },
+          priceRange: priceStats[0]
+            ? {
+                min: priceStats[0].minPrice,
+                max: priceStats[0].maxPrice,
+              }
+            : { min: 0, max: 0 },
           propertyTypeDistribution,
           operationTypeDistribution,
           locationDistribution: {
             topCities,
-            topStates
+            topStates,
           },
           amenitiesDistribution,
           bedroomsDistribution,
@@ -387,11 +425,14 @@ export class PropertyService {
           averageConstructionSize: sizeStats[0]?.averageConstructionSize || 0,
           averageLotSize: sizeStats[0]?.averageLotSize || 0,
           newestProperties,
-          updatedLastWeek
-        }
+          updatedLastWeek,
+        },
       };
     } catch (error) {
-      this.logger.error(`Error fetching homepage data: ${error.message}`, error.stack);
+      this.logger.error(
+        `Error fetching homepage data: ${error.message}`,
+        error.stack,
+      );
       throw new BadRequestException('Failed to fetch homepage data');
     }
   }
@@ -402,7 +443,7 @@ export class PropertyService {
       processed: 0,
       updated: 0,
       created: 0,
-      errors: 0
+      errors: 0,
     };
 
     try {
@@ -415,20 +456,20 @@ export class PropertyService {
           const uniqueIdentifier = {
             title: propertyData.title || '',
             'location.address': propertyData.location?.address || '',
-            'agent.name': propertyData.agent?.name || ''
+            'agent.name': propertyData.agent?.name || '',
           };
 
           const result = await this.propertyModel.findOneAndUpdate(
             uniqueIdentifier,
-            { 
+            {
               ...propertyData,
-              updatedAt: new Date() 
+              updatedAt: new Date(),
             },
-            { 
-              upsert: true, 
+            {
+              upsert: true,
               new: true,
-              setDefaultsOnInsert: true
-            }
+              setDefaultsOnInsert: true,
+            },
           );
 
           if (!result._id) {
@@ -438,7 +479,6 @@ export class PropertyService {
             stats.updated++;
             this.logger.debug(`Updated property: ${propertyData.title}`);
           }
-
         } catch (error) {
           stats.errors++;
           this.logger.error(`Error processing property: ${error.message}`);
@@ -449,12 +489,11 @@ export class PropertyService {
       const summary = {
         ...stats,
         duration: `${duration}ms`,
-        timestamp: new Date()
+        timestamp: new Date(),
       };
 
       this.logger.log('Sync completed', summary);
       return summary;
-
     } catch (error) {
       this.logger.error('Sync failed', error);
       throw error;
@@ -462,26 +501,40 @@ export class PropertyService {
   }
 
   private transformPropertyData(rawProperty: any): Partial<Property> {
-    const price = rawProperty.priceOperationTypes?.[0]?.prices?.[0]?.amount || 0;
+    const price =
+      rawProperty.priceOperationTypes?.[0]?.prices?.[0]?.amount || 0;
 
     const location: PropertyLocation = {
       state: rawProperty.postingLocation?.location?.parent?.parent?.name || '',
       city: rawProperty.postingLocation?.location?.parent?.name || '',
-      area: rawProperty.postingLocation?.location?.name || '',
       address: rawProperty.postingLocation?.address?.name || '',
       coordinates: {
-        lat: rawProperty.postingLocation?.postingGeolocation?.geolocation?.latitude || 0,
-        lng: rawProperty.postingLocation?.postingGeolocation?.geolocation?.longitude || 0
-      }
+        lat:
+          rawProperty.postingLocation?.postingGeolocation?.geolocation
+            ?.latitude || 0,
+        lng:
+          rawProperty.postingLocation?.postingGeolocation?.geolocation
+            ?.longitude || 0,
+      },
     };
 
     const features: PropertyFeatures = {
-      bedrooms: rawProperty.mainFeatures?.CFT2?.value ? Number(rawProperty.mainFeatures?.CFT2?.value) : 0,
-      bathrooms: Number(rawProperty.mainFeatures?.CFT3?.value || 0) + Number(rawProperty.mainFeatures?.CFT4?.value || 0),
-      constructionSize: rawProperty.mainFeatures?.CFT101?.value ? Number(rawProperty.mainFeatures?.CFT101?.value) : 0,
-      lotSize: rawProperty.mainFeatures?.CFT100?.value ? Number(rawProperty.mainFeatures?.CFT100?.value) : 0,
-      parking: rawProperty.mainFeatures?.CFT7?.value ? Number(rawProperty.mainFeatures?.CFT7?.value) : 0,
-      floors: 1
+      bedrooms: rawProperty.mainFeatures?.CFT2?.value
+        ? Number(rawProperty.mainFeatures?.CFT2?.value)
+        : 0,
+      bathrooms:
+        Number(rawProperty.mainFeatures?.CFT3?.value || 0) +
+        Number(rawProperty.mainFeatures?.CFT4?.value || 0),
+      constructionSize: rawProperty.mainFeatures?.CFT101?.value
+        ? Number(rawProperty.mainFeatures?.CFT101?.value)
+        : 0,
+      lotSize: rawProperty.mainFeatures?.CFT100?.value
+        ? Number(rawProperty.mainFeatures?.CFT100?.value)
+        : 0,
+      parking: rawProperty.mainFeatures?.CFT7?.value
+        ? Number(rawProperty.mainFeatures?.CFT7?.value)
+        : 0,
+      floors: 1,
     };
 
     const agent: Agent = {
@@ -492,29 +545,36 @@ export class PropertyService {
       phone: rawProperty.whatsApp || rawProperty.publisher?.mainPhone || '',
       email: 'contact@example.com',
       experience: 0,
-      activeListings: 0
+      activeListings: 0,
     };
 
     const amenities = (rawProperty.highlightedFeatures || []) as Amenity[];
 
     const propertyType = this.mapPropertyType(rawProperty.realEstateType?.name);
-    const operationType = this.mapOperationType(rawProperty.priceOperationTypes?.[0]?.operationType?.name);
+    const operationType = this.mapOperationType(
+      rawProperty.priceOperationTypes?.[0]?.operationType?.name,
+    );
 
     return {
       title: rawProperty.title,
       description: rawProperty.descriptionNormalized || '',
       propertyType,
       operationType,
-      type: rawProperty.postingType?.toLowerCase() === 'development' ? 'development' : 'property',
+      type:
+        rawProperty.postingType?.toLowerCase() === 'development'
+          ? 'development'
+          : 'property',
       price,
       location,
       features,
       amenities,
-      images: rawProperty.visiblePictures?.pictures?.map(pic => pic.url730x532) || [],
+      images:
+        rawProperty.visiblePictures?.pictures?.map((pic) => pic.url730x532) ||
+        [],
       propertyAge: 0,
       maintenanceFee: 0,
       status: 'available',
-      agent
+      agent,
     };
   }
 
@@ -522,17 +582,17 @@ export class PropertyService {
     const typeMap: Record<string, PropertyTypeName> = {
       'Desarrollos verticales': 'Desarrollos verticales',
       'Desarrollos horizontales': 'Desarrollos horizontales',
-      'Casas': 'Casas',
-      'Departamentos': 'Departamentos'
+      Casas: 'Casas',
+      Departamentos: 'Departamentos',
     };
     return typeMap[type] || 'Casas';
   }
 
   private mapOperationType(type: string): OperationType {
     const typeMap: Record<string, OperationType> = {
-      'Venta': 'Venta',
-      'Renta': 'Renta',
-      'Desarrollo': 'Desarrollo'
+      Venta: 'Venta',
+      Renta: 'Renta',
+      Desarrollo: 'Desarrollo',
     };
     return typeMap[type] || 'Venta';
   }
@@ -564,9 +624,6 @@ export class PropertyService {
       }
       if (filters.location.city?.length) {
         query['location.city'] = { $in: filters.location.city };
-      }
-      if (filters.location.area?.length) {
-        query['location.area'] = { $in: filters.location.area };
       }
     }
 
@@ -607,8 +664,10 @@ export class PropertyService {
 
     if (filters.maintenanceFee) {
       query.maintenanceFee = {};
-      if (filters.maintenanceFee.min) query.maintenanceFee.$gte = filters.maintenanceFee.min;
-      if (filters.maintenanceFee.max) query.maintenanceFee.$lte = filters.maintenanceFee.max;
+      if (filters.maintenanceFee.min)
+        query.maintenanceFee.$gte = filters.maintenanceFee.min;
+      if (filters.maintenanceFee.max)
+        query.maintenanceFee.$lte = filters.maintenanceFee.max;
     }
 
     return query;
@@ -629,64 +688,120 @@ export class PropertyService {
     }
   }
 
-  async executeQuery(executeQueryDto: ExecuteQueryDto): Promise<QueryResult<Property>> {
+  async executeQuery(
+    executeQueryDto: ExecuteQueryDto,
+  ): Promise<QueryResult<Property>> {
     const startTime = Date.now();
     const { query, options = {} } = executeQueryDto;
-    
+
     const parsedQuery = JSON.parse(query);
     await this.validateQuery(parsedQuery);
-    
+
     if (options.projection) {
       await this.validateProjection(options.projection);
+    }
+
+    // Check if we have a proximity filter
+    const proximityFilter = parsedQuery._proximityFilter;
+    let filteredData: any[] = [];
+
+    // Remove the proximity filter from the query before executing
+    if (proximityFilter) {
+      delete parsedQuery._proximityFilter;
+      this.logger.debug(
+        `Found proximity filter: ${JSON.stringify(proximityFilter)}`,
+      );
     }
 
     // Get total count in database for statistics
     const totalInDatabase = await this.propertyModel.countDocuments();
 
     // Get count of matching documents
-    const matchingResults = await this.propertyModel.countDocuments(parsedQuery);
+    let matchingResults = await this.propertyModel.countDocuments(parsedQuery);
 
     // Calculate percentage match
-    const percentageMatch = (matchingResults / totalInDatabase) * 100;
+    let percentageMatch = (matchingResults / totalInDatabase) * 100;
 
     // Get statistics based on the query
     const [priceStats, cityStats] = await Promise.all([
       // Price statistics
-      this.propertyModel.aggregate([
-        { $match: parsedQuery },
-        {
-          $group: {
-            _id: null,
-            averagePrice: { $avg: '$price' },
-            minPrice: { $min: '$price' },
-            maxPrice: { $max: '$price' }
-          }
-        }
-      ]).exec(),
+      this.propertyModel
+        .aggregate([
+          { $match: parsedQuery },
+          {
+            $group: {
+              _id: null,
+              averagePrice: { $avg: '$price' },
+              minPrice: { $min: '$price' },
+              maxPrice: { $max: '$price' },
+            },
+          },
+        ])
+        .exec(),
 
       // City distribution
-      this.propertyModel.aggregate([
-        { $match: parsedQuery },
-        {
-          $group: {
-            _id: '$location.city',
-            count: { $sum: 1 }
-          }
-        }
-      ]).exec()
+      this.propertyModel
+        .aggregate([
+          { $match: parsedQuery },
+          {
+            $group: {
+              _id: '$location.city',
+              count: { $sum: 1 },
+            },
+          },
+        ])
+        .exec(),
     ]);
 
     // Execute the main query with limit
-    const data = await this.propertyModel
+    let data = await this.propertyModel
       .find(parsedQuery, options.projection)
       .sort({ ...options.sort, createdAt: -1 })
-      .limit(50)
+      .limit(20) // Always limit to 20 results
       .lean()
       .exec();
 
+    // Apply proximity filtering if needed
+    if (
+      proximityFilter &&
+      proximityFilter.coordinates &&
+      proximityFilter.coordinates.length > 0
+    ) {
+      this.logger.debug(
+        `Applying proximity filter with ${proximityFilter.coordinates.length} coordinates`,
+      );
+
+      // Filter properties by distance to nearby places
+      filteredData = this.filterPropertiesByProximity(
+        data,
+        proximityFilter.coordinates,
+        proximityFilter.maxDistance || 20, // Default to 20km
+        proximityFilter.logicalOperator || 'OR',
+      );
+
+      // Update data with filtered results
+      data = filteredData.slice(0, 20); // Limit to 20 results
+
+      // Update matching results count
+      const filteredMatchingResults = filteredData.length;
+      this.logger.debug(
+        `Filtered from ${matchingResults} to ${filteredMatchingResults} results based on proximity`,
+      );
+
+      // Update statistics
+      if (filteredMatchingResults !== matchingResults) {
+        const filteredPercentageMatch =
+          (filteredMatchingResults / totalInDatabase) * 100;
+
+        // Update matching results and percentage match
+        matchingResults = filteredMatchingResults;
+        percentageMatch = filteredPercentageMatch;
+      }
+    }
+
     // Format the statistics
     const citiesDistribution = Object.fromEntries(
-      cityStats.map(stat => [stat._id, stat.count])
+      cityStats.map((stat) => [stat._id, stat.count]),
     );
 
     const executionTime = Date.now() - startTime;
@@ -700,22 +815,137 @@ export class PropertyService {
           matchingResults,
           percentageMatch,
           averagePrice: priceStats[0]?.averagePrice,
-          priceRange: priceStats[0] ? {
-            min: priceStats[0].minPrice,
-            max: priceStats[0].maxPrice
-          } : undefined,
-          citiesDistribution
-        }
-      }
+          priceRange: priceStats[0]
+            ? {
+                min: priceStats[0].minPrice,
+                max: priceStats[0].maxPrice,
+              }
+            : undefined,
+          citiesDistribution,
+        },
+      },
     };
+  }
+
+  /**
+   * Filter properties by proximity to coordinates
+   * @param properties Array of properties to filter
+   * @param coordinates Array of coordinates to check proximity against
+   * @param maxDistance Maximum distance in kilometers
+   * @param logicalOperator 'AND' or 'OR' operator for combining proximity conditions
+   * @returns Filtered array of properties
+   */
+  private filterPropertiesByProximity(
+    properties: Property[],
+    coordinates: Array<{
+      lat: number;
+      lng: number;
+      name: string;
+      type: string;
+    }>,
+    maxDistance: number = 20,
+    logicalOperator: 'AND' | 'OR' = 'OR',
+  ): Property[] {
+    this.logger.debug(
+      `Filtering ${properties.length} properties by proximity to ${coordinates.length} coordinates`,
+    );
+
+    // Filter properties that have coordinates
+    const propertiesWithCoordinates = properties.filter(
+      (property) =>
+        property.location &&
+        property.location.coordinates &&
+        property.location.coordinates.lat &&
+        property.location.coordinates.lng,
+    );
+
+    if (propertiesWithCoordinates.length === 0) {
+      this.logger.warn(
+        'No properties with coordinates found for proximity filtering',
+      );
+      return properties;
+    }
+
+    this.logger.debug(
+      `Found ${propertiesWithCoordinates.length} properties with coordinates`,
+    );
+
+    // Filter properties by distance
+    return propertiesWithCoordinates.filter((property) => {
+      // Calculate distance to each coordinate
+      const distances = coordinates.map((coord) => ({
+        distance: this.calculateDistance(
+          property.location.coordinates.lat,
+          property.location.coordinates.lng,
+          coord.lat,
+          coord.lng,
+        ),
+        name: coord.name,
+        type: coord.type,
+      }));
+
+      // Apply logical operator
+      if (logicalOperator === 'AND') {
+        // Property must be within maxDistance of ALL coordinates
+        return distances.every((d) => d.distance <= maxDistance);
+      } else {
+        // Property must be within maxDistance of ANY coordinate
+        return distances.some((d) => d.distance <= maxDistance);
+      }
+    });
+  }
+
+  /**
+   * Calculate distance between two coordinates using the Haversine formula
+   * @param lat1 Latitude of first point
+   * @param lng1 Longitude of first point
+   * @param lat2 Latitude of second point
+   * @param lng2 Longitude of second point
+   * @returns Distance in kilometers
+   */
+  private calculateDistance(
+    lat1: number,
+    lng1: number,
+    lat2: number,
+    lng2: number,
+  ): number {
+    const R = 6371; // Radius of the earth in km
+    const dLat = this.deg2rad(lat2 - lat1);
+    const dLng = this.deg2rad(lng2 - lng1);
+    const a =
+      Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+      Math.cos(this.deg2rad(lat1)) *
+        Math.cos(this.deg2rad(lat2)) *
+        Math.sin(dLng / 2) *
+        Math.sin(dLng / 2);
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+    const distance = R * c; // Distance in km
+    return distance;
+  }
+
+  /**
+   * Convert degrees to radians
+   * @param deg Degrees
+   * @returns Radians
+   */
+  private deg2rad(deg: number): number {
+    return deg * (Math.PI / 180);
   }
 
   private validateQuery(query: any) {
     // Add query validation rules
     const disallowedOperators = ['$where', '$expr', '$function'];
-    
+
+    // Allow _proximityFilter as a special field
+    const specialFields = ['_proximityFilter'];
+
     const checkForDisallowedOperators = (obj: any) => {
       for (const key in obj) {
+        // Skip special fields
+        if (specialFields.includes(key)) {
+          continue;
+        }
+
         if (disallowedOperators.includes(key)) {
           throw new BadRequestException(`Operator ${key} is not allowed`);
         }
@@ -731,14 +961,24 @@ export class PropertyService {
   private validateProjection(projection: any) {
     // Add projection validation rules
     const allowedFields = [
-      'title', 'description', 'price', 'location', 
-      'features', 'amenities', 'images', 'status', 
-      'propertyType', 'operationType', 'agent'
+      'title',
+      'description',
+      'price',
+      'location',
+      'features',
+      'amenities',
+      'images',
+      'status',
+      'propertyType',
+      'operationType',
+      'agent',
     ];
 
     for (const field in projection) {
       if (!allowedFields.includes(field.split('.')[0])) {
-        throw new BadRequestException(`Projection field ${field} is not allowed`);
+        throw new BadRequestException(
+          `Projection field ${field} is not allowed`,
+        );
       }
     }
   }
@@ -746,41 +986,42 @@ export class PropertyService {
   async searchProperties(searchDto: SearchPropertiesDto) {
     const { query } = searchDto;
     const startTime = Date.now();
-    
+
     // Create text search query
     const searchQuery = {
-      $text: { $search: query }
+      $text: { $search: query },
     };
 
     // Get total count in database for statistics
     const totalInDatabase = await this.propertyModel.countDocuments();
 
     // Get count of matching documents
-    const matchingResults = await this.propertyModel.countDocuments(searchQuery);
+    const matchingResults =
+      await this.propertyModel.countDocuments(searchQuery);
 
     // Execute search with scoring
     const data = await this.propertyModel
       .aggregate([
         // Add text score
         {
-          $match: searchQuery
+          $match: searchQuery,
         },
         {
           $addFields: {
-            score: { $meta: "textScore" }
-          }
+            score: { $meta: 'textScore' },
+          },
         },
         // Sort by score (descending) and creation date (newest first)
         {
           $sort: {
             score: -1,
-            createdAt: -1
-          }
+            createdAt: -1,
+          },
         },
         // Limit results
         {
-          $limit: 50
-        }
+          $limit: 50,
+        },
       ])
       .exec();
 
@@ -790,8 +1031,8 @@ export class PropertyService {
         executionTime: Date.now() - startTime,
         totalInDatabase,
         matchingResults,
-        percentageMatch: (matchingResults / totalInDatabase) * 100
-      }
+        percentageMatch: (matchingResults / totalInDatabase) * 100,
+      },
     };
   }
-} 
+}

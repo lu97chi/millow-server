@@ -1,6 +1,12 @@
 import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document } from 'mongoose';
-import { PropertyTypeName, OperationType, PropertyEntityType, PropertyStatus, Amenity } from '../interfaces/property-filters.interface';
+import {
+  PropertyTypeName,
+  OperationType,
+  PropertyEntityType,
+  PropertyStatus,
+  Amenity,
+} from '../interfaces/property-filters.interface';
 
 export type PropertyDocument = Property & Document;
 
@@ -20,9 +26,6 @@ class PropertyLocation {
 
   @Prop({ required: true, type: String })
   city: string;
-
-  @Prop({ required: true, type: String })
-  area: string;
 
   @Prop({ required: true, type: String })
   address: string;
@@ -113,22 +116,22 @@ export class Property {
       'Desarrollos horizontales',
       'Naves industriales',
       'Terrenos comerciales',
-      'Terrenos'
-    ]
+      'Terrenos',
+    ],
   })
   propertyType: PropertyTypeName;
 
   @Prop({
     required: true,
     type: String,
-    enum: ['Venta', 'Renta', 'Desarrollo']
+    enum: ['Venta', 'Renta', 'Desarrollo'],
   })
   operationType: OperationType;
 
   @Prop({
     required: true,
     type: String,
-    enum: ['development', 'property']
+    enum: ['development', 'property'],
   })
   type: PropertyEntityType;
 
@@ -149,8 +152,8 @@ export class Property {
       'Estacionamientos',
       'Gimnasio',
       'Jardín',
-      'Roof Garden'
-    ]
+      'Roof Garden',
+    ],
   })
   amenities: Amenity[];
 
@@ -167,7 +170,7 @@ export class Property {
     required: true,
     type: String,
     enum: ['available', 'sold', 'rented'],
-    default: 'available'
+    default: 'available',
   })
   status: PropertyStatus;
 
@@ -179,23 +182,21 @@ export const PropertySchema = SchemaFactory.createForClass(Property);
 
 // Add text index for search
 PropertySchema.index(
-  { 
+  {
     title: 'text',
     description: 'text',
     'location.address': 'text',
-    'location.area': 'text',
     'location.city': 'text',
-    'location.state': 'text'
+    'location.state': 'text',
   },
   {
     weights: {
       title: 10,
       description: 5,
       'location.address': 3,
-      'location.area': 2,
       'location.city': 2,
-      'location.state': 1
+      'location.state': 1,
     },
-    name: "PropertyTextIndex"
-  }
-); 
+    name: 'PropertyTextIndex',
+  },
+);

@@ -14,4 +14,4 @@ export class StatsController {
   async getMarketStats(): Promise<MarketStats> {
     return this.statsService.getMarketStats();
   }
-} 
+}

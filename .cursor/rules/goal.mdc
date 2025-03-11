@@ -1,0 +1,289 @@
+---
+description: Endgoal
+globs: **/*
+alwaysApply: false
+---
+Detailed Implementation Plan: Vector Database with RAG for Property Search
+Overview
+This plan outlines a comprehensive approach to implementing a vector database with RAG for property search using LangGraphJS. The implementation will support simple queries, complex location-aware queries, agent communication, accurate responses, and conversational memory.
+Required Libraries and Technologies
+Core Framework
+NestJS (already in use)
+LangChain.js for base LLM utilities
+LangGraph.js for agent orchestration
+Vector Database Options
+Pinecone (recommended for ease of setup and management)
+Weaviate (alternative, good for semantic search)
+Qdrant (alternative, performance-focused)
+MongoDB Atlas Vector Search (if already using MongoDB)
+LLM and Embedding APIs
+OpenAI API (GPT-4 for reasoning, text-embedding-3-large for embeddings)
+Alternatively: Anthropic Claude, Mistral AI, or Llama 3
+Location Services
+Google Maps JavaScript API
+Google Places API
+Google Distance Matrix API
+Utilities
+Axios for HTTP requests
+Zod for schema validation
+Redis for caching (recommended for performance)
+TypeScript for type safety
+Phase 1: Setup and Foundation (2-3 weeks)
+Step 1: Environment Setup
+Install required dependencies:
+axios
+Set up environment variables for API keys (OpenAI, Pinecone, Google Maps)
+Create the v2 directory structure as outlined in previous discussions
+Step 2: Vector Database Setup
+Create a Pinecone account and index
+Choose dimensions matching OpenAI's text-embedding-3-large (3072)
+Set up appropriate metric (cosine similarity)
+Configure metadata indexing for structured fields (price, bedrooms, etc.)
+Create a service for interacting with Pinecone
+Methods for upserting property data
+Methods for querying with embeddings and metadata filters
+Methods for updating and deleting properties
+Step 3: Property Data Preparation
+Create a script to generate embeddings for all properties
+Generate rich text descriptions that include all property attributes
+Use OpenAI's text-embedding-3-large to create embeddings
+Store embeddings along with property data in Pinecone
+Define metadata schema for structured filtering
+Price range (min/max)
+Number of bedrooms/bathrooms
+Square footage
+Property type
+Location coordinates
+Amenities (as array of strings)
+Step 4: Google Maps Integration
+Set up Google Maps API client
+Create a service for location-based queries
+Geocoding (address to coordinates)
+Reverse geocoding (coordinates to address)
+Distance calculations
+Nearby place searches (hospitals, schools, etc.)
+Phase 2: Core Agent Implementation (3-4 weeks)
+Step 5: State Interface Definition
+Define the state interface for the LangGraphJS implementation
+}
+Step 6: Query Understanding Node
+Implement a node that uses LLM to analyze user queries
+Extract structured filters (price, bedrooms, etc.)
+Identify semantic concepts (cozy, modern, etc.)
+Detect location-related requirements
+Determine if the query references previous results
+Use prompt engineering to ensure consistent output format
+Implement error handling for malformed LLM responses
+Step 7: Location Processing Node
+Implement a node that handles location-specific aspects of queries
+Geocode locations mentioned in the query
+Identify points of interest (hospitals, schools, etc.)
+Calculate distances and travel times
+Determine proximity requirements ("close to", "within walking distance")
+Integrate with Google Maps API for accurate location data
+Cache common location queries to reduce API calls
+Step 8: Vector Search Node
+Implement a node that performs vector search based on query analysis
+Generate query embedding from semantic concepts and original query
+Apply metadata filters for structured criteria
+Include location-based filtering if applicable
+Retrieve the most relevant properties
+Implement pagination and result limiting
+Add logging for search performance metrics
+Step 9: RAG Refinement Node
+Implement a node that uses RAG to refine search results
+Format properties as context for the LLM
+Create prompts that evaluate property matches against user requirements
+Generate explanations for why properties match or don't match
+Score and rank properties based on LLM evaluation
+Optimize context window usage for handling multiple properties
+Implement batching for processing larger result sets
+Step 10: Response Generation Node
+Implement a node that generates natural language responses
+Create prompts that synthesize search results into conversational responses
+Include explanations for property recommendations
+Handle cases where no matching properties are found
+Support comparative responses (e.g., "which is more expensive?")
+Ensure responses maintain a consistent tone and style
+Implement response templates for common query types
+Step 11: Memory Management Node
+Implement a node that manages conversation memory
+Store key information from the conversation
+Track previous search results
+Maintain user preferences
+Handle references to previous queries or results
+Implement memory retrieval for follow-up questions
+Create mechanisms for memory decay or pruning for long conversations
+Phase 3: Graph Construction and Integration (2-3 weeks)
+Step 12: Main Graph Construction
+Define the main LangGraphJS graph
+Add all implemented nodes
+Define edges between nodes
+Implement conditional edges based on query type
+Create specialized subgraphs for complex query patterns
+Ensure proper error handling and fallback paths
+Implement logging for graph execution
+Step 13: API Controller Implementation
+Create a NestJS controller for the v2 API
+Endpoint for processing queries
+Session management
+Authentication and authorization
+Rate limiting
+Implement request validation
+Add response formatting and error handling
+Step 14: Integration with Existing Services
+Connect to existing services as needed
+User service for user preferences
+Conversation service for history management
+Any other relevant services
+Ensure backward compatibility where necessary
+Implement feature flags for gradual rollout
+Phase 4: Advanced Features and Optimization (2-3 weeks)
+Step 15: Implement Multi-Agent Communication
+Create specialized agent nodes for different aspects of property search
+Location specialist agent
+Price and financial specialist agent
+Amenities specialist agent
+Property type specialist agent
+Implement communication protocols between agents
+Shared state management
+Conflict resolution mechanisms
+Collaborative decision making
+Create a coordinator agent that synthesizes insights from specialist agents
+Step 16: Implement Advanced RAG Techniques
+Add chunking strategies for property descriptions
+Split long descriptions into meaningful chunks
+Maintain context across chunks
+Implement hierarchical retrieval
+Implement hybrid search techniques
+Combine BM25 or keyword search with vector search
+Use different embedding models for different aspects
+Implement re-ranking strategies
+Add relevance feedback mechanisms
+Learn from user interactions
+Adjust search parameters based on feedback
+Implement simple reinforcement learning from human feedback (RLHF)
+Step 17: Performance Optimization
+Implement caching strategies
+Cache common queries and their results
+Cache embeddings for frequent terms
+Cache location data and distance calculations
+Optimize vector search parameters
+Tune similarity thresholds
+Adjust result limits
+Implement approximate nearest neighbor search
+Implement batching and parallelization
+Process multiple properties in parallel
+Batch API calls to external services
+Use worker threads for compute-intensive tasks
+Step 18: Implement Conversation Memory Enhancements
+Add structured memory for property search
+Track user preferences over time
+Remember previously viewed properties
+Store feedback on property suggestions
+Implement memory retrieval strategies
+Semantic search over conversation history
+Recency-based retrieval
+Importance-based retrieval
+Add memory visualization for debugging (optional)
+Phase 5: Deployment and Documentation (1-2 weeks)
+Step 19: Deployment Preparation
+Set up environment configurations
+Development
+Staging
+Production
+Implement logging and monitoring
+Request/response logging
+Error tracking
+Performance metrics
+Create deployment scripts and CI/CD pipelines
+Step 20: Documentation
+Create technical documentation
+Architecture overview
+API specifications
+Component interactions
+Configuration options
+Create operational documentation
+Deployment procedures
+Monitoring guidelines
+Troubleshooting guides
+Create developer documentation
+Code organization
+Extension points
+Testing procedures
+Best Practices and Recommendations
+Vector Database Best Practices
+Embedding Strategy:
+Use high-quality, recent embedding models (OpenAI's text-embedding-3-large)
+Create comprehensive property descriptions that capture all relevant attributes
+Consider multiple embeddings per property for different aspects
+Update embeddings when properties change
+Metadata Structure:
+Store all filterable attributes as metadata
+Normalize numerical values for consistent filtering
+Use arrays for multi-value fields (amenities, property types)
+Include derived fields for common filters
+LLM Prompt Engineering
+Query Understanding Prompts:
+Be explicit about expected output format
+Include examples of different query types
+Specify how to handle ambiguous queries
+Provide guidance on extracting implicit requirements
+RAG Evaluation Prompts:
+Structure property information consistently
+Specify evaluation criteria clearly
+Include examples of good and bad matches
+Guide the LLM on providing explanations
+Response Generation Prompts:
+Define the desired tone and style
+Specify how to handle different result scenarios
+Include guidance on formatting and organization
+Provide examples of good responses
+Performance Considerations
+Latency Optimization:
+Implement parallel processing where possible
+Use streaming responses for long-running operations
+Optimize embedding generation and vector search
+Cache frequent queries and results
+Cost Management:
+Monitor API usage (OpenAI, Google Maps)
+Implement tiered processing based on query complexity
+Use smaller models for simpler tasks
+Batch operations where appropriate
+Security and Compliance
+Data Protection:
+Implement proper encryption for sensitive data
+Ensure compliance with relevant regulations (GDPR, CCPA)
+Implement data retention and deletion policies
+Secure API keys and credentials
+Input Validation and Sanitization:
+Validate all user inputs
+Sanitize inputs before processing
+Implement rate limiting and abuse prevention
+Monitor for unusual query patterns
+Timeline and Resource Allocation
+Total Estimated Timeline: 10-15 weeks
+Phase 1: Setup and Foundation (2-3 weeks)
+1 Backend Developer
+1 DevOps Engineer (part-time)
+Phase 2: Core Agent Implementation (3-4 weeks)
+2 Backend Developers
+1 AI/ML Engineer
+Phase 3: Graph Construction and Integration (2-3 weeks)
+2 Backend Developers
+1 QA Engineer
+Phase 4: Advanced Features and Optimization (2-3 weeks)
+1 Backend Developer
+1 AI/ML Engineer
+1 Performance Engineer (part-time)
+Phase 5: Deployment and Documentation (1-2 weeks)
+1 Backend Developer
+1 DevOps Engineer
+1 Technical Writer (part-time)
+Key Success Factors
+Quality of Embeddings: The effectiveness of vector search depends heavily on the quality of embeddings. Invest time in creating comprehensive property descriptions and using the best available embedding models.
+Prompt Engineering: Well-crafted prompts are essential for effective LLM utilization. Iterate on prompts based on performance and user feedback.
+State Management: Proper state management in LangGraphJS is crucial for maintaining context across nodes and handling complex conversations.
+Location Intelligence: For property search, location is often the most important factor. Invest in robust location services integration and proximity calculations.
+User Experience: Focus on response quality, latency, and natural conversation flow. The system should feel like talking to a knowledgeable real estate agent, not an AI.
+This plan addresses all your requirements, including simple queries, complex location-aware queries, agent communication, accurate responses, and conversational memory, while providing a detailed roadmap for implementation

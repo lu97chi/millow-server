@@ -41,14 +41,6 @@ export interface LocationStats {
     averagePrice: number;
     priceRange: { min: number; max: number };
   }[];
-  byArea: {
-    area: string;
-    city: string;
-    count: number;
-    percentage: number;
-    averagePrice: number;
-    priceRange: { min: number; max: number };
-  }[];
 }
 
 export interface PropertyTypeStats {
@@ -126,13 +118,11 @@ export interface MarketStats {
   trends: MarketTrends;
   summary: {
     mostExpensiveAreas: {
-      area: string;
       city: string;
       averagePrice: number;
       propertyCount: number;
     }[];
     mostActiveAreas: {
-      area: string;
       city: string;
       propertyCount: number;
       percentageOfTotal: number;
@@ -149,4 +139,4 @@ export interface MarketStats {
       priceDropRate: number;
     };
   };
-} 
+}

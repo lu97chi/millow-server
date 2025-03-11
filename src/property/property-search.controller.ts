@@ -1,4 +1,11 @@
-import { Controller, Post, Body, HttpCode, UsePipes, ValidationPipe } from '@nestjs/common';
+import {
+  Controller,
+  Post,
+  Body,
+  HttpCode,
+  UsePipes,
+  ValidationPipe,
+} from '@nestjs/common';
 import { PropertyService } from './property.service';
 import { ExecuteQueryDto } from './dto/execute-query.dto';
 import { QueryResult } from './interfaces/query-result.interface';
@@ -11,7 +18,9 @@ export class PropertySearchController {
   @Post()
   @HttpCode(200)
   @UsePipes(new ValidationPipe({ transform: true }))
-  async executeQuery(@Body() executeQueryDto: ExecuteQueryDto): Promise<QueryResult<Property>> {
+  async executeQuery(
+    @Body() executeQueryDto: ExecuteQueryDto,
+  ): Promise<QueryResult<Property>> {
     return this.propertyService.executeQuery(executeQueryDto);
   }
-} 
+}
