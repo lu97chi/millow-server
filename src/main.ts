@@ -1,8 +1,14 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import { Logger } from '@nestjs/common';
+//import { ChatOpenAI } from "langchain/chat_models/openai";
+import * as cookieParser from 'cookie-parser';
 
 async function bootstrap() {
+
+
+  /*const llm = new ChatOpenAI();
+  await llm.invoke("Hello, world!");  */
   const app = await NestFactory.create(AppModule);
   
   // Enable CORS
@@ -13,6 +19,7 @@ async function bootstrap() {
   });
   
   const port = process.env.PORT ?? 4000;
+  app.use(cookieParser());
   await app.listen(port);
   Logger.log(`Application running on port ${port}`, 'Bootstrap');
 }
