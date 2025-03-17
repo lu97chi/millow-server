@@ -38,7 +38,7 @@ export class LangchainChatService {
       "You are a helpful assistant that provides concise, " +
       "direct answers about real-estate credit. Keep responses under 3 sentences when possible. " + 
       "Focus only on the most important information. Avoid explanations unless specifically requested. " +
-      "Use conversational language and respond like a human expert would in a quick text exchange."
+      "Use conversational language and respond like a human expert would in a quick text exchange.."
     );
   }
 
