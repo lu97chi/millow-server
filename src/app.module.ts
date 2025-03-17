@@ -17,6 +17,8 @@ import { PropertyModule } from './property/property.module';
 import { StatsModule } from './stats/stats.module';
 import { OpenAiModule } from './openai/openai.module';
 import { ConversationModule } from './conversation/conversation.module';
+import { LangchainChatModule } from './langchain-chat/langchainChat.module';
+import { CreditModule } from './credit/credit.module';
 import { MapsModule } from './maps/maps.module';
 import { AgentsModule } from './agents/agents.module';
 
@@ -41,6 +43,8 @@ import { AgentsModule } from './agents/agents.module';
     ConversationModule,
     MapsModule,
     AgentsModule,
+    LangchainChatModule,
+    CreditModule,
   ],
   controllers: [AppController],
   providers: [AppService],
