@@ -21,8 +21,11 @@ import { AgentsModule } from './agents/agents.module';
       load: [databaseConfig],
       validationSchema: Joi.object({
         MONGODB_URI: Joi.string().required(),
-        NODE_ENV: Joi.string().valid('development', 'production', 'test').default('development'),
+        NODE_ENV: Joi.string()
+          .valid('development', 'production', 'test')
+          .default('development'),
         OPENAI_API_KEY: Joi.string().required(),
+        GOOGLE_MAPS_API_KEY: Joi.string().optional(),
       }),
     }),
     DatabaseModule,
@@ -33,7 +36,7 @@ import { AgentsModule } from './agents/agents.module';
     MapsModule,
     AgentsModule,
     LangchainChatModule,
-    CreditModule
+    CreditModule,
   ],
   controllers: [AppController],
   providers: [AppService],
