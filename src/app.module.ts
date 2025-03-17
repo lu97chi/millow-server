@@ -30,6 +30,8 @@ import { AgentsModule } from './agents/agents.module';
     StatsModule,
     OpenAiModule,
     ConversationModule,
+    MapsModule,
+    AgentsModule,
     LangchainChatModule,
     CreditModule
   ],
