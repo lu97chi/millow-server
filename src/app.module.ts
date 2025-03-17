@@ -11,6 +11,8 @@ import { OpenAiModule } from './openai/openai.module';
 import { ConversationModule } from './conversation/conversation.module';
 import { LangchainChatModule } from './langchain-chat/langchainChat.module';
 import { CreditModule } from './credit/credit.module';
+import { MapsModule } from './maps/maps.module';
+import { AgentsModule } from './agents/agents.module';
 
 @Module({
   imports: [
