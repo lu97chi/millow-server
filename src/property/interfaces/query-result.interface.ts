@@ -14,4 +14,4 @@ export interface QueryResult<T> {
       citiesDistribution?: Record<string, number>;
     };
   };
-} 
+}

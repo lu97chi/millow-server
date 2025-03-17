@@ -1,3 +1,11 @@
+/**
+ * App Module
+ *
+ * Changes:
+ * - Added MapsModule to the imports array
+ * - Added GOOGLE_MAPS_API_KEY to the validation schema (optional)
+ * - Added AgentsModule to the imports array
+ */
 import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { AppController } from './app.controller';

@@ -40,6 +40,36 @@ export class PropertyContext {
 }
 
 @Schema({ timestamps: true })
+export class SearchContext {
+  @Prop({ type: String })
+  query?: string;
+
+  @Prop({ type: String })
+  location?: string;
+
+  @Prop({ type: [String] })
+  amenities?: string[];
+
+  @Prop({ type: String })
+  logicalOperator?: 'AND' | 'OR';
+
+  @Prop({ type: MongooseSchema.Types.Mixed })
+  mongoQuery?: Record<string, any>;
+
+  @Prop({ type: MongooseSchema.Types.Mixed })
+  extractedInputs?: Record<string, any>;
+
+  @Prop({ type: [String] })
+  previousAgents?: string[];
+
+  @Prop({ type: Date, default: Date.now })
+  lastUpdated: Date;
+
+  @Prop({ type: Boolean, default: false })
+  isContinuation?: boolean;
+}
+
+@Schema({ timestamps: true })
 export class Conversation {
   @Prop({ required: true, unique: true })
   sessionId: string;
@@ -49,6 +79,9 @@ export class Conversation {
 
   @Prop({ type: PropertyContext })
   context: PropertyContext;
+
+  @Prop({ type: SearchContext })
+  searchContext: SearchContext;
 
   @Prop({ type: MongooseSchema.Types.Mixed, default: {} })
   mongoQuery: Record<string, any>;
@@ -66,4 +99,4 @@ export class Conversation {
   isActive: boolean;
 }
 
-export const ConversationSchema = SchemaFactory.createForClass(Conversation); 
+export const ConversationSchema = SchemaFactory.createForClass(Conversation);

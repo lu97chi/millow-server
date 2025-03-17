@@ -10,14 +10,14 @@ async function bootstrap() {
   /*const llm = new ChatOpenAI();
   await llm.invoke("Hello, world!");  */
   const app = await NestFactory.create(AppModule);
-  
+
   // Enable CORS
   app.enableCors({
     origin: true, // Allow all origins, or specify domains like ['https://yourdomain.com', 'http://localhost:3000']
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE,OPTIONS',
     credentials: true,
   });
-  
+
   const port = process.env.PORT ?? 4000;
   app.use(cookieParser());
   await app.listen(port);
